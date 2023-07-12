@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.cuadrados{
+    position: relative;
+    top:50px;
+    left:60px;
+    height:1100px;
+    display: flex;
+}
+
+.cuadrado_red{
+    margin:5px;
+    border-radius: 60px;
+    border: solid rgb(129, 0, 0);
+    background-color: red;
+    height: 200px;
+    width:200px;
+}
+
+.cuadrado_green{
+    border-radius: 60px;
+    border: solid 10px rgb(0, 73, 0);
+    background-color: green;
+    height: 200px;
+    width:200px;
+}

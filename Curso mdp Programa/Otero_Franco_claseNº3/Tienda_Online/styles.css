@@ -1,0 +1,123 @@
+body{
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 0%;
+    background-color: antiquewhite;
+}
+
+main{
+height: 150PX;
+}
+
+header{
+    border: solid rgb(255, 255, 255);
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url(./img/black-wide-banner-with-shadow-lines-design_1017-34216.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.logo{
+    font-size: xxx-large;
+    margin: 20px;
+    float: left;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 20PX;
+    margin-bottom: 50px;
+}
+nav li{
+    border: solid;
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 5px;
+    margin: 30px;
+    border-radius:  5px;
+}
+
+.li_hover{
+    text-decoration: none;
+}
+
+.li_hover li:hover{
+    background-color: rgb(104, 104, 104);
+}
+
+.img_products{
+    border-radius: 3px;
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    height: 300px;
+    width:150PX;
+    background-color: rgb(247, 247, 247);
+}
+
+#products{
+    background-color: rgba(117, 117, 117, 0.219);
+    overflow: scroll;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+.buy_item{
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 5px;
+    background-color: bisque;
+    color: rgb(121, 72, 0);
+}
+
+.ul_footer{
+    padding-top: 10px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 100%;
+    color: aliceblue;
+    height:130px;
+    background-color: rgb(12, 12, 12);
+}
+
+#Sabores{
+    background-color: rgba(233, 150, 122, 0.411);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 150px;
+    margin-right: 260px;
+    margin-top: 90px;
+    display: flex;
+    
+}
+
+#about_us{
+    margin-top: 90px;
+}
+
+.ab_us{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.directions, ul{
+    list-style-type: none;
+}

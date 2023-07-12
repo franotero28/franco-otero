@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.container{
+    display: flex;
+    background-color: rgb(180, 134, 113);
+    height: 500px;
+    width:500px
+}
+
+.red{
+    z-index:1;
+    left:20%;
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    width:100px;
+}
+
+.green{
+    position: relative;
+    z-index:2;
+    background-color: green;
+    height: 100px;
+    width:100px;
+}
+
+.blue{
+    z-index:3;
+    background-color: blue;
+    height: 100px;
+    width:100px;
+}
