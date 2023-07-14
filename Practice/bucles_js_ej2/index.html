@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bucles_js_ej2</title>
+</head>
+
+<body>
+  <button onclick="ingresarNombres()">Ingresar Nombres</button>  
+  <button onclick="mostrarNombres()">Mostrar nombres</button>
+</body>
+
+<script>
+function ingresarNombres(){
+  const listNames = []
+  indice = 0
+  alert("Bienvenido")
+    while(indice< 3){
+    let userName = prompt("Ingresar nombre usuario")
+    if (userName == null || userName == ""){
+      alert("Logueado incorrectemente, intente nuevamente")
+    }
+    else{
+      alert("Logueado correctamente")
+      alert("Bienvenido "+ userName +" estas listo?")
+      listNames.push(userName)
+      console.log(listNames.length)
+      console.log(listNames)
+      indice = indice + 1
+      console.log(indice)
+    }
+  }
+}
+
+function mostrarNombres(){
+  const ul = [document.getElementById("listanombres")]
+  ul.innerHTML = ""
+ul.innerHTML = [listNames]
+}
+
+
+</script>
+
+</html>
