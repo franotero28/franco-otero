@@ -38,4 +38,26 @@ flex-direction: column;
 .anunce:hover {
     color: rgb(62, 28, 255);
   }
-  
+
+.redes_sociales{
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+}
+
+.redes_sociales li{
+    margin:5px;
+    border-radius: 5px;
+}
+
+.redes_sociales li a{
+    padding: 10px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.red{
+    text-decoration: none;
+    padding: 5px;
+}
