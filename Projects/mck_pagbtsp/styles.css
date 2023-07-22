@@ -54,6 +54,13 @@ nav{
     padding: 10px;
 }
 
+.contenedor4{
+    background-color: rgb(204, 204, 204);
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 .cards_clases{
     margin:5px;
 }
