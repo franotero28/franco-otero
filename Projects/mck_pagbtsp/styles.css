@@ -37,18 +37,31 @@ main{
     width: 100%;
 }
 
+.contenedor2{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 .contenedor{
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding:10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.contenedor2{
+.contenedor3{
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(243, 243, 243);
-    padding: 5px;
+    overflow: scroll;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    padding: 10px;
 }
 
 #carouselExampleControls{
@@ -76,17 +89,9 @@ main{
     background-color: rgb(169, 169, 252);
 }
 
-.contenedor3{
-    display: flex;
-    overflow: scroll;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-}
 
 .contenedor4{
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
     width:100%;
     display: flex;
     justify-content: space-around;
@@ -133,6 +138,36 @@ main{
 .red{
     text-decoration: none;
     padding: 5px;
+}
+
+.wpp_button{
+    position:fixed;
+    width:60px;
+    bottom:25px;
+    right:25px;
+    background:#20ba5a;
+    color:#ffffff;
+    border-radius:50px;
+    justify-content: center;
+    text-align:center;
+    font-size:35px;
+    z-index:100;
+    transition: all 300ms ease;
+}
+
+.btn-wsp i {
+    color: white; /* Establecer el color del icono en blanco */
+  }
+
+.wpp_button:hover{
+    background: #0e5028;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .wpp_button{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
 }
 
 footer{
