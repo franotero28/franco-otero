@@ -48,8 +48,6 @@ main{
 }
 
 .contenedor{
-    margin:5%;
-    padding:5px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -102,12 +100,6 @@ main{
 
 .cards_clases{
     margin:5px;
-}
-
-.video_ma{
-    border:solid burlywood 0px ;
-    border-radius: 5px;
-    margin: 5px;
 }
 
 .anunce {
