@@ -1,0 +1,32 @@
+body{
+    background-color: #ffffff;
+    font-family: 'Alata', sans-serif;
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+}
+
+.logo_img{
+    border-radius: 100px;
+}
+
+.instagram:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.facebook:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.whatsapp:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}.linkedin:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.youtube:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}

@@ -1,0 +1,39 @@
+.contenedor0{
+    padding:5px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.barra_nav, li{
+    font-size: large;
+    list-style-type: none;
+    display: flex;
+    margin: 15px;
+}
+
+.redes_sociales{
+    display: flex;
+}
+
+.instagram:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.facebook:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.whatsapp:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}.linkedin:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.youtube:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
