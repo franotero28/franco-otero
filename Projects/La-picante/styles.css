@@ -17,3 +17,23 @@
 .redes_sociales{
     display: flex;
 }
+
+.instagram:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.facebook:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.whatsapp:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}.linkedin:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
+.youtube:hover{
+    transition: .20s;
+    background-color: rgb(173, 173, 173);
+}
