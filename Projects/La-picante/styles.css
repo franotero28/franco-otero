@@ -60,3 +60,26 @@ body{
     transition: .20s;
     background-color: rgb(173, 173, 173);
 }
+
+/*-----------Header--------*/
+
+
+body{
+    background:linear-gradient(black, rgb(80, 0, 0), rgb(207, 160, 160));
+    background-color: rgb(32, 0, 0);
+}
+
+.container{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-us{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
