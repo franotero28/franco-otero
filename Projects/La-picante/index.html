@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <title>La Picante</title>
@@ -17,23 +17,37 @@
 </head>
 
 <body>
-<header>
-    <div class="contenedor0">
-        <img src="./img/lapicante.png" alt="" width="150">
-        <ul class="barra_nav">
-            <li><strong>Eventos</strong></li>
-            <li><strong>Barberia</strong></li>
-            <li><strong>Academia barbero</strong></li>
-        </ul>
-        <ul class="redes_sociales">
-            <li class="red"><a target="_blank" href="https://www.instagram.com/mariaceliakochur/"class="instagram"><i class="fab fa-instagram"></i></a></li>
-            <li class="red"><a target="_blank" href="https://www.youtube.com/@ampliandoconsciencia"class="youtube"><i class="fab fa-tiktok"></i></a></li>
-            <li class="red"><a target="_blank" href="https://api.whatsapp.com/message/3SS7WQODCI22I1?autoload=1&app_absent=0"class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-          </ul>
-    </div>
+<header class="sticky-header">
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid m-3">
+            <img class="logo-pi"src="./img/lapicante.png" alt="logo la picante" width="150">
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item m-3">
+                <a class="nav-link text-white" href="#"><strong>Barberia</strong></a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link text-white" href="#"><strong>Eventos</strong></a>
+              </li>
+              <li class="nav-item m-3">
+                <a class="nav-link text-white" href="#"><strong>Curso barberia</strong></a>
+              </li>
+            </ul>
+            <div class="users">
+              <ul class="redes_sociales">
+                  <li class="red"><a target="_blank" href="https://www.instagram.com/mariaceliakochur/"class="instagram"><i class="fab fa-instagram"></i></a></li>
+                  <li class="red"><a target="_blank" href="https://www.youtube.com/@ampliandoconsciencia"class="youtube"><i class="fab fa-tiktok"></i></a></li>
+                  <li class="red"><a target="_blank" href="https://api.whatsapp.com/message/3SS7WQODCI22I1?autoload=1&app_absent=0"class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 </header>
 <main>
-
 </main>
 <footer>
     <!-- place footer here -->
@@ -42,7 +56,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
-
+<script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 </script>
