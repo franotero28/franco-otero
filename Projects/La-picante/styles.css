@@ -83,3 +83,30 @@ body{
     align-items: center;
     text-align: center;
 }
+
+.ubication{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 100px;
+}
+
+.title-ubi{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.mapa-oficina{
+    height: 500px;
+    width: auto;
+    border: solid 2px black;
+    border-radius: 5px;
+}
+
+.logos{
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
