@@ -1,12 +1,8 @@
-body{
-    height: 1920px;
-}
-
 .sticky-header {
     font-size: larger;
-    position: sticky;
+   /* position: sticky;
     top: 0;
-    z-index: 100; /* Especifica una alta z-index para asegurar que el encabezado aparezca por encima de otros elementos */
+    z-index: 100;  Especifica una alta z-index para asegurar que el encabezado aparezca por encima de otros elementos */
   }
 
 .logo-pi{
@@ -15,12 +11,13 @@ body{
 }
 
 .nav-link{
+    font-size: medium;
     border-radius: 10px;
 }
 
 .nav-link:hover{
     width: max-content;
-    transition: .20s;
+    transition: .2s;
     background-color: rgb(173, 173, 173);
 }
 
@@ -42,30 +39,32 @@ body{
     border-radius: 5px;
 }
 .instagram:hover{
-    transition: .20s;
+    transition: .5s;
     background-color: rgb(173, 173, 173);
 }
 .facebook:hover{
-    transition: .20s;
+    transition: .5s;
     background-color: rgb(173, 173, 173);
 }
 .whatsapp:hover{
-    transition: .20s;
+    transition: .5s;
     background-color: rgb(173, 173, 173);
-}.linkedin:hover{
-    transition: .20s;
-    background-color: rgb(173, 173, 173);
+
 }
 .youtube:hover{
-    transition: .20s;
+    transition: .5s;
     background-color: rgb(173, 173, 173);
 }
 
 /*-----------Header--------*/
 
+.card{
+    text-align: center;
+    color: white;
+}
 
 body{
-    background:linear-gradient(black, rgb(80, 0, 0), rgb(207, 160, 160));
+    background:linear-gradient(rgb(24, 23, 23), rgb(80, 0, 0), rgb(207, 160, 160));
     background-color: rgb(32, 0, 0);
 }
 
@@ -89,6 +88,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
     margin: 10px;
     margin-top: 100px;
 }
@@ -100,7 +100,7 @@ body{
 
 .mapa-oficina{
     height: 500px;
-    width: auto;
+    width: 100%;
     border: solid 2px black;
     border-radius: 5px;
 }
@@ -109,4 +109,12 @@ body{
     margin: 10px;
     display: flex;
     justify-content: space-around;
+}
+
+footer p{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+    background-color: black;
 }
