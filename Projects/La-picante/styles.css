@@ -68,6 +68,11 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
+.barber-info{
+    text-align: center;
+    font-size: larger;
+}
+
 .container{
     margin-top: 10px;
     color: rgb(255, 255, 255);
@@ -117,4 +122,9 @@ footer p{
     margin-bottom: 0px;
     color: white;
     background-color: black;
+}
+
+.hrcut{
+    color: white;
+    height: 2px;
 }
