@@ -15,6 +15,10 @@
     border-radius: 10px;
 }
 
+#hambur{
+    color: white;
+}
+
 .nav-link:hover{
     width: max-content;
     transition: .2s;
