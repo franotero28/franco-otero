@@ -11,18 +11,15 @@
 }
 
 .nav-link{
+    color: white;
     font-size: medium;
     border-radius: 10px;
 }
 
-#hambur{
-    color: white;
-}
-
 .nav-link:hover{
     width: max-content;
-    transition: .2s;
-    background-color: rgb(173, 173, 173);
+    transition: .30s;
+    color: rgb(252, 176, 176);
 }
 
 .redes_sociales{
@@ -48,7 +45,7 @@
 }
 .facebook:hover{
     transition: .5s;
-    background-color: rgb(173, 173, 173);
+    color: rgb(117, 117, 117);
 }
 .whatsapp:hover{
     transition: .5s;
