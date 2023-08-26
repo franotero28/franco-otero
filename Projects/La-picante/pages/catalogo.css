@@ -9,8 +9,8 @@
     margin-right: 25%;
     padding: 15px;
 }
-
 .nav-link{
+    color: white;
     font-size: medium;
     border-radius: 10px;
 }
@@ -18,7 +18,7 @@
 .nav-link:hover{
     width: max-content;
     transition: .2s;
-    background-color: rgb(173, 173, 173);
+    color: rgb(252, 176, 176);
 }
 
 .redes_sociales{
