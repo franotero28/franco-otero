@@ -1,42 +1,35 @@
-import { events } from `./data.js`
-const $ = document;
+import { events } from './data.js';
 
-console.log(events)
+const main = document.querySelector('main');
 
+const fragment = document.createDocumentFragment();
+const cardProductTemplate = document.getElementById(
+  'card-product-template'
+).content;
 
-function createProductCardTemplate(title, description, date, idx) {
-    const productCardTemplate = `
-    <div class="col-md-4 mb-4">
-    <div class="card">
-    <img class="card-img-top" src="${thumbnail}" height="300" alt="Miniatura de producto ${title}">
-    <div class="card-body">
-    <h5 class="card-title">${title}</h5>
-    <p class="card-text">${description}</p>
-    <p class="card-text">$${date}</p>
-    <button id="addToCartBTN${idx}" class="btn btn-primary">Add to Cart</button>
-    </div>
-    </div>
-    </div>`;
-    return productCardTemplate;
+document.getElementById('products_list').addEventListener('click', (e) => {
+  const node = e.target;
+  if (node.classList.contains('btn')) {
+    alert(
+      `soy el producto: ${node.dataset.productname} y mi id es: ${node.dataset.id}`
+    );
   }
+});
 
-  function render() {
-    const productsGalery = $.getElementById('products_galery');
-    products.forEach((product, idx) => {
-      const productCardTemplate = createProductCardTemplate(
-        product.title,
-        product.description,
-        product.date,
-        idx
-      );
-      productsGalery.innerHTML += productCardTemplate;
-      const btn = $.getElementById(`addToCartBTN${idx}`);
-      btn.onclick = addToCart;
-      console.log(
-        '🚀 ~ file: index.js:34 ~ products.forEach ~ btn:',
-        btn.__proto__
-      );
-    });
-  }
+events.forEach((product) => {
+  cardProductTemplate.querySelector('img').src = product.thumbnail;
+  cardProductTemplate.querySelector('img').alt = product.title;
+  cardProductTemplate.querySelector('.card-title').innerText = product.title;
+  cardProductTemplate.querySelector('.card-text').innerText = product.title;
+  cardProductTemplate
+    .querySelector('button')
+    .setAttribute('data-productName', product.title);
+  cardProductTemplate
+    .querySelector('button')
+    .setAttribute('data-id', product.id);
 
-  render()
+  const clone = cardProductTemplate.cloneNode(true);
+  fragment.appendChild(clone);
+});
+
+main.appendChild(fragment);
