@@ -6,6 +6,10 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
+.col-sm-6{
+    text-align: center;
+}
+
 .container{
     margin-top: 10px;
     color: rgb(255, 255, 255);
