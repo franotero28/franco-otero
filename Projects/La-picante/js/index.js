@@ -10,7 +10,7 @@ events.forEach((product) =>{
    let content = document.createElement("div");
    content.className = "card bg-secondary p-2 m-3"
    content.innerHTML = `
-             <img class="card-img-top mt-2" src="${product.img}" alt="Card image cap">
+             <img class="card-img-top mt-2 rounded-circle" src="${product.img}" alt="Card image cap">
              <div class="card-body">
              <h5 class="card-title">${product.title}</h5>
              <p>${product.description}</p>
