@@ -69,6 +69,14 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
+.precio{
+    font-size: large;
+}
+
+.card{
+    width: 18rem;
+}
+
 .barber-info{
     text-align: center;
     font-size: medium;
@@ -79,6 +87,7 @@ body{
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .about-us{
