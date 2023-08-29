@@ -4,7 +4,7 @@ let carrito = [];
 
 const eventproducts = document.getElementById("eventsProducts")
 const verCarrito = document.getElementById("verCarrito")
-const carritoContainer = document.getElementById("carrito-container")
+const carritoContainer = document.getElementById("liCarrito")
 
 events.forEach((product) =>{
    let content = document.createElement("div");
@@ -40,23 +40,24 @@ verCarrito.addEventListener("click",()=> {
   const alertCarrito = document.createElement("div")
   alertCarrito.className = "alert-header"
   alertCarrito.innerHTML =`
-  <h1 class ="alert-title">Carrito</h1>
+  <h2 class ="alert-title">Carrito</h2>
   `;
+  carritoContainer.innerHTML=` `
   carritoContainer.append(alertCarrito);
 
-  const carritoButton = document.createElement("h1")
-    carritoButton.innerText = "X";
-    carritoButton.className = "alert-carrito-button";
+  const carritoButton = document.createElement("button")
+    carritoButton.innerText = "❌";
+    carritoButton.className = "btn btn-secondary p-1 m-1";
 
   alertCarrito.append(carritoButton);
 
   carrito.forEach((product) =>{
-    let carritoContent = document.createElement("div");
+    let carritoContent = document.createElement("li");
+    carritoContent.innerHTML = ''
     carritoContent.className = "carrito-content"
     carritoContent.innerHTML = `
-      <img src="${product.img}">
-      <h3>${product.title}</h3>
-      <p>$${product.price}</p>
+      <img src="${product.img}" width="80">
+      <p><strong>$${product.price}</strong></p>
     `;
 
     carritoContainer.append(carritoContent)
@@ -66,9 +67,9 @@ verCarrito.addEventListener("click",()=> {
     const total = carrito.reduce((acc, el) => acc + el.price, 0);
 
   const totalBuying = document.createElement("div")
-  totalBuying.className = "total-content"
+  totalBuying.className = "total-content mt-1 p-2"
   totalBuying.innerHTML = `
-  Total a pagar:$ ${total}
+  <p style="margin-bottom:0px;"><strong>Total a pagar:$ ${total}</strong></p>
   `;
   carritoContainer.append(totalBuying)
 });
