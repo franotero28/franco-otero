@@ -12,7 +12,7 @@ export const events = [
     title: "📍 LA PICANTE 23 DE SEPTIEMBRE",
     description: "Entrada V.I.P",
     date: "23/09/23",
-    price: 3500,
+    price: 5000,
     img:"https://i.ibb.co/M7w3pZy/party.png",
   },
 ];

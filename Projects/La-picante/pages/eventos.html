@@ -18,34 +18,38 @@
 </head>
 
 <body>
-<header class="sticky-header">
+<header>
     <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container-fluid">
-            <img class="logo-pi" src="./img/lapicante.png" alt="logo la picante" width="120">
-            <h1 class="ver-carrito" id="verCarrito">🛒</h1>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item m-3">
-                <a class="nav-link " href="../index.html"><strong>🌶 Menu</strong></a>
-              </li>
-              <li class="nav-item m-3">
-                <a class="nav-link " href="#"><strong>🌶 Eventos</strong></a>
-              </li>
-              <li class="nav-item m-3">
-                <a class="nav-link " href="barber.html"><strong>🌶 Barberia</strong></a>
-              </li>
-              <li class="nav-item m-3">
-                <a class="nav-link" href="catalogo.html"><strong>🌶 Catalogo</strong></a>
-              </li>
+        <div class="container d-flex justify-content-around">
+          <a href="../index.html"><img class="logo-pi" src="./img/lapicante.png" alt="logo la picante" width="120"></a>
+          <div class="dropdown" style="margin-left: 70px;">
+            <button id="verCarrito" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              🛒
+            </button>
+            <ul id="liCarrito" class="dropdown-menu" style="padding-top: 0px;padding-bottom: 0px;  border-radius:5px ;">
+  
             </ul>
-            <div class="users">
-              <ul class="redes_sociales">
-                  <li class="red"><a target="_blank" href="https://www.instagram.com/la.picante.estudio/"class="instagram"><i class="fab fa-instagram"></i></a></li>
-                  <li class="red"><a target="_blank" href="https://www.tiktok.com/@la.picante.estudio"class="youtube"><i class="fab fa-tiktok"></i></a></li>
-                  <li class="red"><a target="_blank" href="https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20de%20la%20p%C3%A1gina%20de%20LA%20PICANTE"class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        </div>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto" style="margin-left: 100px;">
+            <li class="nav-item m-3">
+              <a class="nav-link " href="#"><strong>🌶 Eventos</strong></a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link " href="barber.html"><strong>🌶 Barberia</strong></a>
+            </li>
+            <li class="nav-item m-3">
+              <a class="nav-link" href="catalogo.html"><strong>🌶 Catalogo</strong></a>
+            </li>
+          </ul>
+          <div class="users">
+            <ul class="redes_sociales">
+              <li class="red"><a target="_blank" href="https://www.instagram.com/la.picante.estudio/"class="instagram"><i class="fab fa-instagram"></i></a></li>
+              <li class="red"><a target="_blank" href="https://www.tiktok.com/@la.picante.estudio"class="youtube"><i class="fab fa-tiktok"></i></a></li>
+              <li class="red"><a target="_blank" href="https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20de%20la%20p%C3%A1gina%20de%20LA%20PICANTE"class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
               </ul>
             </div>
           </div>
@@ -55,16 +59,13 @@
 <main>
   <div id="cbarberia" class="container mb-3">
     <div class="row w-100">
-      <img class="barber mt-3 mb-3" src="./img/fondopicanteeventos.png" alt="">+
+      <img class="barber mt-3 mb-3" src="./img/fondopicanteeventos.png" alt="">
       <div class="h2events">
           <h1>VENTA DE ENTRADAS</h1>
         </div>
           <div id="eventsProducts" class="container mb-3">
 
           </div>
-          <div id="carrito-container" class="carrito-content">
-          
-          </div>  
 <div class="container">
     <div class="row justify-content-sm-center w-100">
         <div class="col-sm-6">
