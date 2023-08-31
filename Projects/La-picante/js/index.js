@@ -32,6 +32,13 @@ events.forEach((product) =>{
      img : product.img,
      price: product.price,
    });
+   Swal.fire({
+    title: 'Añadido al carrito correctamente',
+    background: 'rgb(70, 30, 30)',
+    color : 'white',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#3085d6',
+   })
    console.log(carrito)
   });
 });
@@ -58,6 +65,7 @@ verCarrito.addEventListener("click",()=> {
     carritoContent.innerHTML = `
       <img src="${product.img}" width="80">
       <p><strong>$${product.price}</strong></p>
+      <button>❌</button>
     `;
 
     carritoContainer.append(carritoContent)
@@ -73,16 +81,6 @@ verCarrito.addEventListener("click",()=> {
   `;
   carritoContainer.append(totalBuying)
 });
-
-
-
-
-
-
-
-
-
-
 
 
 
