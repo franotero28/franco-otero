@@ -15,11 +15,17 @@ events.forEach((product) =>{
              <h5 class="card-title">${product.title}</h5>
              <p>${product.description}</p>
              <p class="precio"><strong>$${product.price}</strong></p>
+             <input
+             type="number"
+             placeholder="0"
+             min="0"
+             max="100"
+              id="number" />
              </div>
   `;
 
   let boton = document.createElement("button");
-  boton.innerText = "Comprar entradas";
+  boton.innerText = "Agregar al Carrito";
   boton.className = "btn btn-primary";
   content.append(boton);
   
@@ -57,6 +63,7 @@ verCarrito.addEventListener("click",()=> {
     carritoButton.className = "btn btn-secondary p-1 m-1";
 
   alertCarrito.append(carritoButton);
+
 
   carrito.forEach((product) =>{
     let carritoContent = document.createElement("li");
