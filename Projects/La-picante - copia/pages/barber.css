@@ -6,16 +6,17 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
-.col-sm-6{
-    text-align: center;
-}
-
 .container{
     margin-top: 10px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+}
+
+.descript{
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .card-body{
@@ -48,30 +49,6 @@ body{
     margin: 10px;
     display: flex;
     justify-content: space-around;
-}
-
-.carrito-content{
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 10px;
-    border: solid 1px;
-    border-radius: 4px;
-}
-
-.total-content{
-    background-color: black;
-    color: #ffffff
-}
-
-
-.alert-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    color: #ffffff;
-    width: 100%;
 }
 
 footer p{

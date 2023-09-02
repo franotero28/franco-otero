@@ -109,10 +109,3 @@ footer p{
     color: white;
     background-color: black;
 }
-
-.prox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large
-}

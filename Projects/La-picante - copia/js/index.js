@@ -15,31 +15,38 @@ events.forEach((product) =>{
              <h5 class="card-title">${product.title}</h5>
              <p>${product.description}</p>
              <p class="precio"><strong>$${product.price}</strong></p>
+             <input
+             type="number"
+             placeholder="0"
+             min="0"
+             max="100"
+              id="number" />
              </div>
   `;
 
-  let boton = document.createElement("a");
-  boton.innerText = "Comprar Entradas";
-  boton.className = "btn btn-primary"
-  boton.id = "wppbutton"
+  let boton = document.createElement("button");
+  boton.innerText = "Agregar al Carrito";
+  boton.className = "btn btn-primary";
   content.append(boton);
   
   eventproducts.append(content);
 
-  boton.addEventListener("click",() =>{
-    let wpplink = "https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20para%20comprar%20una%20entrada%20de%20LA%20PICANTE"
-    window.open(wpplink, '_blank');
-  } )
- /* boton.addEventListener("click", ()=>{
+  boton.addEventListener("click", ()=>{
    carrito.push({
      id : product.id,
      title: product.title,
      img : product.img,
      price: product.price,
    });
+   Swal.fire({
+    title: 'Añadido al carrito correctamente',
+    background: 'rgb(70, 30, 30)',
+    color : 'white',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#3085d6',
+   })
    console.log(carrito)
   });
-  */
 });
 
 verCarrito.addEventListener("click",()=> {

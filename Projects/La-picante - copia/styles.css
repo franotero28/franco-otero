@@ -6,9 +6,9 @@
   }
 
 .logo-pi{
-    margin-right: 25%;
     padding: 15px;
 }
+
 .nav-link{
     color: white;
     font-size: medium;
@@ -17,7 +17,7 @@
 
 .nav-link:hover{
     width: max-content;
-    transition: .2s;
+    transition: .30s;
     color: rgb(252, 176, 176);
 }
 
@@ -44,7 +44,7 @@
 }
 .facebook:hover{
     transition: .5s;
-    background-color: rgb(173, 173, 173);
+    color: rgb(117, 117, 117);
 }
 .whatsapp:hover{
     transition: .5s;
@@ -53,14 +53,32 @@
 }
 .youtube:hover{
     transition: .5s;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(173, 173, 173);background-color: rgb(70, 30, 30);
 }
 
-/*---------css header-------*/
+/*-----------Header--------*/
+
+.card{
+    text-align: center;
+    color: white;
+}
 
 body{
     background:linear-gradient(rgb(24, 23, 23), rgb(80, 0, 0), rgb(207, 160, 160));
     background-color: rgb(32, 0, 0);
+}
+
+.precio{
+    font-size: large;
+}
+
+.card{
+    width: 18rem;
+}
+
+.barber-info{
+    text-align: center;
+    font-size: medium;
 }
 
 .container{
@@ -68,10 +86,23 @@ body{
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.card-body{
-    color: rgb(255, 255, 255);
+.about-us{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.h2events{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 158, 158);
 }
 
 .ubication{
@@ -81,7 +112,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: 10px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .title-ubi{
@@ -110,9 +141,7 @@ footer p{
     background-color: black;
 }
 
-.prox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large
+.hrcut{
+    color: white;
+    height: 2px;
 }
