@@ -1,10 +1,11 @@
 import {events} from "./data.js"
 
+
 let carrito = [];
 
-const eventproducts = document.getElementById("eventsProducts")
 const verCarrito = document.getElementById("verCarrito")
 const carritoContainer = document.getElementById("liCarrito")
+const eventproducts = document.getElementById("eventsProducts")
 
 events.forEach((product) =>{
    let content = document.createElement("div");
@@ -42,7 +43,9 @@ events.forEach((product) =>{
   */
 });
 
-verCarrito.addEventListener("click",()=> {
+/*--------JS Carrito----------*/
+
+  verCarrito.addEventListener("click", () =>{
   const alertCarrito = document.createElement("div")
   alertCarrito.className = "alert-header"
   alertCarrito.innerHTML =`
@@ -69,9 +72,8 @@ verCarrito.addEventListener("click",()=> {
 
     carritoContainer.append(carritoContent)
   });
-  
 
-    const total = carrito.reduce((acc, el) => acc + el.price, 0);
+  const total = carrito.reduce((acc, el) => acc + el.price, 0);
 
   const totalBuying = document.createElement("div")
   totalBuying.className = "total-content mt-1 p-2"
@@ -79,8 +81,16 @@ verCarrito.addEventListener("click",()=> {
   <p style="margin-bottom:0px;"><strong>Total a pagar:$ ${total}</strong></p>
   `;
   carritoContainer.append(totalBuying)
-});
+})
 
+
+
+/*let cantidades = document.getElementById("number")
+let mostrarValor = document.getElementById("mostrarValor")
+mostrarValor.addEventListener("click", ()=>{
+  let cantidad = cantidades.value ;
+  console.log("el valor del input es " + cantidad)
+})*/
 
 
 

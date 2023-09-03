@@ -1,11 +1,5 @@
 
 /*---------css header-------*/
-
-body{
-    background:linear-gradient(rgb(24, 23, 23), rgb(80, 0, 0), rgb(207, 160, 160));
-    background-color: rgb(32, 0, 0);
-}
-
 .col-sm-6{
     text-align: center;
 }
@@ -72,6 +66,10 @@ body{
     background-color: black;
     color: #ffffff;
     width: 100%;
+}
+
+.delete-product{
+    cursor: pointer;
 }
 
 footer p{
