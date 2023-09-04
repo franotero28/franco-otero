@@ -6,6 +6,7 @@ export const events = [
     date: "23/09/23",
     price: 2500,
     img:"https://i.ibb.co/Tmzf0X4/party-1.png",
+    quantity: 1,
 },
 {
     id: 2,
@@ -14,6 +15,7 @@ export const events = [
     date: "23/09/23",
     price: 5000,
     img:"https://i.ibb.co/M7w3pZy/party.png",
+    quantity: 1,
   },
 ];
 
