@@ -69,7 +69,7 @@ events.forEach((product) =>{
 
     const closeButton = document.createElement("button")
     closeButton.className = "btn btn-danger"
-    closeButton.innerText = "❌"
+    closeButton.innerText = "X"
 
     closeButton.addEventListener("click", () => {
       carritoContainer.style.display = "none"
@@ -82,9 +82,9 @@ events.forEach((product) =>{
     carritoContent.innerHTML = ''
     carritoContent.className = "carrito-content"
     carritoContent.innerHTML = `
-      <span class="restar">-</span>
+      <button class="restar btn btn-danger">-</button>
       <p>${product.quantity}</p>
-      <span class="sumar">+</span>
+      <button class="sumar btn btn-primary">+</button>
       <img src="${product.img}" width="30px">
       <p style="padding-right:15px; padding-left:10px;"><strong>${product.description}</strong></p>
       <p id="totalbuy"><strong>$${product.quantity * product.price}</strong></p>
@@ -111,9 +111,10 @@ events.forEach((product) =>{
     })
 
 
-    let eliminar = document.createElement("span")
-    eliminar.innerText = "X";
-    eliminar.className = "delete-product";
+    let eliminar = document.createElement("button")
+    eliminar.style.fontSize = "small"
+    eliminar.innerText = "🗑";
+    eliminar.className = "delete-product btn btn-danger";
     carritoContent.append(eliminar);
 
     eliminar.addEventListener("click", eliminarProducto)
@@ -126,6 +127,18 @@ events.forEach((product) =>{
   <p style="margin-bottom:0px;">Total a pagar:$ ${total}</p>
   `;
   carritoContainer.append(totalBuying)
+
+  const pagar = document.createElement("button")
+  pagar.className = "btn btn-primary"
+  pagar.innerText = "Comprar"
+  totalBuying.append(pagar)
+
+  pagar.addEventListener("click",() =>{
+    let wpplink = "https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20para%20comprar%20%20entradas%20de%20LA%20PICANTE"
+    window.open(wpplink, '_blank');
+  } )
+
+
 };
 
 verCarrito.addEventListener("click", pintarCarrito)
