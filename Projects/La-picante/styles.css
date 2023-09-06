@@ -23,6 +23,7 @@
 
 .redes_sociales{
     display: flex;
+    justify-content: center;
     list-style-type: none;
     text-decoration: none;
 }
