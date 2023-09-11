@@ -4,9 +4,6 @@ const verTurnos = document.getElementById("verTurnos")
 const boton = document.getElementById("mostrarTurnos")
 let botonPresionado = false;
 
-
-
-
 boton.addEventListener("click", () => {
     if (!botonPresionado) {
         botonPresionado = true;
@@ -14,8 +11,8 @@ boton.addEventListener("click", () => {
             let content = document.createElement("div");
             content.className = "div-turnos";
             content.innerHTML = `
-                <p style="margin-right:10px;">${turno.day}</p>
-                <p>${turno.hour}hs</p>  
+                <p>${turno.day}</p>
+                <p>${turno.hour}hs</p>
             `;
             verTurnos.append(content);
 

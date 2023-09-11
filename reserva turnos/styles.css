@@ -9,6 +9,8 @@ body{
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 1px;
+    align-items: center;
 }
 
 .ver-turno{
