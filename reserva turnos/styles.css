@@ -1,0 +1,15 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.div-turnos{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+}
+
+.ver-turno{
+    text-align: center;
+}
