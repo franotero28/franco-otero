@@ -8,6 +8,7 @@ body{
     background-color: blueviolet;
     padding: 10px;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .ver-turno{
