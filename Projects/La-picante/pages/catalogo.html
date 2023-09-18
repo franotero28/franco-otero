@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./barber.css">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="catalogo.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
@@ -58,13 +59,15 @@
       </nav>
 </header>
 <main>
-  <div id="cbarberia" class="container mb-3">
+  <div data-aos="fade-right" data-aos-duration="3000" id="cbarberia" class="container mb-3">
     <div class="row w-100">
       <img class="barber mt-3 mb-3"src="./img/catalogopicante.png" alt="catalogo picante" >
-
+    </div>
+  </div>
       <div class="prox">
       <h1>Proximamente....</h1>
      </div>
+    
 <div id="oficina" class="ubication">
   <h3 class="title-ubi">Encontranos en nuestra oficina!</h3>
   <p style="color: white; font-size: medium;">Ubicada en Bolivar 3053 Edificio Tango</p>
@@ -78,7 +81,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
-<script defer type="module" src="./js/index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script defer type="module" src="../js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 </script>
