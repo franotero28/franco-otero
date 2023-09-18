@@ -111,6 +111,7 @@ footer p{
 }
 
 .prox{
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;

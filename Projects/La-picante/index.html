@@ -12,6 +12,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
@@ -48,7 +49,7 @@
       </nav>
 </header>
 <main>
-  <div class="container">
+  <div data-aos="fade-right" class="container">
     <div class="row w-100">
       <div class="col-sm-6">
         <div class="img-jodas">
@@ -88,14 +89,14 @@
         </div>
       </div>
     </div>
-<div class="container mb-3">
+<div data-aos="fade-down" data-aos-offset="300"class="container mb-3">
   <div class="row w-100">
     <div class="col-sm-6">
       <h2 class="h2events">PROXIMOS EVENTOS</h2>
         <div id="eventos" class="container mb-3">
           <div class="row">
             <div class="card bg-secondary" style="width: 18rem;">
-              <img class="card-img-top mt-2" src="assets/img/Imagen de WhatsApp 2023-08-31 a las 17.59.40.jpg" alt="Card image cap">
+              <img class="card-img-top mt-2" src="./pages/img/Picante flyer (Anuncio).png" alt="Card image cap">
               <div class="card-body">
                <h5 class="card-title">📍 LA PICANTE 23 DE SEPTIEMBRE</h5>
                 <a target="_blank" href="./pages/eventos.html" class="btn btn-primary">COMPRAR ENTRADAS</a>
@@ -140,7 +141,7 @@
   </div>
 </div>
 </div>
-<div id="oficina" class="ubication">
+<div data-aos="flip-right" id="oficina" class="ubication">
   <h3 class="title-ubi">Encontranos en nuestra oficina!</h3>
   <p style="color: white; font-size: medium;">Ubicada en Bolivar 3053 Edificio Tango</p>
   <iframe class="mapa-oficina" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.50057298880307!2d-57.55402929382921!3d-38.00024663063627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dea83adff4d1%3A0x77a3b23da1690969!2sEdificio%20Tango!5e0!3m2!1ses!2sar!4v1675176695604!5m2!1ses!2sar" frameborder="0"></iframe>
@@ -153,6 +154,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script defer type="module" src="./js/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">

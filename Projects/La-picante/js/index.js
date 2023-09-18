@@ -1,11 +1,19 @@
 import {events} from "./data.js"
 
 
+AOS.init();
 let carrito = [];
 
 const verCarrito = document.getElementById("verCarrito")
 const carritoContainer = document.getElementById("liCarrito")
 const eventproducts = document.getElementById("eventsProducts")
+const botonReserva = document.getElementById("boton-reserva")
+
+botonReserva.addEventListener("click", ()=>{
+  console.log("se apreto el boton")
+  let whpplink = "https://api.whatsapp.com/send?phone=2233048014&text=Hola,%20te%20escribo%20para%20reservar%20un%20turno%20para%20barberia"
+  window.open(whpplink, '_blank');
+})
 
 events.forEach((product) =>{
    let content = document.createElement("div");
@@ -83,12 +91,7 @@ events.forEach((product) =>{
   carritoContainer.append(totalBuying)
 })
 
-const botonReserva = document.getElementById("boton-reserva")
 
-botonReserva.addEventListener("click", ()=>{
-  let whpplink = "https://api.whatsapp.com/send?phone=2233048014&text=Hola,%20te%20escribo%20para%20reservar%20un%20turno%20para%20barberia"
-  window.open(whpplink, '_blank');
-})
 
 /*let cantidades = document.getElementById("number")
 let mostrarValor = document.getElementById("mostrarValor")
