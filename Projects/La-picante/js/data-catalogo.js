@@ -39,12 +39,12 @@ export const articulos = [
     id: 7,
     title: "Tijera de pulir royal cut",
     price: 5000,
-    img: "https://i.postimg.cc/63Mvz3KL/ARTICULO-6-SACAPELO.jpg",
+    img: "https://i.postimg.cc/DwyFZcKc/ARTICULO-7-TIJERA-PERFIL.jpg",
     },
     {
     id: 8,
     title: "Navaja",
     price: 2000,
-    img: "https://i.postimg.cc/63Mvz3KL/ARTICULO-6-SACAPELO.jpg",
+    img: "https://i.postimg.cc/Gm7RssLn/ARTICULO-8-NAVAJA.jpg",
     },
 ] 
