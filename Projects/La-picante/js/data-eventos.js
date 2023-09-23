@@ -5,6 +5,7 @@ export const events = [
     description: "Entrada General",
     date: "23/09/23",
     price: 2500,
+    quantity: 1,
     img:"https://i.ibb.co/Tmzf0X4/party-1.png",
 },
 {
@@ -13,6 +14,7 @@ export const events = [
     description: "Entrada V.I.P",
     date: "23/09/23",
     price: 5000,
+    quantity: 1,
     img:"https://i.ibb.co/M7w3pZy/party.png",
   },
 ];

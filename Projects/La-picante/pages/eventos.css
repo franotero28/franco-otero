@@ -1,5 +1,8 @@
+body{
+    background:linear-gradient(rgb(24, 23, 23), rgb(80, 0, 0), rgb(207, 160, 160));
+    background-color: rgb(32, 0, 0);
+}
 
-/*---------css header-------*/
 .col-sm-6{
     text-align: center;
 }
@@ -49,11 +52,13 @@
     align-items: center;
     padding: 5px;
     margin: 10px;
-    border: solid 1px;
-    border-radius: 4px;
 }
 
 .total-content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
     background-color: black;
     color: #ffffff
 }
@@ -69,7 +74,12 @@
 }
 
 .delete-product{
+    color: red;
+    font-size: larger;
     cursor: pointer;
+    margin-bottom: 17px;
+    margin-left: 10px;
+
 }
 
 footer p{
@@ -78,4 +88,41 @@ footer p{
     margin-bottom: 0px;
     color: white;
     background-color: black;
+}
+
+.restar{
+    font-size: larger;
+    cursor: pointer;
+    padding: 3px 6px;
+    margin-bottom: 17px;
+    margin-right: 10px;
+}
+
+.sumar{
+    font-size: larger;
+    cursor: pointer;
+    padding: 3px 6px;
+    margin-bottom: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.modal-container{
+    width: 600px;
+    margin:  0 10%;
+    max-height: 88vh;
+    color: #ffffff;
+    background-color: rgb(88, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top:12vh;
+    scrollbar-color: none;
+}
+
+.close{
+    display: none;
 }
