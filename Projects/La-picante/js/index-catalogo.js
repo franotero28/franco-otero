@@ -19,4 +19,11 @@ articulos.forEach((articulo) =>{
     botoncompra.innerText = "Comprar"
 
     card.append(botoncompra);
+
+    botoncompra.addEventListener("click", () => {
+        let wpplink = "https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20para%20comprar%20un%20articulo%20de%20LA%20PICANTE"
+        window.open(wpplink, '_blank'); 
+    })
 });
+
+
