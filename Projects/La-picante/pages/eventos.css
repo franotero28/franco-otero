@@ -82,13 +82,13 @@ body{
 
 }
 
-footer p{
-    font-size: small;
+footer{
     text-align: center;
     margin-bottom: 0px;
     color: white;
-    background-color: black;
+    background-color: rgb(43, 2, 2);
 }
+
 
 .restar{
     font-size: larger;
