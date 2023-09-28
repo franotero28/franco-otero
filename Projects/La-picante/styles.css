@@ -1,9 +1,4 @@
-.sticky-header {
-    font-size: larger;
-   /* position: sticky;
-    top: 0;
-    z-index: 100;  Especifica una alta z-index para asegurar que el encabezado aparezca por encima de otros elementos */
-  }
+
 
 .logo-pi{
     padding: 15px;
@@ -27,6 +22,7 @@
     list-style-type: none;
     text-decoration: none;
     padding: 0%;
+    margin-bottom: 0;
 }
 
 .redes_sociales li{
@@ -43,10 +39,7 @@
     transition: .5s;
     background-color: rgb(173, 173, 173);
 }
-.facebook:hover{
-    transition: .5s;
-    color: rgb(117, 117, 117);
-}
+
 .whatsapp:hover{
     transition: .5s;
     background-color: rgb(173, 173, 173);
@@ -55,6 +48,20 @@
 .tiktok:hover{
     transition: .5s;
     background-color: rgb(173, 173, 173);
+}
+
+.register-login{
+    color: #ffffff;
+    text-decoration: none;
+    padding:5px;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-right: 30px;
+}
+
+.register-login:hover{
+    transition: .5s;
+    color: rgb(252, 176, 176);
 }
 
 /*-----------Header--------*/
@@ -143,6 +150,38 @@ footer{
 .hrcut{
     color: white;
     height: 2px;
+}
+
+.ingresar-login{
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 50;
+    font-size: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 5px solid crimson;
+}
+
+.contenedor-login{
+    display: flex;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(29, 0, 0);
+    border-radius: 5px;
+    max-width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.form-label{
+    color: #ffffff;
 }
 
 .btn-reserva{
