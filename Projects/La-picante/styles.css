@@ -64,6 +64,22 @@
     color: rgb(252, 176, 176);
 }
 
+@media screen and (max-width:480px){
+    .register-sign{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+
+/* @media screen and (max-width:480px){
+    .register-login{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+} */
 /*-----------Header--------*/
 
 .card{
