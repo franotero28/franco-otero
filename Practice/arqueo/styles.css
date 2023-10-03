@@ -1,0 +1,16 @@
+.title{
+    display: flex;
+    justify-content: center;
+}
+
+.li-trans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    flex-direction: column-reverse;
+}
+
+.total-neto{
+    text-align: center;
+}

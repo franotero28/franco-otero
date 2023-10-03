@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Arqueo</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>💾</text></svg>">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+  </header>
+  <main>
+    <div class="container">
+        <div class="row w-100">
+            <div class="title">
+                <h1>Arqueo</h1>
+            </div>
+            <div class="col-4 mr-2 d-flex justify-content-center align-items-center">
+                <label>Importe</label>
+                <input type="number" id="number" name="tentacles" min="1" max="100000" />
+            </div>
+            <div class="col-4 d-flex justify-content-center align-items-center"> 
+              <label>CAJA</label>
+              <select id="caja">
+                  <option id="1">PAGO FACIL</option>
+                  <option id="2">KIOSCO</option>
+                  <option id="3">MERCADO PAGO</option>
+              </select>
+            </div>
+            <div class="col-4 ml-2 d-flex justify-content-center align-items-center">
+                <button id="btnSuma" class="btn btn-primary">Sumar</button>
+                <button id="btnDeshacer" class="btn btn-danger">Deshacer ultimo</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <h4 class="text-center">Historial de transacciones</h4>
+    <ul class="li-trans"id="arqueo">
+
+    </ul>
+    <div id="totalNeto" class="total-neto">
+
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+<script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
