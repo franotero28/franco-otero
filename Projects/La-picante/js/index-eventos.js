@@ -119,7 +119,7 @@ events.forEach((product) =>{
 
     eliminar.addEventListener("click", eliminarProducto)
   });
-    const total = carrito.reduce((acc, el) => acc + el.price * el.quantity, 0);
+  const total = carrito.reduce((acc, el) => acc + el.price * el.quantity, 0);
 
   const totalBuying = document.createElement("div")
   totalBuying.className = "total-content p-2"
@@ -136,7 +136,7 @@ events.forEach((product) =>{
   pagar.addEventListener("click",() =>{
     let wpplink = "https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20para%20comprar%20%20entradas%20de%20LA%20PICANTE"
     window.open(wpplink, '_blank');
-  } )
+  })
 
 
 };
