@@ -1,0 +1,43 @@
+.e-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}   
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.e-datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: max-content;
+}
+
+.preg-1{
+    display: none;
+}
+
+.ul-preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.option{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
