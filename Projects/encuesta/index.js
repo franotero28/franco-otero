@@ -30,20 +30,30 @@ questions.forEach((pregunta, index) =>{
     liPreguntas.className = "ul-preguntas"
     liPreguntas.innerHTML = 
 
-    `<li class="option"><input type="radio" name="q${index + 1}" value="${pregunta.option1}">${pregunta.option1}</li>
-    <li class="option"><input type="radio" name="q${index + 1}" value="${pregunta.option2}">${pregunta.option2}</li>
-    <li class="option"><input type="radio" name="q${index + 1}" value="${pregunta.option3}">${pregunta.option3}</li>`
+    `<li class="option"><input type="radio" class="${index + 1 }" name="q${index + 1}" value="${pregunta.option1}">${pregunta.option1}</li>
+    <li class="option"><input type="radio" class="${index + 1 }" name="q${index + 1}" value="${pregunta.option2}">${pregunta.option2}</li>
+    <li class="option"><input type="radio" class="${index + 1 }" name="q${index + 1}" value="${pregunta.option3}">${pregunta.option3}</li>`
 
     preg1.append(preguntas, liPreguntas)
 });
+const enviarRespuestas = document.getElementById("Submit")
+const respuestas1 = document.querySelectorAll("input[type='radio'][name='q1']")
 
-
-/*const q1Answer = document.querySelector('input[name="q1"]:checked');
-const q2Answer = document.querySelector('input[name="q2"]:checked');
-
-if (q1Answer == 'La picante') {
-    alert("Sos un picante")
-}
-else{
-    alert("Sos un peton")
-}*/
+enviarRespuestas.addEventListener("click", () =>{
+    respuestas1.forEach((checkbox) =>{
+        let indicecorrect = 0
+        let indiceincorrect = 0
+        if (checkbox.checked){
+            if(checkbox.value == "La Picante"){
+                indicecorrect = indicecorrect + 1
+                console.log("Respuesta correcta")
+                console.log(indicecorrect)
+            }
+            else{
+                console.log("Respuesta incorreta")
+                indiceincorrect = indiceincorrect + 1
+                console.log(indiceincorrect)
+            }
+        }
+    })
+})
