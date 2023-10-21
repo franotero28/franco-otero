@@ -9,18 +9,12 @@
     font-size: large;
 }   
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
 .e-datos{
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
-    width: max-content;
 }
 
 .preg-1{
@@ -30,7 +24,6 @@ main{
 .ul-preguntas{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -38,6 +31,7 @@ main{
     list-style-type: none;
     display: flex;
     justify-content: center;
+    cursor: pointer;
     align-items: center;
     margin-bottom: 5px;
 }
