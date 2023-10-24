@@ -1,0 +1,47 @@
+.header-b{
+    /* 
+    position: fixed;
+    top:0;
+    width: 100%;
+    Sticky header */
+    background-color: rgb(1, 5, 39);
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body{
+    height: 1020px;
+    background: linear-gradient( rgb(130, 169, 240),rgb(2, 2, 117));
+}
+
+.h1-players{
+    text-align: center;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.players{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.players-img{
+    border-radius: 5px;
+    margin: 10px;
+    width:150px;
+    height:150px;
+}
+
+.tag-name{
+    color: white;
+}
