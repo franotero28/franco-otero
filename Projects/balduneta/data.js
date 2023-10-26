@@ -6,7 +6,7 @@ export const games = [
     team2: "Los Polludos",
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2: "https://i.postimg.cc/x8q08Xmn/lospoulludo.png",
-    win: false,
+    win: "false",
     },
     {
     team1: "La Balduneta",
@@ -15,6 +15,6 @@ export const games = [
     team2: "Tortuguitas anashe",
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2: "https://i.postimg.cc/tg4838Lp/image2.webp",
-    win: true,
+    win: "true",
     },
 ]
