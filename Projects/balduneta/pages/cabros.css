@@ -1,0 +1,63 @@
+.header-b{
+    /* 
+    position: fixed;
+    top:0;
+    width: 100%;
+    Sticky header */
+    background-color: rgb(1, 5, 39);
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body{
+    background: linear-gradient( rgb(130, 169, 240),rgb(2, 2, 117));
+    height: 1920px;
+}
+
+
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:500px) {
+    .player{
+        flex-direction: column;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: larger;
+}
+
+.players-img{
+    border-radius: 5px;
+    margin: 10px;
+    width:300px;
+    height:300px;
+}
+
+.titles{
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.clips{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
