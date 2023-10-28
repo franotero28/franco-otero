@@ -41,15 +41,22 @@ body{
     }
 }
 
+.fecha-game p{
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    color: rgb(0, 0, 0);
+    background-color: rgba(170, 168, 168, 0.295);
+}
+
 .tracker-games0{
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: xx-large;
-    background-color: rgb(190, 51, 51);
+    background-color: rgb(182, 180, 180);
     color: white;
     font-family: 'Outfit', sans-serif;
-    margin-bottom: 20px;
 }
 
 .tracker-games1{
@@ -57,10 +64,19 @@ body{
     justify-content: center;
     text-align: center;
     font-size: xx-large;
+    background-color: rgb(190, 51, 51);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.tracker-games2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
     background-color: rgb(39, 90, 42);
     color: white;
     font-family: 'Outfit', sans-serif;
-    margin-bottom: 20px;
 }
 
 
@@ -101,4 +117,29 @@ body{
     font-family: 'Outfit', sans-serif;
     color: white;
     font-size: larger;
+}
+
+.vod-review{
+    font-family: 'Outfit', sans-serif;
+    background-color: rgba(123, 123, 243, 0.493);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+.v-review{
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.v-review:hover{
+    color: rgb(139, 139, 243);
+    transition: 0.2s;
 }

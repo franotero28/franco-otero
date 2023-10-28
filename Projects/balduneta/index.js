@@ -13,9 +13,24 @@ games.forEach((game) => {
     <p class="rondas-teams m-2">${game.rondaR}</p>
     <p class="team-name m-2" data-aos="fade-left" data-aos-delay="300">${game.team2}</p>
     <img src="${game.img2}" width="60">
-    `
+    `;
+    const vod = document.createElement("div")
+    vod.className = "vod-review"
+    vod.innerHTML = `
+    <p class="v-review">📺 Vod Review</p>
+    `;
+
+    const fecha = document.createElement("div")
+    fecha.className = "fecha-game"
+    fecha.innerHTML = `
+    <p>${game.date}</p>
+    `;
+
     i = i + 1
+
+    divtrack.append(fecha)
     divtrack.append(tracker)
+    divtrack.append(vod)
 })
 
 AOS.init();
