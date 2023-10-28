@@ -17,7 +17,7 @@ games.forEach((game) => {
     const vod = document.createElement("div")
     vod.className = "vod-review"
     vod.innerHTML = `
-    <p class="v-review">📺 Vod Review</p>
+    <a href="${game.vod}" target="_blank" class="v-review">📺 Vod Review</a>
     `;
 
     const fecha = document.createElement("div")

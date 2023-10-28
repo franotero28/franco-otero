@@ -7,6 +7,7 @@ export const games = [
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2:"https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     date:"Jueves 2/11 21hs",
+    vod:""
     },
     {
     team1: "La Balduneta",
@@ -16,6 +17,7 @@ export const games = [
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2: "https://i.postimg.cc/x8q08Xmn/lospoulludo.png",
     date:"Domingo 22/10 21hs",
+    vod:"https://www.youtube.com/watch?v=MijVY2wl0Ho&ab_channel=BLNfranz",
     },
     {
     team1: "La Balduneta",
@@ -25,5 +27,6 @@ export const games = [
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2: "https://i.postimg.cc/tg4838Lp/image2.webp",
     date:"Jueves 12/10 21hs",
+    vod:"https://www.youtube.com/watch?v=MijVY2wl0Ho&ab_channel=BLNfranz",
     },
 ]

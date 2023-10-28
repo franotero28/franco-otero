@@ -53,6 +53,7 @@ body{
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
     font-size: xx-large;
     background-color: rgb(182, 180, 180);
     color: white;
@@ -131,6 +132,8 @@ body{
 }
 
 .v-review{
+    text-decoration: none;
+    color: white;
     font-family: 'Outfit', sans-serif;
     cursor: pointer;
     display: flex;
