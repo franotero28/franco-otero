@@ -24,6 +24,40 @@ body{
     align-items: center;
 }
 
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.fab{
+    color: white;
+    background-color: rgba(41, 13, 201, 0.329);
+    padding: 10px;
+    border-radius: 5px;
+    font-size:larger;
+    transition: transform .2s; 
+}
+
+.fab:hover{
+    transform: scale(1.1); 
+}
+
+.fa-solid{
+    color: white;
+    background-color: rgba(41, 13, 201, 0.329);
+    padding: 10px;
+    border-radius: 5px;
+    font-size:larger;
+    transition: transform .2s; 
+}
+
+.fa-solid:hover{
+    transform: scale(1.1); 
+}
+
 @media screen and (max-width:500px) {
     .player{
         flex-direction: column;
