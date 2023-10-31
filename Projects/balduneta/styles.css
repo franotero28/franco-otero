@@ -13,8 +13,14 @@
     align-items: center;
 }
 
-body{
+/* body{
     background: linear-gradient( rgb(130, 169, 240),rgb(2, 2, 117));
+} */
+
+body{
+    background-image: url(./img-mapas/fondonegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sobre-us{
@@ -94,7 +100,7 @@ body{
 }
 
 .cards{
-    background-color: rgb(16, 62, 102);
+    background-color: rgb(1, 2, 27);
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -155,7 +161,7 @@ body{
 
 .footer{
     margin-top: 50px;
-    background-color: rgba(225, 223, 255, 0.199);
+    background-color: rgba(225, 223, 255, 0.466);
     display: flex;
     justify-content: center;
     align-items: center;
