@@ -17,6 +17,11 @@ body{
     background: linear-gradient( rgb(130, 169, 240),rgb(2, 2, 117));
 }
 
+.h1-players{
+    text-align: center;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
 
 .player{
     display: flex;
@@ -31,6 +36,11 @@ body{
     flex-direction: column;
 }
 
+body{
+    background-image: url(../img-mapas/fondonegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .fab{
     color: white;
@@ -138,4 +148,22 @@ body{
     flex-direction: column;
 }   
 
+.comentarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja-comentarios{
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    overflow: visible;
+    border: solid 3px black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
 
