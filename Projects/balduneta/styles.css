@@ -182,4 +182,13 @@ body{
     flex-direction: column;
 }   
 
- 
+.fab{
+    font-size: xxx-large;
+    text-decoration: none;
+    color: blueviolet;
+    transition: transform .2s; 
+}
+
+.fab:hover{
+    transform: scale(1.2); 
+}
