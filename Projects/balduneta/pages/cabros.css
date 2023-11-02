@@ -105,8 +105,10 @@ body{
     justify-content: space-around;
 }
 
-.video-clip{
-    width: 450px;
+@media screen and (max-width:500px) {
+.clips-yt{
+    width:350px;
+}
 }
 
 @media screen and (max-width:500px) {
@@ -118,9 +120,6 @@ body{
     }
     .titles{
         text-align: center;
-    }
-    .video-clip{
-        width: 300px;
     }
 }
 
