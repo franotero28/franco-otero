@@ -6,7 +6,7 @@ export const games = [
     team2: "Proximo Rival",
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2:"https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
-    date:"Jueves 2/11 21hs",
+    date:"Sabado 4/11 21hs",
     vod:""
     },
     {
