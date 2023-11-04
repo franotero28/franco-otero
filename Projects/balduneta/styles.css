@@ -23,6 +23,21 @@ body{
     background-size: cover;
 }
 
+.botones-nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:500px){
+    .botones-nav{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+}
+
 .sobre-us{
     color: white;
     font-family: 'Outfit', sans-serif;
