@@ -1,11 +1,11 @@
 export const games = [
     {
     team1:"La Balduneta",
-    rondaB: 0,
-    rondaR: 0,
-    team2: "Proximo Rival",
+    rondaB: 6,
+    rondaR: 13,
+    team2: "Masaco con",
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
-    img2:"https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
+    img2:"https://i.postimg.cc/8z3rNd0g/image.webp",
     date:"Sabado 4/11 21hs",
     vod:""
     },
