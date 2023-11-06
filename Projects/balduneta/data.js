@@ -7,7 +7,7 @@ export const games = [
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2: "https://i.postimg.cc/tJv7MBvJ/image-1.webp",
     date:"Domingo 5/11 21hs",
-    vod:"https://www.youtube.com/watch?v=MijVY2wl0Ho&ab_channel=BLNfranz",
+    vod:"https://www.youtube.com/watch?v=CMOW81r8QqM&ab_channel=BLNfranz",
     },
     {
     team1:"La Balduneta",
