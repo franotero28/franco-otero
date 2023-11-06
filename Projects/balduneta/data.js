@@ -1,5 +1,15 @@
 export const games = [
     {
+    team1: "La Balduneta",
+    rondaB: 11,
+    rondaR: 13,
+    team2: "Los Primates",
+    img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
+    img2: "https://i.postimg.cc/tJv7MBvJ/image-1.webp",
+    date:"Domingo 5/11 21hs",
+    vod:"https://www.youtube.com/watch?v=MijVY2wl0Ho&ab_channel=BLNfranz",
+    },
+    {
     team1:"La Balduneta",
     rondaB: 6,
     rondaR: 13,
@@ -7,7 +17,7 @@ export const games = [
     img: "https://i.postimg.cc/gJJmJw94/oso-balduneta.webp",
     img2:"https://i.postimg.cc/8z3rNd0g/image.webp",
     date:"Sabado 4/11 21hs",
-    vod:""
+    vod:"https://www.youtube.com/watch?v=fQUYiK4SN7Q&t=970s&ab_channel=BLNfranz"
     },
     {
     team1: "La Balduneta",
