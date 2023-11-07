@@ -76,7 +76,7 @@ body{
     text-align: center;
     align-items: center;
     font-size: xx-large;
-    background-color: rgb(182, 180, 180);
+    background-color: rgb(190, 51, 51);
     color: white;
     font-family: 'Outfit', sans-serif;
 }
@@ -96,11 +96,21 @@ body{
     justify-content: center;
     text-align: center;
     font-size: xx-large;
-    background-color: rgb(39, 90, 42);
+    background-color:  rgb(190, 51, 51);
     color: white;
     font-family: 'Outfit', sans-serif;
 }
 
+.tracker-games3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: xx-large;
+    background-color: rgb(39, 90, 42);
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
 
 .h1-players{
     text-align: center;
