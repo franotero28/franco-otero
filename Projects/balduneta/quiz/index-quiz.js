@@ -12,9 +12,17 @@ preguntas.innerHTML = `<p>${elemento.pregunta}</p>
 <input type="radio" name="${index + 1}"><p>${elemento.opciones[1]}</p></input>
 <input type="radio" name="${index + 1}"><p>${elemento.opciones[2]}</p></input>
 `
-index = index + 1 
+index++
 divCuestionario.append(preguntas)
 })
 
+const botonEnviar = document.getElementById("enviarRespuestas")
+
+botonEnviar.addEventListener("click", ()=>{
 const radios = document.getElementsByName("1") 
-console.log(radios)
+for(let i = 0; i < radios.length; i++){
+    if(radios[i].checked){
+        console.log("selecciono:" + radios[i].value)
+    }
+}
+})
