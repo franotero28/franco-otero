@@ -1,0 +1,14 @@
+body{
+    background-color: aquamarine;
+    height: 1000px;
+}
+
+#carouselExampleCaptions{
+    max-width: 450px;
+    max-height: 500px;
+}
+
+.d-block{
+    height: 300px;
+    width: 550px;
+}
