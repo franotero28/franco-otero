@@ -1,3 +1,9 @@
 .preguntas-quiz{
     color: white;
+    font-family:'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
 }
