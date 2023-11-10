@@ -12,6 +12,6 @@ export const preguntas = [
     {
     pregunta:"¿Cuantos mapas tienen 3 sites?",
     opciones:["1","2","3"],
-    respuesta: 0,
+    respuesta: 1,
     },
 ]
