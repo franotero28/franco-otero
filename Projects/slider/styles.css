@@ -1,8 +1,53 @@
 body{
     background-color: aquamarine;
     height: 1000px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
+
+.animation-slider1{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-name: slide1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.animation-slider{
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: slide2;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@keyframes slide1{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slide2{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 #carouselExampleCaptions{
     max-width: 450px;
     max-height: 500px;
