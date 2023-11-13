@@ -6,7 +6,6 @@ body{
     overflow-x: hidden;
 }
 
-
 .animation-slider1{
     color: rgb(255, 255, 255);
     font-size: larger;
@@ -20,7 +19,7 @@ body{
 .animation-slider{
     color: rgb(255, 255, 255);
     font-size: larger;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-duration: 5s;
     animation-name: slide2;
     overflow: hidden;
