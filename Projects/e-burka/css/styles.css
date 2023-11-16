@@ -1,0 +1,32 @@
+header{
+    background-color: antiquewhite;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav-item{
+    margin: 50px;
+}
+
+.nav-link{
+    color: black;
+}
+
+.nav-item:hover{
+    color: cadetblue;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.navbar-brand{
+    margin-left: 80px;
+}
+
+@media screen and (max-width:500px) {
+    .nav-item{
+        margin: 0px;
+    }
+    .navbar-brand{
+        margin-left: 0px;
+    }
+}
