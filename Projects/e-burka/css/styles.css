@@ -4,6 +4,10 @@ header{
     font-family: 'Work Sans', sans-serif;
 }
 
+body{
+    height: 1080px;
+}
+
 .nav-item{
     margin: 50px;
 }
@@ -15,7 +19,7 @@ header{
 .nav-item:hover{
     color: cadetblue;
     transform: scale(1.1);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .navbar-brand{
@@ -25,8 +29,48 @@ header{
 @media screen and (max-width:500px) {
     .nav-item{
         margin: 0px;
+        padding: 10px;
     }
     .navbar-brand{
         margin-left: 0px;
     }
+}
+
+.buy{
+    background-color: rgb(79, 79, 173);
+    color: white;
+    padding: 10px;
+    border: solid black 0.5px;
+    border-radius: 5px;
+}
+
+.buy:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    color:  rgb(79, 79, 173);
+    background-color:white ;
+}
+
+/*----- CSS HEADER ------- */
+
+.div-1{
+    text-align: center;
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    animation-name: titulo-animado;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes titulo-animado {
+    from{
+    margin-right: 200px;
+    }
+    to{
+    margin-right: 0px;
+    }
+    
 }
