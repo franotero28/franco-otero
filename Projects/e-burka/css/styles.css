@@ -4,7 +4,8 @@ header{
     font-family: 'Work Sans', sans-serif;
 }
 
-body{
+main{
+    background-color: rgb(252, 231, 241);
     height: 1080px;
 }
 
@@ -58,19 +59,79 @@ body{
 }
 
 .title{
+    padding-top: 30px;
     font-family: 'Kanit', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.tecnologia{
+    margin-bottom: 0px;
     animation-name: titulo-animado;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    border-bottom: 5px  solid;
+    animation-direction: alternate;
+    transition: 2s;
 }
 
 @keyframes titulo-animado {
     from{
-    margin-right: 200px;
+    width: 0%;
+    color: rgb(2, 0, 109);
     }
     to{
-    margin-right: 0px;
+    width: 100%;
+    color: rgb(180, 133, 182);
     }
     
 }
+
+/*----- div-1 ------- */
+
+.div-2{
+    color: white;
+}
+
+/*------ div-2 ------*/
+.div-3{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.fondo-title{
+    display: inline-block;
+    height: 90px;
+    background-color: rgb(252, 231, 241);
+    animation: fondo-scale;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 10px;
+}
+
+@keyframes fondo-scale {
+    from{
+    transform: rotate(0deg);
+    }
+    to{
+    transform: rotate(-8deg);
+    }
+}
+
+.title-1{
+    color: rgb(0, 0, 0);
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/*-----div-3------*/
+
+.div-4{
+    background-color: white;
+    height: 500px;
+}
+
+/*------div-3-----*/
