@@ -86,24 +86,35 @@ main{
     
 }
 
-/*----- div-1 ------- */
-
-.div-2{
-    color: white;
+.propo{
+    width: 850px;
 }
 
-/*------ div-2 ------*/
-.div-3{
+@media screen and (max-width:500px) {
+    .propo{
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .title{
+        font-size: 35px;
+    }
+}
+
+/*----- div-1 ------- */
+.div-2{
     padding: 50px;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(211, 211, 211);
 }
 
 .fondo-title{
     display: inline-block;
+    text-align: center;
     height: 90px;
-    background-color: rgb(252, 231, 241);
+    background-color: rgb(0, 0, 0);
+    color: white;
     animation: fondo-scale;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -113,25 +124,72 @@ main{
 
 @keyframes fondo-scale {
     from{
-    transform: rotate(0deg);
+    width: 70%;
     }
     to{
-    transform: rotate(-8deg);
+    width: 100%;
     }
 }
 
 .title-1{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Kanit', sans-serif;
     text-align: center;
     padding: 20px;
 }
 
-/*-----div-3------*/
-
-.div-4{
-    background-color: white;
-    height: 500px;
+@media screen and (max-width:500px) {
+    .title-1{
+        width: 100%;
+        font-size: 20px;
+    }
+    .fondo-title{
+        height: 70px;
+    }
 }
 
-/*------div-3-----*/
+/*------ div-2 ------*/
+
+.div-3{
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ofertas{
+    background-color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: solid 4px black;
+    border-radius: 10px;
+    height: 300px;
+    margin: 5px;
+    width: 300px;
+    animation-name: border-animado;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: 2s;
+}
+
+.ofertas:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    animation-duration: 1s;
+}
+
+@keyframes border-animado {
+    from{
+    border-color: rgb(92, 92, 92);
+    }
+    to{
+    border-color: rgb(235, 235, 235);
+    }
+}
+/*-----div-3------*/
