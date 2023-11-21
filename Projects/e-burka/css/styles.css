@@ -90,7 +90,7 @@ main{
     width: 850px;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
     .propo{
         width: 100%;
         margin-top: 30px;
