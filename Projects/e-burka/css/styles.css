@@ -52,7 +52,7 @@ main{
     background-color:white ;
 }
 
-/*----- CSS HEADER ------- */
+/*----- div-1 ------- */
 
 .div-1{
     text-align: center;
@@ -101,7 +101,8 @@ main{
     }
 }
 
-/*----- div-1 ------- */
+/*----- div-2 ------- */
+
 .div-2{
     padding: 50px;
     display: flex;
@@ -148,7 +149,7 @@ main{
     }
 }
 
-/*------ div-2 ------*/
+/*------ div-3 ------*/
 
 .div-3{
     background-color: rgb(211, 211, 211);
@@ -156,6 +157,12 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 50px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
 }
 
 .ofertas{
@@ -192,4 +199,33 @@ main{
     border-color: rgb(235, 235, 235);
     }
 }
-/*-----div-3------*/
+
+/*-----div-4------*/
+
+.div-4{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.emoji{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: auto;
+    padding: 10px;
+}
+
+.why{
+    font-weight: bold;
+}
