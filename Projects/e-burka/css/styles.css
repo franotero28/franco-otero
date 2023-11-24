@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 header{
     background-color: antiquewhite;
     font-family: 'Kanit', sans-serif;
@@ -54,6 +58,75 @@ main{
 
 /*----- div-1 ------- */
 
+.cartel-led{
+    background-color: black;
+}
+
+.marquee {
+    width: 100%;
+    background-color: black;
+    animation-name: cartel-led;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.palabra{
+    font-weight: bolder;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7);
+    margin-right:10px;
+}
+
+.palabra-sep{
+    font-weight: bolder;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7);
+    margin-right: 50px;
+}
+
+@keyframes cartel-led{
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+@media screen and (max-width:500px) {
+.marquee{
+    max-height: fit-content;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    animation-name: cartel-led;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.palabra{
+    display: flex;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-right:10px;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7);
+}
+.palabra-sep{
+    font-size: 12px;
+}
+}
+
 .div-1{
     text-align: center;
 }
@@ -106,11 +179,11 @@ main{
 .div-2{
     display: flex;
     justify-content: center;
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(245, 242, 242);
     padding-bottom: 30px;
 }
-
-.fondo-title{
+ 
+/* .fondo-title{
     display: inline-block;
     text-align: center;
     height: 70px;
@@ -148,12 +221,12 @@ main{
     .fondo-title{
         height: 70px;
     }
-}
+} */
 
 /*------ div-3 ------*/
 
 .div-3{
-    background-color: rgb(211, 211, 211);
+    background-color: rgb(245, 242, 242);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -212,13 +285,23 @@ main{
     padding: 20px;
 }
 
+.titulos{
+    display: flex;
+    justify-content: center;
+}
+
 .title-2{
     background-color: rgb(19, 72, 122);
     color:rgb(243, 242, 242);
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
-    width: 100%;
-    padding: 10px;
+    border-radius: 20px;
+    text-align:center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 10px;
 }
 
 @media screen and (max-width:500px) {
@@ -250,4 +333,19 @@ main{
 .div-footer{
     height: 300px;
     background-color: rgb(201, 201, 201);
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.icon-ig{
+    font-size: 50px;
+    color: rgb(46, 46, 46);
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
