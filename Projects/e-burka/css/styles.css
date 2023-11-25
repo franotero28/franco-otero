@@ -63,12 +63,23 @@ main{
 }
 
 .marquee {
+    padding: 5px;
     width: 100%;
     background-color: black;
     animation-name: cartel-led;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.palabra-oferta{
+    font-weight: bolder;
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.7),
+    0 0 8px rgba(255, 255, 255, 0.7),
+    0 0 15px rgba(255, 255, 255, 0.7);
+    margin-right: 50px;
 }
 
 .palabra{
@@ -78,7 +89,6 @@ main{
     text-shadow: 0 0 3px rgba(255, 255, 255, 0.7),
     0 0 8px rgba(255, 255, 255, 0.7),
     0 0 15px rgba(255, 255, 255, 0.7);
-    margin-right:10px;
 }
 
 .palabra-sep{
@@ -100,20 +110,27 @@ main{
     }
 }
 
-@media screen and (max-width:500px) {
+/*Responsive*/
+
+@media screen and (max-width:1110px) {
+body{
+    overflow-x: hidden;
+}
+
 .marquee{
-    max-height: fit-content;
     display: flex;
     width: 100%;
     background-color: black;
     animation-name: cartel-led;
-    animation-duration: 11s;
+    animation-duration: 12s;
+    animation-delay: 7s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 .palabra{
     display: flex;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bolder;
     padding-right:10px;
     width: 100%;
@@ -123,7 +140,7 @@ main{
     0 0 15px rgba(255, 255, 255, 0.7);
 }
 .palabra-sep{
-    font-size: 12px;
+    font-size: 15px;
 }
 }
 
@@ -162,6 +179,8 @@ main{
 .propo{
     width: 850px;
 }
+
+/*Responsive*/
 
 @media screen and (max-width:900px) {
     .propo{
@@ -304,6 +323,8 @@ main{
     margin-top: 10px;
 }
 
+/*Responsive*/
+
 @media screen and (max-width:500px) {
     .title-2{
         font-size: 30px;
@@ -331,21 +352,61 @@ main{
 /*------ div-5 ------ */
 
 .div-footer{
-    height: 300px;
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(25, 34, 83);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logos{
+    text-align: center;
+}
+
+.equis{
+    font-family: cursive;
+    font-weight: bolder;
+    color: white;
 }
 
 .redes{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-top: 10px;
 }
 
-.icon-ig{
-    font-size: 50px;
-    color: rgb(46, 46, 46);
-    background-color: white;
+.icons{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
     padding: 10px;
+    margin: 5px;
     border-radius: 10px;
+    background-color: rgb(19, 72, 122);
+}
+
+.icons:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    color:rgb(8, 3, 56);
+}
+
+.img-logo{
+    width: 150px;
+}
+
+/*Responsive*/
+
+@media screen and (max-width:500px) {
+    .contact{
+        font-size:small;
+        padding: 15px;
+    }
+    .icons{
+        font-size: 20px;
+    }
+    .img-logo{
+        width: 70px;
+    }
 }
