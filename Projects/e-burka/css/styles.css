@@ -10,7 +10,7 @@ header{
 
 main{
     background-color: rgb(252, 231, 241);
-    height: 1080px;
+    overflow-x: hidden;
 }
 
 .nav-item{
@@ -112,9 +112,9 @@ main{
 
 /*Responsive*/
 
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1000px) {
 body{
-    overflow-x: hidden;
+    max-width: 100%;
 }
 
 .marquee{
@@ -166,11 +166,9 @@ body{
 
 @keyframes titulo-animado {
     from{
-    width: 0%;
     color: rgb(2, 0, 109);
     }
     to{
-    width: 100%;
     color: rgb(180, 133, 182);
     }
     
@@ -295,6 +293,23 @@ body{
 
 /*-----div-4------*/
 
+.fondo-negro{
+    background-image:url(../img/zeus-fondo.png) ;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+.fondo-blanco{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
 .div-4{
     text-align: center;
     display: flex;
@@ -302,6 +317,12 @@ body{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .fondo-blanco{
+        margin: 20px;
+    }
 }
 
 .titulos{
@@ -336,6 +357,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .emoji{
@@ -390,10 +412,6 @@ body{
     transform: scale(1.1);
     transition: 0.2s;
     color:rgb(8, 3, 56);
-}
-
-.img-logo{
-    width: 150px;
 }
 
 /*Responsive*/

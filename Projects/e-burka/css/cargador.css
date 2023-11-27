@@ -1,0 +1,51 @@
+.galeria{
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.div-articulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    max-width:max-content;
+    padding: 0px 0px 10px 0px;
+    border-radius: 5px 5px 10px 10px;
+    border: solid 0.05px rgb(209, 209, 209);
+    margin: 10px;
+}
+
+.div-articulo:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.img-articulo{
+    border-radius: 5px 5px 0px 0px;
+}
+
+.nombre-articulo{
+    font-size: 12px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 2px;
+}
+
+.precio-articulo{
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.boton-articulo{
+    font-family: 'Work Sans', sans-serif;
+    background-color: bisque;
+    color: rgb(0, 0, 0);
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
