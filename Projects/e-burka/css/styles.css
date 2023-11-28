@@ -9,7 +9,7 @@ header{
 }
 
 main{
-    background-color: rgb(252, 231, 241);
+    background-color: rgb(245, 242, 242);
     overflow-x: hidden;
 }
 
@@ -228,11 +228,13 @@ video{
 @media screen and (max-width:900px) {
     .propo{
         width: 100%;
-        margin-top: 30px;
 
     }
     .title{
         font-size: 35px;
+    }
+    .div-2{
+        margin-top: 40px;
     }
 }
 
@@ -243,7 +245,7 @@ video{
     justify-content: center;
     background-color: rgb(245, 242, 242);
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 50px;
 }
 /*------ div-3 ------*/
 
