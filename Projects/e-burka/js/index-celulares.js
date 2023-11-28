@@ -1,4 +1,4 @@
-import { articulos } from "./data-carga.js";
+import { articulos } from "./data-celulares.js";
 
 const divGaleria = document.getElementById("galeria")
 let indice = 0

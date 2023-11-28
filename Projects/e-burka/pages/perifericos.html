@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
-  <title>E-burka</title>
+  <title>Zeus Tech</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="shortcut icon" href="../img/burka tech.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cargador.css">
+    <link rel="shortcut icon" href="../img/logo-zeus.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,7 +25,8 @@
   <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <div class="container">
-              <img class="mr-3 rounded" src="../img/burka-tech-png.png" alt="" width="100">
+          <img class="m-3 rounded" src="../img/logo-zeus.png" alt="logo zeus tech" width="100">
+          <a class="navbar-brand m-3" href="../index.html"><img class="rayo fa-bounce"src="../img/rayo.png" alt="rayito" width="130"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,19 +34,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavId">
                 <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="../index.html" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+                        <a class="nav-link active" href="perifericos.html">🎧 Periféricos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./perifericos.html">🎧 Periféricos</a>
+                        <a class="nav-link active" href="cargadores.html">⚡ Cargadores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./cargadores.html">⚡ Cargadores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./celulares.html">📱 Celulares</a>
+                        <a class="nav-link active" href="celulares.html">📱 Celulares</a>
                     </li>
                 </ul>
-                <button class="buy">💲 Comprá Ahora!</button>
+                <a href="#compra"><button class="buy">💲 Comprá Ahora!</button></a>
             </div>
       </div>
     </nav>
@@ -74,22 +73,24 @@
         <!-- Agrega más palabras según sea necesario -->
       </div>
     </div>
+    <div id="galeria" class="galeria">
+      
+    </div>
     <div class="div-footer">
-        <div class="logos">
-          <img class="img-logo rounded-circle" src="../img/fran-logo.png" alt="" width="100">
-          <p class="equis">X</p>
-          <img class="img-logo rounded-circle" src="../img/burka tech.png" alt="" width="100">
-        </div>
-        <div class="">
-  
-        </div>
-        <div class="redes"> 
-          <h4 class="contact title-2 fa-fade">Contacto</h4>
-          <a target="_blank" href="https://www.instagram.com/tecnoburk/"><i class="icons fa-brands fa-instagram"></i></a>
-          <a target="_blank" href=""><i class="icons fa-brands fa-whatsapp"></i></a>
-          <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZwDGnhVtbXkmkvTBdmVKGSZdMvRPGsVdnBjDntHDDQGBsNrXLhckMgZpXGDrHjCzDwMl"><i class="icons fa-solid fa-envelope"></i></a>
-        </div>
+      <div class="logos">
+        <img class="img-logo rounded-circle" src="../img/fran-logo.png" alt="logo franco otero" width="100">
+        <p class="equis">X</p>
+        <img class="img-logo rounded-circle" src="../img/burka tech.png" alt="logo burka tech" width="80">
       </div>
+      <div class="">
+        <img class="zeus fa-beat-fade" src="../img/zeus.png" alt="logo zeus" width="350">
+      </div>
+      <div class="redes">
+        <a target="_blank" href="https://www.instagram.com/tecnoburk/"><i class="icons fa-brands fa-instagram"></i></a>
+        <a target="_blank" href=""><i class="icons fa-brands fa-whatsapp"></i></a>
+        <a target="_blank" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZwDGnhVtbXkmkvTBdmVKGSZdMvRPGsVdnBjDntHDDQGBsNrXLhckMgZpXGDrHjCzDwMl"><i class="icons fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
   </main>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -99,7 +100,8 @@
   <script>
     AOS.init()
   </script>
-    <script src="./js/index.js"></script>
+    <script type="module" src="../js/index-perifericos.js"></script>
+    <script src="../js/data-perifericos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>

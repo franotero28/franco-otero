@@ -1,4 +1,4 @@
-import { articulos } from "./data-carga.js";
+import { articulos } from "./data-perifericos.js";
 
 const divGaleria = document.getElementById("galeria")
 let indice = 0
@@ -10,7 +10,7 @@ articulos.forEach((elemento) =>{
     divArticulo.innerHTML = `
     <img class="img-articulo" src="${elemento.img}" width="250">
     <hr class="border border-1 opacity-100 w-100">
-    <p class="nombre-articulo">${elemento.nombre} ${elemento.descripcion} </p>
+    <p class="nombre-articulo">${elemento.nombre} , ${elemento.descripcion} </p>
     <p class="precio-articulo">$${elemento.precio}</p>
     <button class="boton-articulo">Comprar</button>
     `
