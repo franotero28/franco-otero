@@ -148,6 +148,7 @@ body{
 
 .div-1{
     text-align: center;
+    min-height: max-content;
 }
 
 video{
@@ -207,7 +208,7 @@ video{
 }
 
 .propo{
-    width: 850px;
+    width: 800px;
     animation: fade-img;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -243,48 +244,8 @@ video{
     justify-content: center;
     background-color: rgb(245, 242, 242);
     padding-bottom: 30px;
+    padding-top: 30px;
 }
- 
-/* .fondo-title{
-    display: inline-block;
-    text-align: center;
-    height: 70px;
-    background-color: rgb(19, 72, 122);
-    color: white;
-    animation: fondo-scale;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border-radius: 3px;
-}
-
-@keyframes fondo-scale {
-    from{
-    width: 70%;
-    }
-    to{
-    width: 100%;
-    }
-}
-
-.title-1{
-    color: rgb(255, 255, 255);
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-}
-
-@media screen and (max-width:500px) {
-    .title-1{
-        width: 100%;
-        font-size: 20px;
-    }
-    .fondo-title{
-        height: 70px;
-    }
-} */
-
 /*------ div-3 ------*/
 
 .div-3{
