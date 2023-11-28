@@ -42,7 +42,7 @@ main{
 }
 
 .buy{
-    background-color: rgb(79, 79, 173);
+    background-color: rgb(0, 0, 0);
     color: white;
     padding: 10px;
     border: solid black 0.5px;
@@ -56,7 +56,7 @@ main{
     background-color:white ;
 }
 
-/*----- div-1 ------- */
+/*----- cartel-led ------- */
 
 .cartel-led{
     background-color: black;
@@ -144,16 +144,48 @@ body{
 }
 }
 
+/*----- div-1 ------- */
+
 .div-1{
     text-align: center;
 }
 
+video{
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+@media screen and (max-width:800px) {
+    video{
+        height: 50%;
+    }
+}
+
+.capa{
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.6;
+    mix-blend-mode: overlay;
+}
+
 .title{
+    position: relative;
+    z-index: 2;
     padding-top: 30px;
     font-family: 'Kanit', sans-serif;
     font-size: 50px;
     font-weight: bolder;
 }
+
 .tecnologia{
     margin-bottom: 0px;
     animation-name: titulo-animado;
@@ -166,16 +198,29 @@ body{
 
 @keyframes titulo-animado {
     from{
-    color: rgb(2, 0, 109);
+    color: rgb(255, 255, 255);
     }
     to{
-    color: rgb(180, 133, 182);
+    color: rgb(17, 0, 255);
     }
     
 }
 
 .propo{
     width: 850px;
+    animation: fade-img;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fade-img {
+    from{
+    opacity: 0;
+    }
+    to{
+    opacity: 0.8;
+    }
 }
 
 /*Responsive*/
@@ -280,6 +325,7 @@ body{
     transform: scale(1.05);
     transition: 0.5s;
     animation-duration: 1s;
+    color: rgb(88, 88, 54);
 }
 
 @keyframes border-animado {
@@ -302,6 +348,17 @@ body{
     align-items: center;
     flex-direction: column;
     background-attachment: fixed;
+}
+
+@media screen and (max-width:800px) {
+    .fondo-negro{
+        background-image:url(../img/zeus-fondo.png);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-attachment: fixed;
+    }
 }
 
 .fondo-blanco{
@@ -331,7 +388,7 @@ body{
 }
 
 .title-2{
-    background-color: rgb(19, 72, 122);
+    background-color: rgb(0, 0, 0);
     color:rgb(243, 242, 242);
     font-family: 'Kanit', sans-serif;
     font-size: 30px;
@@ -348,7 +405,7 @@ body{
 
 @media screen and (max-width:500px) {
     .title-2{
-        font-size: 30px;
+        font-size: 18px;
     }
 }
 
@@ -374,11 +431,12 @@ body{
 /*------ div-5 ------ */
 
 .div-footer{
-    background-color: rgb(25, 34, 83);
+    background-color: rgb(3, 3, 3);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100%;
 }
 
 .logos{
@@ -400,7 +458,7 @@ body{
 }
 
 .icons{
-    font-size: 40px;
+    font-size: 25px;
     color: rgb(255, 255, 255);
     padding: 10px;
     margin: 5px;
@@ -412,6 +470,10 @@ body{
     transform: scale(1.1);
     transition: 0.2s;
     color:rgb(8, 3, 56);
+}
+
+.zeus{
+    width: 200px;
 }
 
 /*Responsive*/
