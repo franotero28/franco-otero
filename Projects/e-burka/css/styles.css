@@ -27,10 +27,6 @@ main{
     transition: 0.5s;
 }
 
-.navbar-brand{
-    margin-left: 80px;
-}
-
 @media screen and (max-width:500px) {
     .nav-item{
         margin: 0px;
@@ -38,6 +34,9 @@ main{
     }
     .navbar-brand{
         margin-left: 0px;
+    }
+    .rayo{
+        width: 100px;
     }
 }
 
@@ -192,7 +191,7 @@ video{
     animation-name: titulo-animado;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
-    border-bottom: 5px  solid;
+
     animation-direction: alternate;
     transition: 2s;
 }
@@ -230,7 +229,7 @@ video{
     .propo{
         width: 100%;
         margin-top: 30px;
-        margin-bottom: 30px;
+
     }
     .title{
         font-size: 35px;
