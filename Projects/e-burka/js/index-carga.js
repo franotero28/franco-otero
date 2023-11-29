@@ -16,7 +16,14 @@ articulos.forEach((elemento) =>{
     divGaleria.append(divArticulo)
 
     divArticulo.addEventListener("click", ()=>{
-        alert("Un virus TROYANO se instalo CORRECTAMENTE en tu TELEFONO GRACIAS POR TU IDIOTEZ REY")
+        const ventanaArticulo = document.createElement("div")
+        ventanaArticulo.className= "ventana-articulo"
+        ventanaArticulo.innerHTML=`
+        <img class="img-articulo" src="${elemento.img}" width="250" height="200">
+        <p class="nombre-articulo">${elemento.nombre} ${elemento.descripcion} </p>
+        <p class="precio-articulo">$${elemento.precio}</p>
+        `
+        window.location.href = "../index.html"
     })
 })
 
