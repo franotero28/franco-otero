@@ -16,7 +16,7 @@ articulos.forEach((elemento) =>{
     divGaleria.append(divArticulo)
 
     divArticulo.addEventListener("click", ()=>{
-        alert("estas seguro q queres comprar esta poronga? hijo de re mil puta")
+        alert("Un virus TROYANO se instalo CORRECTAMENTE en tu TELEFONO GRACIAS POR TU IDIOTEZ REY")
     })
 })
 
