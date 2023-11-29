@@ -402,7 +402,13 @@ video{
 }
 
 .logos{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo{
+    margin: 10px;
 }
 
 .equis{
@@ -415,7 +421,6 @@ video{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding-top: 10px;
 }
 
@@ -451,4 +456,8 @@ video{
     .img-logo{
         width: 70px;
     }
+}
+
+.div-articulo{
+    cursor: pointer;
 }
