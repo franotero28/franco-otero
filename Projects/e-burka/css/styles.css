@@ -13,6 +13,15 @@ main{
     overflow-x: hidden;
 }
 
+.prueba1{
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
 .nav-item{
     margin: 50px;
 }

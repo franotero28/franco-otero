@@ -52,11 +52,105 @@
     padding: 10px;
 }
 
-.ventana-modal{
-    position: absolute;
-    top: 50;
-    left: 50;
+/*------ MODAL -------- */
+
+.div-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 150px;
+    left: 350px;
+    padding: 20px;
+    border-radius: 5px;
     z-index: 1;
-    height: 500px;
-    background-color: aqua;
+    height: 300px;
+    background-image: url(../img/fondo-rayos.png);
+    background-size: cover;
+    color: white;
+    animation-name: modalvolador;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes modalvolador {
+    from{
+    margin-top: 500px;
+    margin-left: 500px;
+    opacity: 0;
+    }
+    to{
+    margin-left: 0px;
+    margin-top: 0px;
+    opacity: 1;
+    }
+}
+
+.modal-h {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.ventana-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+}
+
+.descripcion-modal{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+
+.nombre-modal{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.precio-modal{
+    font-size: 25px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*---- RESPONSIVE MEDIA QUERYS ----- */
+
+@media screen and (max-width:800px) {
+    .div-modal{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0px;
+        padding: 0px;
+        border-radius: 5px;
+        z-index: 1;
+        height: 300px;
+        background-image: url(../img/fondo-rayos.png);
+        background-size: cover;
+        color: white;
+        animation-name: modalvolador;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+    .img-articulo{
+        width: 150px;
+        height: 150px;
+    }
+    .precio-modal{
+        color: black;
+        font-weight: bolder;
+        font-size: 20px;
+    }
 }
