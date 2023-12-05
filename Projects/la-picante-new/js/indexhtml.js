@@ -1,6 +1,18 @@
 AOS.init();
 
+const crearCuenta = document.getElementById("crearCuenta")
 const botonReserva = document.getElementById("boton-reserva")
+
+crearCuenta.addEventListener("click", ()=>{
+  Swal.fire({
+    title: 'Proximamente...',
+    background: 'rgb(85, 28, 28)',
+    color : 'white',
+    confirmButtonText: 'Aceptar',
+    confirmButtonColor: '#3085d6',
+   });
+})
+
 
 botonReserva.addEventListener("click", ()=>{
   console.log("se apreto el boton")

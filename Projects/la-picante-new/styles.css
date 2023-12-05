@@ -1,20 +1,129 @@
 /*---- ESTILOS HEADER ----- */
+body{
+    overflow-x: hidden;
+}
 
-.promociones{
+.cartel-promo{
+    background-color: black;
+}
+
+.promociones, .slogan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     font-family: 'Kanit', sans-serif;
     font-family: 'Work Sans', sans-serif;
     background-color: black;
     color: white;
-    text-align: center;
+    animation-name:cartel-led;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes cartel-led {
+    from{
+    transform:translateX(100%) ;
+    }
+    to{
+        transform: translateX(-75%);
+    }
 }
 
 .navbar{
-    background-color: rgb(85, 28, 28);
+    background-color: rgb(160, 36, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-.navegador{
-    margin-left: 50px;
+.browser{
+    font-family: 'Kanit', sans-serif;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
 }
+
+.input-wrapper {
+    position: relative;
+    width: 271px;
+}
+
+.input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 180px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.register, .sign-up{
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    display: flex;
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sign-up:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+    color: rgb(90, 13, 13);
+}
+
+.tabeador{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+
+}
+
+.tabs{
+    font-family: 'Kanit', sans-serif;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.tabs:hover{
+    transition: 0.8s;
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.responsive{
+    position: absolute;
+    visibility: hidden;
+}
+
+@media screen and (max-width:610px) {
+    .responsive{
+        visibility: visible;
+        position: static;
+    }
+    .header-pro{
+        visibility: hidden;
+        position: absolute;
+    }
+    .slogan{
+        font-size: 13px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
+
+/*------- Header-responsive
 
 .nav-item{
     font-weight: bolder;
@@ -41,11 +150,10 @@
     }
 }
 
-/*----- CONTENEDOR 1-----*/
-
+/*-------- Contenedor-1 ----- */
 
 .contenedor-1{
-    background-color: rgb(16, 16, 59);
+    background-color: rgb(27, 27, 54);
     padding: 50px;
 }
 
@@ -68,7 +176,6 @@
 }
 
 .container{
-    margin-top: 10px;
     color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
@@ -76,6 +183,7 @@
 }
 
 .about-us{
+    color: white;
     margin-top: 20px;
     display: flex;
     flex-direction: column;

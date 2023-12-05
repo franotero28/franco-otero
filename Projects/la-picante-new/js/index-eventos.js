@@ -8,19 +8,22 @@ const carritoContainer = document.getElementById("modal-container")
 
 events.forEach((product) =>{
    let content = document.createElement("div");
-   content.className = "card bg-secondary p-2 m-3"
+   content.className = "eventos-picante"
    content.innerHTML = `
-             <img data-aos="zoom-in" class="card-img-top mt-1 rounded-1" src="${product.img}" alt="Card image cap">
-             <div data-aos="zoom-out" class="card-body">
-             <h5 class="card-title">${product.title}</h5>
-             <p>${product.description}</p>
-             <p class="precio"><strong>$${product.price}</strong></p>
-             </div>
+             <img src="${product.img}" alt="evento" width="150">
+             <h6 class="h-titulo p-2">${product.title}</h6>
+            <div class="info-hour">
+              <p class="hour">${product.date}</p>
+              <p class="hour">${product.dia}</p>
+              <p class="hour">${product.hour}</p>
+              </div>
+             <p class="hour">${product.place}</p>
+             <p class="hour"><strong>$${product.price}</strong></p>
   `;
 
   let addtoCart = document.createElement("button");
   addtoCart.innerText = "Agregar al Carrito";
-  addtoCart.className = "btn btn-primary";
+  addtoCart.className = "boton-carrito";
   content.append(addtoCart);
   
   eventproducts.append(content);

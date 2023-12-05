@@ -8,119 +8,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <link rel="shortcut icon" href="./img/lapicante.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/lapicante.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./barber.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="barber.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
   <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Work+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-black">
-        <div class="container d-flex justify-content-around">
-          <a href="../index.html"><img class="logo-pi" src="./img/lapicante.png" alt="logo la picante" width="120"></a>
-          <div class="dropdown">
-        </div>
-        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto" style="margin-left: 100px;">
-            <li class="nav-item m-3">
-              <a class="nav-link " href="eventos.html"><strong>🌶 Eventos</strong></a>
-            </li>
-            <li class="nav-item m-3">
-              <a class="nav-link " href="barber.html"><strong>🌶 Barberia</strong></a>
-            </li>
-            <li class="nav-item m-3">
-              <a class="nav-link" href="catalogo.html"><strong>🌶 Catalogo</strong></a>
-            </li>
-          </ul>
-          <div class="users">
-            <ul class="redes_sociales">
-              <li class="red"><a target="_blank" href="https://www.instagram.com/la.picante.estudio/"class="instagram"><i class="fab fa-instagram"></i></a></li>
-              <li class="red"><a target="_blank" href="https://www.tiktok.com/@la.picante.estudio"class="youtube"><i class="fab fa-tiktok"></i></a></li>
-              <li class="red"><a target="_blank" href="https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20de%20la%20p%C3%A1gina%20de%20LA%20PICANTE"class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+
+<header class="header-pro">
+  <div class="cartel-promo">
+    <div class="promociones">
+      <p class="slogan">SÉ PICANTE</p>
+      <p class="slogan"><img src="./img/logopicante.png" alt="" width="120"></p>
+      <p class="slogan">LA FIESTA MAS PICANTE 🔥🔥</p>
+    </div>
+  </div>
+    <div class="navbar">
+      <div class="buscador">
+        <input class="browser" type="search" placeholder="Buscar" name="" id="">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="input-icon"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+     >
+        <path
+           fill-rule="evenodd"
+           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+           clip-rule="evenodd"
+        />
+     </svg>
+      </div>
+      <div class="logo">
+        <a href="../index.html"><img src="./img/lapicante.png" alt="" width="100"></a>
+      </div>
+      <div class="register">
+        <a class="sign-up" id="crearCuenta">Crear cuenta</a>
+        <p>|</p>
+        <a class="sign-up" id="crearCuenta">Iniciar sesion</a>
+      </div>
+    </div>
+    <div class="tabeador">
+      <a class="tabs" href="../index.html">INICIO</a>
+      <a class="tabs" href="/pages/eventos.html">EVENTOS</a>
+      <a class="tab" href="/pages/barber.html">BARBERÍA</a>
+      <a class="tabs" href="/pages/catalogo.html">CATÁLOGO</a>
+    </div>
+  </header>
+
+  <!----HEADER RESPONSIVE----->
+
+  <header class="responsive">
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <img class="m-3 rounded" src="./img/lapicante.png" alt="" width="100">
+    <a class="picantito navbar-brand m-3" href="#"></a>
+    <button class="navbar-toggler d-lg-none bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">EVENTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BARBER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CATALOGO</a>
+          </li>
+      </div>
+    </div>
+  </nav>
 </header>
+
 <main>
-  <div id="cbarberia" class="container mb-3">
-    <div class="row w-100">
-      <img data-aos="fade-right" data-aos-duration="3000" class="barber mt-3 mb-3" src="./img/fondobarberlapicante.png" alt="">
-        <div class="col-sm-6">
-            <div class="container mb-3">
-                <div class="row">
-                  <div data-aos="zoom-out" class="card bg-black" style="width: 18rem;">
-                    <img class="card-img-top mt-2" src="./img/curso bareria inicial.png" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title mb-3">Curso barberia basico</h5>
-                    <p class="card-text">Costo: $15.000</p>
-                    <p class="card-text"> Se dictaminan cursos básicos de barbería los cuales acabaran por concretar una certificación profesionalizante o diploma.</p>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20quisiera%20tener%20de%20mas%20info%20del%20curso%20de%20barberia" class="btn btn-primary">Inscribite ahora</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="container mb-3">
-                <div class="row">
-                  <div data-aos="zoom-out" class="card bg-black" style="width: 18rem;">
-                    <img class="card-img-top mt-2" src="./img/curso bareria avanzado.png" alt="Card image cap">
-                    <div class="card-body">
-                    <h5 class="card-title">Curso barberia Avanzado</h5>
-                    <p class="card-text">Costo: $25.000</p>
-                    <p class="card-text"> Se dictaminaran cursos avanzados de barbería los cuales acabaran por concretar una certificación profesionalizante o diploma.</p>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20quisiera%20tener%20de%20mas%20info%20del%20curso%20de%20barberia" class="btn btn-primary">Inscribite ahora</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-  </div>
-<div data-aos="fade-up" class="container">
-    <div class="row justify-content-sm-center w-100">
-      <div class="col-sm-3">
-        <div class="img-barber mt-3">
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./img/oficinapicante.png" class="d-block w-100" alt="LA PICANTE OFICINA">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/oficinapicante1.png" class="d-block w-100" alt="LA PICANTE OFICINA">
-              </div>
-              <div class="carousel-item">
-                <img src="./img/oficinapicante2.png" class="d-block w-100" alt="LA PICANTE OFICINA">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div>
+  
 </main>
 <footer>
   <div class="container">
@@ -153,7 +125,9 @@
 integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script defer type="module"src="../js/index-eventos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 </script>

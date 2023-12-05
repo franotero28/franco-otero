@@ -21,8 +21,57 @@
 </head>
 
 <body>
-<header>
-  <div class="promociones">LA FIESTA MAS PICANTE 🔥🔥</div>
+
+<header class="header-pro">
+  <div class="cartel-promo">
+    <div class="promociones">
+      <p class="slogan">SÉ PICANTE</p>
+      <p class="slogan"><img src="./img/logopicante.png" alt="" width="120"></p>
+      <p class="slogan">LA FIESTA MAS PICANTE 🔥🔥</p>
+    </div>
+  </div>
+    <div class="navbar">
+      <div class="buscador">
+        <input class="browser" type="search" placeholder="Buscar" name="" id="">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="input-icon"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+     >
+        <path
+           fill-rule="evenodd"
+           d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+           clip-rule="evenodd"
+        />
+     </svg>
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="./img/lapicante.png" alt="" width="100"></a>
+      </div>
+      <div class="register">
+        <a class="sign-up" id="crearCuenta">Crear cuenta</a>
+        <p>|</p>
+        <a class="sign-up" id="crearCuenta">Iniciar sesion</a>
+      </div>
+    </div>
+    <div class="tabeador">
+      <a class="tabs" href="#info">SOBRE NOSOTROS</a>
+      <a class="tabs" href="./pages/eventos.html">EVENTOS</a>
+      <a class="tabs" href="./pages/barber.html">BARBERÍA</a>
+      <a class="tabs" href="./pages/catalogo.html">CATÁLOGO</a>
+    </div>
+  </header>
+
+  <!----HEADER RESPONSIVE----->
+
+  <header class="responsive">
+    <div class="cartel-promo">
+      <div class="promociones">
+        <p class="slogan">SÉ PICANTE</p>
+        <p class="slogan"><img src="./img/logopicante.png" alt="" width="120"></p>
+        <p class="slogan">LA FIESTA MAS PICANTE 🔥🔥</p>
+      </div>
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
       <img class="m-3 rounded" src="./img/lapicante.png" alt="" width="100">
@@ -31,7 +80,7 @@
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-      <div class="navegador collapse navbar-collapse" id="collapsibleNavId">
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
         <ul class="navbar-nav me-auto mt-2 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link" href="#">EVENTOS</a>
@@ -46,6 +95,9 @@
     </div>
   </nav>
 </header>
+
+<!------ACA COMIENZA EL MAIN------>
+
 <main>
   <div class="contenedor-1">
     <div class="row w-100">
@@ -72,7 +124,7 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <div class="about-us">
+        <div class="about-us" id="info">
         <img class="mb-3" src="./img/logopicante.png" alt="" width="350">
         <strong>
         <p>Somos una productora de eventos bailables estilo boliche que opera a lo largo de la ciudad de Mar Del Plata y alrededores</p>
@@ -87,6 +139,9 @@
         </div>
     </div>
   </div>
+
+  <!-----Change container--->
+
 <div class="container mb-3">
   <div class="row w-100">
     <div class="col-sm-6">
@@ -94,9 +149,9 @@
         <div id="eventos" class="container mb-3">
           <div class="row">
             <div class="card bg-secondary" style="width: 18rem;">
-              <img data-aos="zoom" data-aos-offset="300" class="card-img-top mt-2" src="./pages/img/flyerhalloween.jpeg" alt="Card image cap" height="430" width="200">
+              <img data-aos="zoom" data-aos-offset="300" class="card-img-top mt-2" src="./img/flyer-joda.jpeg" alt="Card image cap" height="430" width="200">
               <div data-aos="fade-up" class="card-body">
-               <h5 class="card-title">📍 LA PICANTE 4 DE NOVIEMBRE</h5>
+               <h5 class="card-title">📍 LA PICANTE 9 DE DICIEMBRE</h5>
                 <a target="_blank" href="./pages/eventos.html" class="btn btn-primary">COMPRAR ENTRADAS</a>
               </div>
             </div>
@@ -172,6 +227,7 @@ integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/j
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script defer type="module" src="./js/indexhtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
 integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
 </script>

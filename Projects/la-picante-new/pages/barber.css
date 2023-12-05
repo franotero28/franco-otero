@@ -6,6 +6,23 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
+.tab{
+    font-family: 'Kanit', sans-serif;
+    padding: 12px;
+    text-decoration: none;
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+.tab:hover{
+    transition: 0.8s;
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+
+}
+
 .container{
     margin-top: 10px;
     color: rgb(255, 255, 255);

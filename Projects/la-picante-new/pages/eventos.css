@@ -3,21 +3,75 @@ body{
     background-color: rgb(32, 0, 0);
 }
 
-.col-sm-6{
-    text-align: center;
+.tab{
+    font-family: 'Kanit', sans-serif;
+    padding: 12px;
+    text-decoration: none;
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 }
 
-.container{
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
+.tab:hover{
+    transition: 0.8s;
+    color: red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+}
+
+/*------- MAIN CSS ------*/
+
+.galeria-eventos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.eventos-picante{
+    font-family: 'Kanit', sans-serif;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 0.5px solid black;
+    border-radius: 8px;
+}
+
+.eventos-picante:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    transform: translate(-4px, -4px) !important;
+    box-shadow: 4px 4px 0px #121212;
+    transition: transform 300ms, box-shadow 100ms ease;
+}
+
+.h-titulo{
+    border-top: 1px solid black;
+}
+
+.info-hour{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    background-color: white;
+    color: black;
 }
 
-.card-body{
-    color: rgb(255, 255, 255);
+.hour{
+    border: 1px solid black;
+    width: 100%;
+    margin: 0;
 }
+
+.boton-carrito{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+/*----- FOOTER ----- */
 
 .ubication{
     display: flex;
@@ -35,7 +89,7 @@ body{
 }
 
 .mapa-oficina{
-    height: 500px;
+    height: 350px;
     width: 100%;
     border: solid 2px black;
     border-radius: 5px;
