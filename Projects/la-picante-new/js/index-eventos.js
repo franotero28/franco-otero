@@ -10,7 +10,7 @@ events.forEach((product) =>{
    let content = document.createElement("div");
    content.className = "eventos-picante"
    content.innerHTML = `
-             <img src="${product.img}" alt="evento" width="150">
+             <img src="${product.img}" alt="evento">
              <h6 class="h-titulo p-2">${product.title}</h6>
             <div class="info-hour">
               <p class="hour">${product.date}</p>
@@ -18,6 +18,7 @@ events.forEach((product) =>{
               <p class="hour">${product.hour}</p>
               </div>
              <p class="hour">${product.place}</p>
+             <p class="hour">${product.description}</p>
              <p class="hour"><strong>$${product.price}</strong></p>
   `;
 
@@ -89,7 +90,7 @@ events.forEach((product) =>{
       <p>${product.quantity}</p>
       <button class="sumar btn btn-primary">+</button>
       <img src="${product.img}" width="30px">
-      <p style="padding-right:15px; padding-left:10px;"><strong>${product.description}</strong></p>
+      <p style="padding-right:15px; padding-left:10px;"><strong>${product.title}</strong></p>
       <p id="totalbuy"><strong>$${product.quantity * product.price}</strong></p>
 
 
