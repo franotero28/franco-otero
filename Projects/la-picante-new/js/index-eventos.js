@@ -138,7 +138,7 @@ events.forEach((product) =>{
   totalBuying.append(pagar)
 
   pagar.addEventListener("click",() =>{
-    let wpplink = "https://api.whatsapp.com/send?phone=2233006071&text=Hola,%20te%20escribo%20para%20comprar%20%20entradas%20de%20LA%20PICANTE"
+    let wpplink = "https://api.whatsapp.com/send?phone=2233048014&text=Hola,%20te%20escribo%20para%20comprar%20%20entradas%20de%20LA%20PICANTE"
     window.open(wpplink, '_blank');
   })
 
