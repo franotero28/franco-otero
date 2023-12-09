@@ -32,7 +32,7 @@ body{
     animation-name: slider;
     animation-duration: 8s;
     animation-delay: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes slider {
@@ -40,9 +40,10 @@ body{
         opacity: 0;
     }
     to{
-        opacity: 1;
+        opacity: 1;;
     }
 }
+
 
 .cursos{
     font-family: 'Quicksand', sans-serif;
@@ -54,10 +55,48 @@ body{
 }
 
 .div-curso{
-    padding: 5px;
-    background-color: blueviolet;
+    color: black;
+    padding: 15px;
 }
 
+.title-curso{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 190, 190);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.emojis-animados{
+    animation-name: emojis;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes emojis {
+    from{
+        margin-right: 5px;
+    }
+    to{
+        margin-left: 5px;
+    }
+}
+
+
+.info-curso{
+    color: white;
+}
+
+@media screen and (max-width:610px) {
+    .cortes{
+        flex-wrap:wrap ;
+    }
+    .title-curso{
+    font-size: 20px;
+    }
+}
 
 /*---- FOOTER ---- */
 
