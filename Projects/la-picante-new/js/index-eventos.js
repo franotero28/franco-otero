@@ -57,6 +57,7 @@ events.forEach((product) =>{
    });
    console.log(carrito);
    saveLocal();
+   updateCartItemCount();
   });
 });
 
@@ -103,6 +104,7 @@ events.forEach((product) =>{
       if(product.quantity !==1){
       product.quantity--
       saveLocal()
+      updateCartItemCount();
       }
       pintarCarrito()
     })
@@ -111,6 +113,7 @@ events.forEach((product) =>{
     sumar.addEventListener("click", () =>{
       product.quantity++
       saveLocal()
+      updateCartItemCount();
       pintarCarrito();
     })
 
@@ -153,6 +156,7 @@ const eliminarProducto = () =>{
     return carritoId !== foundId;
   });
   saveLocal();
+  updateCartItemCount();
   pintarCarrito();
 };
 
@@ -162,6 +166,14 @@ localStorage.setItem("carrito", JSON.stringify(carrito));
 };
 //get item
 
+// Agrega esto al principio de tu código JavaScript
+const cartItemCountElement = document.getElementById("cartItemCount");
+
+// Función para actualizar el contador de artículos
+const updateCartItemCount = () => {
+  const itemCount = carrito.reduce((acc, el) => acc + el.quantity, 0);
+  cartItemCountElement.innerText = itemCount.toString();
+};
 
 
 /*let cantidades = document.getElementById("number")

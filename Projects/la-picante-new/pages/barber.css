@@ -31,7 +31,6 @@ body{
     justify-content: space-evenly;
     animation-name: slider;
     animation-duration: 8s;
-    animation-delay: 1.5s;
     animation-iteration-count: 1;
 }
 
@@ -84,9 +83,26 @@ body{
     }
 }
 
+.cursos-in{
+    display: flex;
+}
 
 .info-curso{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
     color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagenes-curso{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 @media screen and (max-width:610px) {

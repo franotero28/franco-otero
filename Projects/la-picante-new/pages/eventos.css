@@ -21,6 +21,15 @@ body{
 
 /*------- MAIN CSS ------*/
 
+.contador-carrito{
+    position: absolute;
+    top:49px;
+    left:87px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+
 .galeria-eventos{
     background-image: url(../img/fondo-la-picante.png);
     background-size: 100%;
@@ -132,7 +141,7 @@ body{
     justify-content: space-around;
     text-align: center;
     width: 100%;
-    background-color: black;
+    background-color: rgb(78, 10, 10);
     color: #ffffff
 }
 
@@ -141,7 +150,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: rgb(78, 10, 10);
     color: #ffffff;
     width: 100%;
 }
@@ -181,19 +190,22 @@ footer{
 }
 
 .modal-container{
+    font-family: 'Kanit', sans-serif;
     width: 600px;
     margin:  0 10%;
     padding: 0%;
     max-height: 88vh;
     color: #ffffff;
-    background-color: rgb(88, 43, 43);
+    background-color: rgb(173, 109, 109);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: fixed;
     overflow: auto;
     z-index: 9;
-    top:12vh;
+    border-radius: 20px;
+    top:30%;
+    left: 15%;
     scrollbar-color: none;
 }
 
