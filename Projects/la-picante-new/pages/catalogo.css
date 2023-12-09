@@ -2,8 +2,19 @@
 /*---------css header-------*/
 
 body{
-    background:linear-gradient(rgb(24, 23, 23), rgb(80, 0, 0), rgb(207, 160, 160));
-    background-color: rgb(32, 0, 0);
+    background-image: url(../img/fondo-la-picante.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width:610px) {
+    body{
+        background-image: url(../img/fondo-la-picante.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 }
 
 .tab{
