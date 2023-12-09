@@ -5,13 +5,14 @@ body{
 
 .cartel-promo{
     background-color: black;
+    width: 100%;
 }
 
 .promociones, .slogan{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 1000px;
     font-family: 'Kanit', sans-serif;
     font-family: 'Work Sans', sans-serif;
     background-color: black;
@@ -26,10 +27,10 @@ body{
 
 @keyframes cartel-led {
     from{
-    transform:translateX(100%) ;
+    transform:translateX(-75%) ;
     }
     to{
-        transform: translateX(-75%);
+        transform: translateX(100%);
     }
 }
 
@@ -107,12 +108,11 @@ body{
 }
 
 @media screen and (max-width:610px) {
-
-    .slogan{
-        font-size: 13px;
-    }
     body{
         overflow-x: hidden;
+    }
+    .input-icon{
+        top:39%
     }
 }
 
