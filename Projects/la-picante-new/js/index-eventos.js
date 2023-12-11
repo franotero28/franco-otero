@@ -83,17 +83,18 @@ events.forEach((product) =>{
     alertCarrito.append(closeButton)
 
   carrito.forEach((product) =>{
-    let carritoContent = document.createElement("li");
+    let carritoContent = document.createElement("div");
     carritoContent.innerHTML = ''
     carritoContent.className = "carrito-content"
     carritoContent.innerHTML = `
-      <button class="restar btn btn-danger">-</button>
-      <p>${product.quantity}</p>
-      <button class="sumar btn btn-primary">+</button>
-      <img src="${product.img}" width="30px">
-      <p style="padding-right:15px; padding-left:10px;"><strong>${product.title}</strong></p>
-      <p id="totalbuy"><strong>$${product.quantity * product.price}</strong></p>
-
+      <img class="img-carrito m-1" src="${product.img}">
+      <p style="padding-right:15px; padding-left:10px; margin:0px; font-size:15px;"><strong>${product.title}</strong></p>
+      <p class="m-0" id="totalbuy"><strong>$${product.quantity * product.price}</strong></p>
+      <div class="suma-resta">
+      <button class="restar m-3 btn btn-danger">-</button>
+      <p class="m-0">${product.quantity}</p>
+      <button class="sumar m-3 btn btn-primary">+</button>
+      </div>
 
     `;
 
