@@ -66,8 +66,9 @@ body{
 }
 
 .eventos-picante:hover{
+    background-color: rgb(255, 138, 138);
     transform: scale(1.05);
-    transition: 0.5s;
+    transition: 1s;
     cursor: pointer;
     transform: translate(-4px, -4px) !important;
     box-shadow: 4px 4px 0px #121212;

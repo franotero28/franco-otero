@@ -143,10 +143,17 @@ body{
     }
 }
 
+/*-------- Contenedor-0 -----*/
+.contenedor-0{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #191919;
+    color: white;
+}
 /*-------- Contenedor-1 ----- */
 
 .contenedor-1{
-    background-color: rgb(175, 103, 98);
+    background-color: #191919;
     padding: 50px;
 }
 
