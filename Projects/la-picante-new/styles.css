@@ -199,7 +199,53 @@ body{
     color: white;
 }
 
-/*----------- asdasd ---------*/
+/*----------- contenedor-2 ---------*/
+
+.contenedor-2{
+    margin: 20px;
+}
+
+.evento-picante{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-prox{
+    color: white;
+}
+
+.proxima-joda{
+    margin: 5px;
+    border: double 5px black;
+}
+
+.data{
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapa-joda{
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.comprar-entrada{
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: solid white 1px ;
+    border-radius: 10px;
+}
+
+/*------------- footer ----------*/
 
 .ubication{
     display: flex;
