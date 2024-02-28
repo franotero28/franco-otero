@@ -2,9 +2,9 @@ export const events = [
     {
     id: 1,
     title: "🔥 LA PICANTE ft MOMENTOS BAILABLES 🔥",
-    description: "Especial Reggeaton",
+    description: "Batán",
     dia: "Viernes",
-    date: "9/02/2024",
+    date: "01/03/2024",
     hour: "23:30hs",
     place: "📍 Momentos bailables, Batán",
     price: "Consultar",
@@ -14,9 +14,9 @@ export const events = [
 {
   id: 2,
   title: "🔥 LA PICANTE ft MOMENTOS BAILABLES 🔥",
-  description: "Especial Reggeaton",
+  description: "Batán",
   dia: "Viernes",
-  date: "9/02/2024",
+  date: "01/03/2024",
   hour: "23:30hs",
   place: "📍 Momentos bailables, Batán",
   price: "Consultar",
