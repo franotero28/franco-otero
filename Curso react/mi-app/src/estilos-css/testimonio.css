@@ -1,0 +1,9 @@
+.contenedor-testimonio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-testimonio{
+    height: 200px;
+}
