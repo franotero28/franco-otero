@@ -15,7 +15,7 @@ function Formulario(){
             </div>
             <form onSubmit={onSubmit}>
                 <div className="form">
-                    <label>Usuario</label>
+                    <label>Nombre de usuario</label>
                     <input type="text" name="" {...register("usuario", {
                         required:{
                             value: true,
@@ -41,8 +41,20 @@ function Formulario(){
                     }
                 </div>
                 <div className="form">
+                    <label>Correo Electronico</label>
+                    <input type="email" {...register("email", {
+                        required:{
+                            value: true,
+                            message: "Debe ingresar un correo valido"
+                        }
+                        })}/>
+                    {
+                        errors.email && <span>{errors.email.message}</span>
+                    }
+                </div>
+                <div className="form">
                     <label>Edad</label>
-                    <input type="date" {...register("fechaNacimiento")} />
+                    <input type="date" {...register("fechaNacimiento", {required:true})} />
                     {
                         errors.contraseña && <span>Debe ingresar fecha valida</span>
                     }
