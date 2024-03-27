@@ -41,6 +41,14 @@ function Formulario(){
                     }
                 </div>
                 <div className="form">
+                    <label>Confirmar contraseña</label>
+                    <input type="password" {...register("confirmarContraseña", {required: true}
+                    )}/>
+                    {
+                        errors.contraseña && <span>Debe ingresar contraseña valida</span>
+                    }
+                </div>
+                <div className="form">
                     <label>Correo Electronico</label>
                     <input type="email" {...register("email", {
                         required:{
@@ -54,9 +62,25 @@ function Formulario(){
                 </div>
                 <div className="form">
                     <label>Edad</label>
-                    <input type="date" {...register("fechaNacimiento", {required:true})} />
+                    <input type="date" {...register("fechaNacimiento", {required:{
+                        value: true,
+                        message: "Ingresar fecha valida"
+                    },
+                    validate: (value) => {
+                        const diaNacimiento = new Date(value)
+                        const diaActual = new Date()
+                        const edad = diaActual.getFullYear()- diaNacimiento.getFullYear()
+                        
+                        if (edad >= 18){
+                            return true
+                        }
+                        else{
+                            return "Debe ser mayor de edad"
+                        }
+                    }
+                    })} />
                     {
-                        errors.contraseña && <span>Debe ingresar fecha valida</span>
+                        errors.fechaNacimiento && <span>{errors.fechaNacimiento.message}</span>
                     }
                 </div>
                 <button type="submit">Registrarse</button>
