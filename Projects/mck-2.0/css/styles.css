@@ -2,6 +2,10 @@ body{
     font-family: "Noto Sans", sans-serif;
 }
 
+hr{
+    margin: 0;
+}
+
 nav{
     background-color: rgb(255, 255, 255);
 }
@@ -56,70 +60,97 @@ nav{
 /*-------- contenedor 1 ----- */
 
 .contenedor-1{
-    font-family: "Noto Sans", sans-serif;
-    color: white;
     display: flex;
     justify-content: center;
-    background-image: url(../img/bgc-ola.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-}
-
-.card-1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 10px;
-    padding: 10px;
-    margin: 75px;
-    margin-top: 200px;
-    height: 350px;
-    width: 350px;
+    align-items: center;
+    background-color: rgba(148, 40, 89, 0.747);
     color: white;
-    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.card-2{
+.contenedor-imagen{
     display: flex;
+    justify-content: left;
+    align-items: start;
     flex-direction: column;
-    text-align: center;
-    font-size: 10px;
-    padding: 10px;
-    margin: 25px;
-    height: 350px;
-    width: 350px;
-    background-color: blue;
+    z-index: 1;
 }
 
-/*------- contenedor 2 ------ */
+.imagen-frente{
+    width:300px
+}
+
+@media screen and (max-width:850px) {
+    .contenedor-1{
+        flex-direction: column-reverse;
+    }
+    .circulo{
+        display: none;
+    }
+    .imagen-frente{
+        width: 200px;
+        margin-top: 20px;
+    }
+}
+
+.circulo{
+    height: 450px;
+    width: 30%;
+    position: absolute;
+    background-color: rgb(253, 249, 249);
+    border-radius: 0px 50px 50px 0px; 
+    left: 0%;
+}
+
+.contenedor-informacion{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    height: 400px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.contenedor-formacion{
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.formacion{
+    width: 50%;
+}
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.boton-contactar{
+    color:  white;
+    background-color: rgb(110, 48, 86);
+    border: 0.5px solid white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.boton-contactar:hover{
+    background-color: rgb(247, 124, 216);
+    transition: 0.5s;
+}
+/*------ contenedor 2 ------ */
 
 .contenedor-2{
     display: flex;
     justify-content: center;
-    background-color: rgb(231, 231, 231);
-    width: 100%;
-}
-
-.perfil-pro{
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-}
-
-.img-frente{
-    border:5px solid rgb(216, 216, 216);
-    margin-bottom: 25px;
-}
-
-.certificados, li{
-    margin: 0;
-    padding: 0;
-    list-style-type: upper-roman;
-    text-decoration: none;
-    list-style-position: inside;
+    background-color: grey;
+    height: 500px;
+    z-index: 2;
 }
