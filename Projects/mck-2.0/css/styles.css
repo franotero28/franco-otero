@@ -6,6 +6,10 @@ hr{
     margin: 0;
 }
 
+p{
+    margin: 0;
+}
+
 nav{
     background-color: rgb(255, 255, 255);
 }
@@ -66,30 +70,45 @@ nav{
     background-color: rgba(148, 40, 89, 0.747);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.contenedor-imagen{
-    display: flex;
-    justify-content: left;
-    align-items: start;
-    flex-direction: column;
-    z-index: 1;
+    max-height: max-content;
 }
 
 .imagen-frente{
-    width:300px
+    width:300px;
+    animation-name: slide-img;
+    animation-duration: 3s;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes slide-img {
+    from{
+        right: 500px;
+    }
+    to{
+        right: 0px;
+    }
 }
 
 @media screen and (max-width:850px) {
     .contenedor-1{
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .circulo{
         display: none;
     }
+    .contenedor-imagen{
+        background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .imagen-frente{
         width: 200px;
-        margin-top: 20px;
+    }
+    .contenedor-formacion{
+        font-size: smaller;
     }
 }
 
@@ -104,53 +123,46 @@ nav{
 
 .contenedor-informacion{
     display: flex;
-    justify-content: left;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 400px;
     z-index: 1;
     padding: 10px;
+    animation-name: animacion-info;
+    animation-duration: 3s;
+}
+
+@keyframes animacion-info {
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 
 .contenedor-formacion{
     display: flex;
-    justify-content: left;
-    align-items: start;
+    background-color: rgb(158, 108, 158);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding: 10px;
+    width: 100%;
 }
 
 .formacion{
-    width: 50%;
-}
-
-.contenedor-boton{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 50px;
-}
-
-.boton-contactar{
-    color:  white;
-    background-color: rgb(110, 48, 86);
-    border: 0.5px solid white;
+    width:50%;
     padding: 5px;
-    cursor: pointer;
-    border-radius: 5px;
-
 }
 
-.boton-contactar:hover{
-    background-color: rgb(247, 124, 216);
-    transition: 0.5s;
-}
+
 /*------ contenedor 2 ------ */
 
 .contenedor-2{
     display: flex;
     justify-content: center;
-    background-color: grey;
-    height: 500px;
-    z-index: 2;
+    background-color: rgb(158, 158, 158);
 }
