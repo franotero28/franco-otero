@@ -11,7 +11,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -65,32 +66,36 @@
         </header>
         <main>
           <div class="contenedor-1">
-            <div class="contenedor-imagen">
-              <img class="imagen-frente" src="./img/ma-png.png" alt="">
-            </div>
-            <div class="circulo">
-
-            </div>
-            <div class="contenedor-informacion">
-                <h6 style="font-weight: 100; font-size: x-small; margin-bottom: 20px;">"Ampliando Consciencias"</h6>
-                <h4>Maria Celia Kochur</h4>
-                <h5 style="font-weight: 100; font-size: smaller; margin-top: 20px;">
-                  Maestra de Registros Akáshicos, trainer y máster coach en PNL,<br> maestra de Reiki, didacta en energías arquetípicas, calendario Maya y practicante de técnicas chamánicas.</h5>
-              <div class="contenedor-formacion">
-                <p class="formacion">✔️ Calendario maya</p>
-                <p class="formacion">✔️ Hipnosis Ericksoniana</p>
-                <p class="formacion">✔️ Registros Akashicos</p>
-                <p class="formacion">✔️ Maestra en Reiki</p>
+            <div class="contenedor-perfil">
+              <h1 style="font-weight: bold;">Maria Celia Kochur</h1>
+              <p style="font-weight: lighter;">"Ampliando Consciencias"</p>
+              <div class="contenedor-titulos">
+                <p>✔️ Coach Pnl</p>
+                <p>✔️ Registros Akashicos</p>
+                <p>✔️ Maestra en Reiki</p>
+                <p>✔️ Hipnosis Ericksoniana</p>
               </div>
-              <p style="font-weight: 100; font-size: smaller; margin-top: 40px; padding: 0px;"> "Desde hace años que sigo formándome en distintas técnicas de sanación y autoconocimiento,<br> técnicas que apliqué en mí y que desde hace tiempo comparto con el mundo. Me auto defino como aprendiz,<br> ya que sigo capacitándome para disponer de más herramientas para dar un mejor servicio cada día.<br> te presento mis servicios los cuales brindo de manera presencial y on-line"</p>
+              <div class="contenedor-botones">
+                <button class="boton-perfil">Contactar</button>
+                <button class="boton-perfil">Mas informacion</button>
+              </div>
+            </div>
+            <div class="contenedor-imagen">
+              <img class="imagen-ma" src="./img/ma-frente.jpg" alt="" width="250">
             </div>
           </div>
 
           <div class="contenedor-2">
-            <img class="" src="./img/ma3.jpeg" alt="" width="100%">
+            <div class="contenedor-eslogan">
+              <img data-aos="fade-right" data-aos-duration="3000" class="imagen-ma-2" src="./img/ma1.jpeg" alt="" width="250">
+              <h6>"Co-creando un mundo Mejor"</h6>
+              <p data-aos="fade-left" data-aos-duration="3000" class="texto-eslogan">
+                Enseño a usar tu cerebro para optimizar tus recursos, desarrollando técnicas para encontrarte con tu mejor versión en cada área de tu vida.<br><br>
+                Abriendo tu Registro Akáshico encontrarás toda la información que este disponible para vos para traer sanación y consciencia a tu vida.<br><br>
+                Con Reiki, Energía de armonizacion, estaremos compartiendo cada nivel con material didáctico  y prácticas. Sanación a uno mismo y para los que lo pidan.
+                </p>
+            </div>
           </div>
-          <hr>
-
         </main>
         <footer>
             <!-- place footer here -->
@@ -101,7 +106,10 @@
             integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
             crossorigin="anonymous"
         ></script>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
