@@ -66,20 +66,33 @@ nav{
 .contenedor-1{
     color: white;
     display: flex;
-    flex-direction: column;
     overflow: hidden;
 }
 
 .contenedor-perfil{
-    background-color: rgb(166, 149, 184);
+    background-color: rgb(148, 132, 241);
     padding: 20px;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+.contenedor-imagen{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding:50px;
+}
+
 .contenedor-titulos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 10px;
     padding: 15px;
 }
@@ -95,31 +108,72 @@ nav{
 .boton-perfil{
     color: rgb(255, 255, 255);
     background-color: rgb(252, 176, 252);
-    border: 0.1px solid rgb(196, 196, 196);
+    border: 0.1px solid rgb(145, 145, 145);
     padding: 5px;
-}
-
-.contenedor-imagen{
-    background-color: #131313;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+    margin-top: 15px;
+    border-radius: 2px;
 }
 
 .imagen-ma{
-    animation-name: animacion-imagen;
-    animation-duration: 3s;
+    mask-image: linear-gradient(
+        black 70%,
+        transparent
+    );
 }
 
-@keyframes animacion-imagen {
-    from{
-        transform: translatey(100%);
+@media screen and (max-width:820px) {
+    .contenedor-1{
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
     }
-    to{
-        transform: translateX(0%);
+    
+    .contenedor-perfil{
+        background-color: rgb(148, 132, 241);
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .contenedor-titulos{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .contenedor-botones{
+        margin: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .boton-perfil{
+        color: rgb(255, 255, 255);
+        background-color: rgb(252, 176, 252);
+        border: 0.1px solid rgb(196, 196, 196);
+        padding: 5px;
+    }
+    
+    .contenedor-imagen{
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
     }
 }
+
+
 
 /* -------- Contenedor 2 -------- */
 
@@ -132,7 +186,8 @@ nav{
 }
 
 .imagen-ma-2{
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .contenedor-eslogan{
@@ -160,3 +215,42 @@ nav{
     }
 }
 
+/* --------- Contenedor 3 ---------- */
+
+.contenedor-3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(148, 132, 241);
+    color: white;
+}
+
+.contenedor-experiencia{
+    margin: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.separador-flecha{
+    height: 20px;
+    background-color: white;
+    width: 1px;
+    margin: 5px;
+}
+
+@media screen and (max-width:850px) {
+    .contenedor-experiencia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    .contenedor-trabajo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
