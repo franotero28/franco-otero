@@ -10,12 +10,40 @@ p{
     margin: 0;
 }
 
-nav{
-    background-color: rgb(255, 255, 255);
+.contenedor-header-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.logo_img{
-    border-radius: 100px;
+.tabeador{
+    background-color: rgb(255, 227, 227);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+
+}
+
+.tabs{
+    font-family: 'Kanit', sans-serif;
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(209, 146, 167);
+}
+
+.tabs:hover{
+    transition: 0.8s;
+    color: rgb(209, 146, 167);
+    border-top: 1px solid grey;
+    border-bottom: 1px solid rgb(209, 146, 167);
+}
+
+
+@media screen and (max-width:850px) {
+    .tabs{
+        font-size: 13px;
+    }
 }
 
 .instagram:hover{
@@ -42,6 +70,7 @@ nav{
     list-style-type: none;
     text-decoration: none;
     display: flex;
+    padding: 0px;
 }
 
 .redes_sociales li{
@@ -50,7 +79,6 @@ nav{
 }
 
 .redes_sociales li a{
-    padding: 10px;
     background-color: rgb(255, 255, 255);
     color: #000000;
     border-radius: 5px;
@@ -64,13 +92,13 @@ nav{
 /*-------- contenedor 1 ----- */
 
 .contenedor-1{
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     overflow: hidden;
 }
 
 .contenedor-perfil{
-    background-color: rgb(208, 199, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     width: 50%;
     display: flex;
@@ -80,7 +108,6 @@ nav{
 }
 
 .contenedor-imagen{
-    background-color: rgb(207, 207, 207);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,20 +137,19 @@ nav{
     background-color: rgb(42, 26, 43);
     border: 0.1px solid rgb(145, 145, 145);
     padding: 5px;
-    margin-top: 15px;
     border-radius: 2px;
 }
 
 .imagen-ma{
     mask-image: linear-gradient(
-        black 70%,
+        black 80%,
         transparent
     );
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:850px) {
     .contenedor-1{
-        color: white;
+        color: rgb(39, 39, 39);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -131,8 +157,10 @@ nav{
     }
     
     .contenedor-perfil{
+        margin-top: 50px;
         width: 100%;
-        padding: 20px;
+        padding: 10px;
+        font-size: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -140,14 +168,17 @@ nav{
     }
     
     .contenedor-titulos{
+        margin-top: 20px;
+        margin-bottom: 20px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 2px;
     }
 
     .titulo{
-        font-size: 13px;
+        font-size: 16px;
+        margin-bottom: 30px;
         width: 50%;
     }
     
@@ -160,9 +191,6 @@ nav{
     }
     
     .boton-perfil{
-        color: rgb(255, 255, 255);
-        background-color: rgb(252, 176, 252);
-        border: 0.1px solid rgb(196, 196, 196);
         padding: 5px;
     }
     
@@ -173,6 +201,15 @@ nav{
         justify-content: center;
         align-items: center;
     }
+
+    .imagen-ma{
+        margin-top: 100px;
+        mask-image: linear-gradient(
+            black 80%,
+            transparent
+        );
+    }
+    
 }
 
 
@@ -184,6 +221,8 @@ nav{
     justify-content: center;
     align-items: center;
     margin: 50px;
+    margin-top: 250px;
+    margin-bottom: 250px;
     color: black;
 }
 
@@ -204,7 +243,7 @@ nav{
 
 .texto-eslogan{
     text-align: center;
-    font-size: 13px;
+    font-size: 17px;
     margin: 7px;
 }
 
@@ -235,7 +274,7 @@ nav{
     
     .texto-eslogan{
         text-align: center;
-        font-size: 13px;
+        font-size: 17px;
         margin: 7px;
     }
 }
@@ -251,6 +290,8 @@ nav{
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contenedor-experiencia{
@@ -284,10 +325,24 @@ nav{
 /* ---- Contenedor 4 ------------ */
 
 .contenedor-4{
+    background-image: url(../img/bgc-colores.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white    ;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 500px;
+}
+
+.contenedor-intro-material{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .contenedor-material{
@@ -300,6 +355,23 @@ nav{
     border-radius: 5px;
     width: 150px;
     margin: 20px;
+    animation-name: animacion-archivos;
+    animation-duration: 3s;
+}
+
+@keyframes animacion-archivos {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.contenedor-archivos{
+    display: flex;
+    color: black;
 }
 
 .boton-descarga{
