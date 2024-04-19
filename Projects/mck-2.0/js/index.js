@@ -23,3 +23,9 @@ botonArchivos.addEventListener("click", ()=> {
       contenedorArchivos.append(contenedorMaterial);
     })
 })
+
+const header = document.getElementById("Header")
+
+window.addEventListener("scroll",() =>{
+  console.log("hola")
+})
