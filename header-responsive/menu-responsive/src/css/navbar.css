@@ -1,0 +1,31 @@
+.contenedor-navbar{
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui;
+}
+
+.contenedor-links{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: rgb(146, 146, 146);
+}
+
+@media screen and (min-width:768px) {
+.contenedor-hamburguesa{
+    display: none;
+}    
+}
+
+@media screen and (max-width:768px) {
+.contenedor-links{
+    display: none;
+}  
+}
