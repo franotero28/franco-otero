@@ -7,9 +7,11 @@ function App() {
     <div className="App">
       <div className='contenedor-header'>
         <Navbar/>
-        <div className='separador'></div>
-        <Contenedor1 />
+        <div className='separador'>
+          <img className='img-logo' src={require('./img/logopicante.png')}/>
         </div>
+        <Contenedor1 />
+      </div>
     </div>
   );
 }

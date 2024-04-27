@@ -31,10 +31,21 @@ const ContenedorNavbar = styled.div`
         margin:0;
     }
     p:hover{
-        background:linear-gradient(to top, transparent 10%, #1d1d1d 100%);
-        transition:5s;
         transform:5s;
+        transition:5s;
+        background:linear-gradient(to top, transparent 10%, #1d1d1d 100%);
     }
-`
+    `
+    const ContenedorPromo = styled.div`
+        display:flex;
+    `
+
+    const Eslogan = styled.div`
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:red;
+    text-align:center;
+    `
 
 export default Navbar
