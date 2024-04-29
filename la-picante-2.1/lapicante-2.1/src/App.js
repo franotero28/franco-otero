@@ -1,6 +1,8 @@
 import './App.css';
 import Navbar from './components/navbar';
 import Contenedor1 from "./components/video"
+import Eventos from "./components/events"
+
 
 function App() {
   return (
@@ -12,6 +14,15 @@ function App() {
         </div>
         <Contenedor1 />
       </div>
+      <div className='contenedor-2'>
+        <Eventos
+          fecha = "VIERNES 3 de MAYO"
+          entrada = "Free Hasta 2 AM"
+          direccion = "Entre rios 1719"
+        />
+      </div>
+
+
     </div>
   );
 }

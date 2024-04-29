@@ -1,7 +1,7 @@
 .contenedor-header{
 background-color: black;
 width: 100%;
-height:1000px;
+height: 900px;
 display:flex;
 flex-direction: column;
 align-items: center;
@@ -24,4 +24,11 @@ overflow-x: hidden;
     width: 300px;
     position: absolute;
     top:100px
+}
+
+
+/*---- Contenedor 2 ------- */
+
+.contenedor-2{
+    background-color: black;
 }
