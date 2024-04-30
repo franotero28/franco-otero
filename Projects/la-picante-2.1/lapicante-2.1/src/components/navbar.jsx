@@ -7,6 +7,7 @@ import styled from "styled-components";
 function Navbar (){
     return(
         <ContenedorNavbar>
+            <img src={require("../img/la-picante-logo.png")} alt="" />
             <p>INICIO</p>
             <p>EVENTOS</p>
             <p>BARBERIA</p>
@@ -19,33 +20,27 @@ const ContenedorNavbar = styled.div`
     font-family: "Ubuntu", sans-serif;
     font-weight: 300;
     font-style: normal;
-    background-color: #000000;
-    color: white;
+    color: #000000;
     width:100%;
     display:flex;
-    justify-content:center;
+    justify-content:space-around;
+    align-items:center;
     font-size:20px;
     p{
+        font-weight:bold;
         cursor: pointer;
         padding:50px;
         margin:0;
     }
     p:hover{
-        transform:5s;
-        transition:5s;
-        background:linear-gradient(to top, transparent 10%, #1d1d1d 100%);
+        transition: all .5s;
+        background:linear-gradient(to top, transparent 10%, #ececec 100%);
     }
     `
     const ContenedorPromo = styled.div`
         display:flex;
     `
 
-    const Eslogan = styled.div`
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:red;
-    text-align:center;
-    `
+
 
 export default Navbar

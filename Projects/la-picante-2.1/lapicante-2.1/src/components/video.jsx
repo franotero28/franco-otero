@@ -1,12 +1,11 @@
 import React from "react";
-import videoBg from "../img/lapicante.mp4"
 import styled from "styled-components";
 
 function Contenedor1 (){
     return (
         <ContenedorVideo>
             <separador></separador>
-            <Video src={videoBg} autoPlay muted loop/>
+            <img src={require("../img/logo-lapicante.gif")} alt="" />
             <separador-1></separador-1>
         </ContenedorVideo>
     )
@@ -18,24 +17,29 @@ const ContenedorVideo = styled.div`
     align-items:center;
     width:100%;
     padding:2rem;
+
+    img{
+        width:2000px;
+    }
+
     separador{
         height: 1px;
         background-color: white;
         width: 100%;
-        background: linear-gradient(to left, transparent 10%, rgb(212, 212, 212) 80%),
-                    linear-gradient(to left, transparent 10%, rgb(212, 212, 212) 80%);
+        background: linear-gradient(to left, transparent 10%, rgb(0, 0, 0) 80%),
+                    linear-gradient(to left, transparent 10%, rgb(0, 0, 0) 80%);
     }
     separador-1{
         height: 1px;
-        background-color: white;
+        background-color: #000000;
         width: 100%;
-        background: linear-gradient(to right, transparent 10%, rgb(212, 212, 212) 80%),
-                    linear-gradient(to right, transparent 10%, rgb(212, 212, 212) 80%);
+        background: linear-gradient(to right, transparent 10%, rgb(0, 0, 0) 80%),
+                    linear-gradient(to right, transparent 10%, rgb(0, 0, 0) 80%);
     }
 `
 
-const Video = styled.video`
-    width:110%;
+const img = styled.img`
+    width:250px;
 `
 
 export default Contenedor1

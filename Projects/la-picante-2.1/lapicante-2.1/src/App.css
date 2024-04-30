@@ -1,5 +1,9 @@
+body{
+    background-image: url(https://PascualHache.github.io/ubiq/assets/green-sand-OG1GorwJ.svg);
+}
+
 .contenedor-header{
-background-color: black;
+
 width: 100%;
 height: 900px;
 display:flex;
@@ -20,7 +24,7 @@ overflow-x: hidden;
 }
 
 .img-logo{
-    background-color: black;
+
     width: 300px;
     position: absolute;
     top:100px
@@ -29,6 +33,3 @@ overflow-x: hidden;
 
 /*---- Contenedor 2 ------- */
 
-.contenedor-2{
-    background-color: black;
-}
