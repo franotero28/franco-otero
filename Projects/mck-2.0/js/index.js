@@ -25,7 +25,3 @@ botonArchivos.addEventListener("click", ()=> {
 })
 
 const header = document.getElementById("Header")
-
-window.addEventListener("scroll",() =>{
-  console.log("hola")
-})
