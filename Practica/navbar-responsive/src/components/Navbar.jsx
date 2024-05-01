@@ -16,7 +16,7 @@ function Navbar () {
             <div className="burguer">
                 <BotonHamburguesa clicked={clicked} handleClick={handleClick}/>
             </div>
-            <h2>Padel Torneos</h2>
+            <img className="img-logo" src={require("../img/logo_texto_icono.png")} alt="" />
             <div className={`links ${clicked ? "active" : ""}`}>
                 <a href="#">Home</a>
                 <a href="#">Contact</a>
@@ -44,7 +44,7 @@ const Bgdiv = styled.div`
     &.active{
         left:0;
         top:0;
-        width:50%;
+        width:100%;
         height:100%;
     }
 
@@ -53,26 +53,26 @@ const Bgdiv = styled.div`
 const ContenedorNavbar = styled.div`
     color:white;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:center;
-    background-color:black;
-
+    background-color:rgb(13, 110, 253);
+    padding:10px;
     a{
         text-decoration:none;
         color:white;
         padding:2rem;
     }
 
-    .burguer{
-        @media (min-width:700px){
-            display:none;
+    .img-logo{
+        @media (max-width:700px){
+            width:150px;
         }
     }
 
     .links{
         position:absolute;
-        top:-500px;
-        left:-500px;
+        top:0px;
+        left:-2000px;
         margin-left:auto;
         margin-right:auto;
         text-align:center;
@@ -81,15 +81,7 @@ const ContenedorNavbar = styled.div`
             color:white;
             display:block;
         } 
-        @media (min-width:700px){
-            position:initial;
-            margin:0;
-            a{
-                font-size:1rem;
-                color:white;
-                display:inline;
-            }
-        }
+
     }
     .links.active{
         width:100%;
@@ -100,7 +92,8 @@ const ContenedorNavbar = styled.div`
         right:0;
         margin-right:auto;
         margin-left:auto;
-        text-align:left;
+        text-align:center;
+        transition:all .6s ease;
         a{
             color:white;
         }
