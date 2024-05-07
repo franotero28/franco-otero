@@ -3,7 +3,6 @@ import Navbar from './components/navbar';
 import Contenedor1 from "./components/video"
 import Eventos from "./components/events"
 import Contador from "./components/contador"
-import Countdown from './components/countdown';
 
 function App() {
   return (
@@ -11,14 +10,10 @@ function App() {
         <Navbar/>
         <Contenedor1 />
         <div className='contenedor-2'>
-          <Eventos
-            fecha = "VIERNES 3 de MAYO"
-            entrada = "Free Hasta 2 AM"
-            direccion = "Entre rios 1719"
-            ads = "ZEVEN CLUB"
-          />
-        <Countdown
-          segundos = "283301"
+          <Eventos/>
+        <Contador
+          segundos = "281400"
+          initialSeconds={280020}
         />
         </div>
 

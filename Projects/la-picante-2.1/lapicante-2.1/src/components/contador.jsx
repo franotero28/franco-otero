@@ -1,20 +1,35 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
 
-function Contador(){
+
+const formatTime = (time) => {
+    let dias = Math.floor(time / 86400); // Calculamos los días dividiendo por 86400 (segundos en un día)
+    let horas = Math.floor((time % 86400) / 3600); // Calculamos las horas utilizando el residuo de la división de los segundos entre 86400, y luego dividimos por 3600 (segundos en una hora)
+    let minutos = Math.floor((time % 3600) / 60); // Calculamos los minutos utilizando el residuo de la división de los segundos entre 3600, y luego dividimos por 60 (segundos en un minuto)
+    let segundos = Math.floor(time % 60); // Los segundos restantes son el residuo de la división por 60
+
+    // Agregamos ceros a la izquierda si son menores que 10
+    if (horas < 10) horas = "0" + horas;
+    if (minutos < 10) minutos = "0" + minutos;
+    if (segundos < 10) segundos = "0" + segundos;
+    
     return (
         <ContenedorContador>
-            <div className="contador">
-                <p className="number">15</p>
-                <p>Dias</p>
+            <div className='contador'>
+                <p className='number'>{dias}</p>
+                <p>Días</p>
             </div>
-            <div className="contador">
-                <p className="number">20</p>
+            <div className='contador'>
+                <p className='number'>{horas}</p>
                 <p>Horas</p>
             </div>
-            <div className="contador">
-                <p className="number">48</p>
+            <div className='contador'>
+                <p className='number'>{minutos}</p>
                 <p>Minutos</p>
+            </div>
+            <div className='contador'>
+                <p className='number'>{segundos}</p>  
+                <p>Segundos</p>
             </div>
         </ContenedorContador>
     )
@@ -37,6 +52,7 @@ const ContenedorContador = styled.div`
     }
 
     .number{
+        padding:20px;
         font-size:120px;
     }
 
@@ -46,4 +62,27 @@ const ContenedorContador = styled.div`
     }
 `
 
-export default Contador
+const Countdown = ({ initialSeconds }) => {
+    const [countdown, setCountdown] = useState(
+      parseInt(localStorage.getItem('countdownSeconds')) || initialSeconds // Por defecto, 1 hora
+    );
+  
+    useEffect(() => {
+      const intervalId = setInterval(() => {
+        setCountdown((prevCountdown) => {
+          localStorage.setItem('countdownSeconds', prevCountdown - 1);
+          return prevCountdown - 1;
+        });
+      }, 1000);
+  
+      return () => clearInterval(intervalId);
+    }, []);
+  
+    return (
+      <div>
+        <p>{formatTime(countdown)}</p>
+      </div>
+    );
+  };
+
+export default Countdown;
