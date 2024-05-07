@@ -40,7 +40,7 @@ function Navbar (){
 }
 
 const ContenedorNavbar = styled.div`
-    background-color:#33333316;
+    background-color:#ffffffa0;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     font-weight: 300;
     font-style: normal;
