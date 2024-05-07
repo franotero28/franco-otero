@@ -3,16 +3,35 @@ import styled from 'styled-components';
 
 
 const formatTime = (time) => {
-    let dias = Math.floor(time / 86400); // Calculamos los días dividiendo por 86400 (segundos en un día)
+    let dias = Math.floor(time / 86400);
     let horas = Math.floor((time % 86400) / 3600); // Calculamos las horas utilizando el residuo de la división de los segundos entre 86400, y luego dividimos por 3600 (segundos en una hora)
-    let minutos = Math.floor((time % 3600) / 60); // Calculamos los minutos utilizando el residuo de la división de los segundos entre 3600, y luego dividimos por 60 (segundos en un minuto)
-    let segundos = Math.floor(time % 60); // Los segundos restantes son el residuo de la división por 60
+    let minutos = Math.floor((time % 3600) / 60); 
+    let segundos = Math.floor(time % 60); 
 
-    // Agregamos ceros a la izquierda si son menores que 10
     if (horas < 10) horas = "0" + horas;
     if (minutos < 10) minutos = "0" + minutos;
     if (segundos < 10) segundos = "0" + segundos;
     
+
+    const dateTime = new Date('2024-05-10').getTime();
+    const timestamp = Math.floor(dateTime / 1000);
+    const ahora = Date.now();
+    const timeAhora = Math.floor(ahora / 1000);
+
+    console.log(timestamp)
+
+    const fechaActual = new Date();
+    const dia = fechaActual.getDate();
+    const mes = fechaActual.getMonth() + 1;
+    const anio = fechaActual.getFullYear();
+    const hours = fechaActual.getHours();
+    const minutes = fechaActual.getMinutes();
+    const seconds = fechaActual.getSeconds();
+    const miliseconds = fechaActual.getMilliseconds();
+
+    console.log(dia ,mes ,anio, hours, minutes, seconds)
+
+
     return (
         <ContenedorContador>
             <div className='contador'>
