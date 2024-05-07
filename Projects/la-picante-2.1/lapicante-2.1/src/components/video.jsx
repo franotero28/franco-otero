@@ -5,7 +5,7 @@ function Contenedor1 (){
     return (
         <ContenedorVideo>
             <separador></separador>
-            <img src={require("../img/logo-lapicante.gif")} alt="" />
+            <img src={require("../img/la-picante-negro.png")} alt="" />
             <separador-1></separador-1>
         </ContenedorVideo>
     )
@@ -16,7 +16,7 @@ const ContenedorVideo = styled.div`
     justify-content:center;
     align-items:center;
     width:100%;
-    padding:2rem;
+    margin-top:120px;
 
     img{
         width:2000px;
