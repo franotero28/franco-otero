@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Eventos (props){
     return(
         <Header>
-            <p className="title-1">¿ESTAS LISTA?</p>
+            <p className="title-1">¿ESTAN LISTOS?</p>
             <p className="title">LA MAS PICANTE<span className="span"></span></p>
             <p>{props.fecha}</p>
             <p>{props.entrada}</p>
@@ -18,7 +18,6 @@ const Header = styled.div`
     font-family: "Avant Garde", Avantgarde, "Century Gothic",
     CenturyGothic, "AppleGothic", sans-serif;
     text-align:center;
-    height:500px;
     p{
         margin:0px;
         padding:30px;

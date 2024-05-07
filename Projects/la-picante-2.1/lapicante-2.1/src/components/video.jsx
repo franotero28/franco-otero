@@ -4,7 +4,7 @@ import styled from "styled-components";
 function Contenedor1 (){
     return (
         <ContenedorVideo>
-            <separador></separador>
+            <separador-2></separador-2>
             <img src={require("../img/la-picante-negro.png")} alt="" />
             <separador-1></separador-1>
         </ContenedorVideo>
@@ -22,7 +22,7 @@ const ContenedorVideo = styled.div`
         width:2000px;
     }
 
-    separador{
+    separador-2{
         height: 1px;
         background-color: white;
         width: 100%;
