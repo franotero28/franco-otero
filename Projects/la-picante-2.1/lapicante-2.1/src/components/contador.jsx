@@ -4,33 +4,19 @@ import styled from 'styled-components';
 
 const formatTime = (time) => {
     let dias = Math.floor(time / 86400);
-    let horas = Math.floor((time % 86400) / 3600); // Calculamos las horas utilizando el residuo de la división de los segundos entre 86400, y luego dividimos por 3600 (segundos en una hora)
+    let horas = Math.floor((time % 86400) / 3600);
     let minutos = Math.floor((time % 3600) / 60); 
     let segundos = Math.floor(time % 60); 
 
     if (horas < 10) horas = "0" + horas;
     if (minutos < 10) minutos = "0" + minutos;
     if (segundos < 10) segundos = "0" + segundos;
-    
 
-    const dateTime = new Date('2024-05-10').getTime();
+    const dateTime = new Date('2024-05-11 00:00').getTime();
     const timestamp = Math.floor(dateTime / 1000);
     const ahora = Date.now();
     const timeAhora = Math.floor(ahora / 1000);
-
-    console.log(timestamp)
-
-    const fechaActual = new Date();
-    const dia = fechaActual.getDate();
-    const mes = fechaActual.getMonth() + 1;
-    const anio = fechaActual.getFullYear();
-    const hours = fechaActual.getHours();
-    const minutes = fechaActual.getMinutes();
-    const seconds = fechaActual.getSeconds();
-    const miliseconds = fechaActual.getMilliseconds();
-
-    console.log(dia ,mes ,anio, hours, minutes, seconds)
-
+  
 
     return (
         <ContenedorContador>
@@ -57,10 +43,10 @@ const formatTime = (time) => {
 const ContenedorContador = styled.div`
     display:flex;
     justify-content:center;
-
+    
     .contador{
         font-family: "Avant Garde", Avantgarde, "Century Gothic",
-    CenturyGothic, "AppleGothic", sans-serif;
+        CenturyGothic, "AppleGothic", sans-serif;
         display:flex;
         justify-content:center;
         align-items:center;
@@ -79,29 +65,38 @@ const ContenedorContador = styled.div`
         font-size:30px;
         margin:5px;
     }
+
+    @media screen and (max-width:800px) {
+        .number{
+            font-size:30px;
+        }
+        p{
+            font-size:15px;
+        }
+        .contador{
+            margin:5px;
+        }
+        width:100%;
+    }
 `
 
-const Countdown = ({ initialSeconds }) => {
-    const [countdown, setCountdown] = useState(
-      parseInt(localStorage.getItem('countdownSeconds')) || initialSeconds // Por defecto, 1 hora
-    );
-  
-    useEffect(() => {
-      const intervalId = setInterval(() => {
-        setCountdown((prevCountdown) => {
-          localStorage.setItem('countdownSeconds', prevCountdown - 1);
-          return prevCountdown - 1;
-        });
-      }, 1000);
-  
-      return () => clearInterval(intervalId);
-    }, []);
-  
-    return (
-      <div>
-        <p>{formatTime(countdown)}</p>
-      </div>
-    );
-  };
+const Countdown = ({ segundos1 }) => {
+  const [countdown, setCountdown] = useState(segundos1);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCountdown((prevCountdown) => prevCountdown - 1);
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
+  return (
+    <div>
+      <p>{formatTime(countdown)}</p>
+    </div>
+  );
+};
+
 
 export default Countdown;
