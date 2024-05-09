@@ -39,7 +39,7 @@ function App() {
           img= "bgc-lapicante.jpeg"
           fecha= "18-05 00:00"
           direccion= "Batan - Momentos bailables"
-          entrada= "2500"
+          entrada= "2200"
           dj="DJ TucaLesca"
           button= "Comprar Entradas"
           finalizado={false}
