@@ -12,11 +12,13 @@ const formatTime = (time) => {
     if (minutos < 10) minutos = "0" + minutos;
     if (segundos < 10) segundos = "0" + segundos;
 
-    const dateTime = new Date('2024-05-11 00:00').getTime();
+    {/*const dateTime = new Date('2024-05-18 00:00').getTime();
     const timestamp = Math.floor(dateTime / 1000);
     const ahora = Date.now();
     const timeAhora = Math.floor(ahora / 1000);
   
+    const segundos1 = timestamp - timeAhora*/}
+
 
     return (
         <ContenedorContador>
@@ -77,6 +79,7 @@ const ContenedorContador = styled.div`
             margin:5px;
         }
         width:100%;
+        margin-bottom:100px;
     }
 `
 

@@ -105,6 +105,7 @@ const ContenedorTitulos = styled.div`
             font-size:25px;
         }
         width:100%;
+        margin-bottom:50px;
     }
 `
 

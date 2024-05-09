@@ -5,11 +5,10 @@ import Contenedor1 from "./components/logoPicante"
 import Eventos from "./components/events"
 import Contador from "./components/contador"
 import Titulos from './components/titulos';
-import PruebaBoton from './components/prueba-bootstrap';
 
 function App() {
 
-  const dateTime = new Date('2024-05-11 00:00').getTime();
+  const dateTime = new Date('2024-05-18 00:00').getTime();
   const timestamp = Math.floor(dateTime / 1000);
   const ahora = Date.now();
   const timeAhora = Math.floor(ahora / 1000);
@@ -22,7 +21,16 @@ function App() {
         <Contenedor1 />
         <Titulos />
         <Contador segundos1={segundos1}/>
-        <PruebaBoton />
+        <Eventos 
+        titulo= "LA PICANTE en BATÁN"
+        img= "bgc-lapicante.jpeg"
+        fecha= "18-05 00:00"
+        direccion= "Batan - Zeven Club"
+        entrada= "2500"
+        dj="DJ TucaLesca"
+        button= "Comprar Entradas"
+        finalizado={false}
+        />
     </div>
   );
 }
