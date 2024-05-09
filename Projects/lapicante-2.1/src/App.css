@@ -1,0 +1,46 @@
+body{
+    background-image: url(https://PascualHache.github.io/ubiq/assets/green-sand-OG1GorwJ.svg);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        overflow-x: hidden;
+        background-attachment: fixed;
+    }
+}
+
+.contenedor-header{
+width: 100%;
+display:flex;
+flex-direction: column;
+align-items: center;
+overflow-x: hidden;
+}
+
+.separador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    background-color: white;
+    width: 100%;
+    background: linear-gradient(to right, transparent 5%, rgb(212, 212, 212) 80%);
+    background: linear-gradient(to left, transparent 5%, rgb(212, 212, 212) 80%);
+}
+
+.img-logo{
+
+    width: 300px;
+    position: absolute;
+    top:100px
+}
+
+
+.contenedor-eventos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
