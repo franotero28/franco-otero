@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 const formatTime = (time) => {
@@ -21,22 +23,21 @@ const formatTime = (time) => {
   
     const segundos1 = timestamp - timeAhora*/}
 
-
     return (
         <ContenedorContador>
-            <div className='contador'>
+            <div data-aos="zoom-out" data-aos-duration="500" className='contador'>
                 <p className='number'>{dias}</p>
                 <p>Días</p>
             </div>
-            <div className='contador'>
+            <div data-aos="zoom-out" data-aos-duration="1000" className='contador'>
                 <p className='number'>{horas}</p>
                 <p>Horas</p>
             </div>
-            <div className='contador'>
+            <div data-aos="zoom-out" data-aos-duration="2000" className='contador'>
                 <p className='number'>{minutos}</p>
                 <p>Minutos</p>
             </div>
-            <div className='contador'>
+            <div data-aos="zoom-out" data-aos-duration="3000" className='contador'>
                 <p className='number'>{segundos}</p>  
                 <p>Segundos</p>
             </div>
@@ -89,6 +90,7 @@ const Countdown = ({ segundos1 }) => {
   const [countdown, setCountdown] = useState(segundos1);
 
   useEffect(() => {
+    Aos.init();
     const intervalId = setInterval(() => {
       setCountdown((prevCountdown) => prevCountdown - 1);
     }, 1000);

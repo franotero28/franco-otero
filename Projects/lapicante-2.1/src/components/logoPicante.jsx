@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 
 function Contenedor1 (){
+
+    useEffect(()=>{
+        Aos.init();
+    }, [])
+
     return (
         <ContenedorVideo>
             <separador-2></separador-2>
-            <img className="logoPicante" src={require("../img/la-picante-negro.png")} alt="Logo la picante" />
+            <img data-aos="fade-up" className="logoPicante" src={require("../img/la-picante-negro.png")} alt="Logo la picante" />
             <separador-1></separador-1>
         </ContenedorVideo>
     )

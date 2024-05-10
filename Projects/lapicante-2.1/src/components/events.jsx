@@ -85,7 +85,6 @@ const Header = styled.div`
 
     .contenedor-info{
         font-size:15px;
-        font-weight:bold;
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -94,6 +93,7 @@ const Header = styled.div`
         padding:5px;
         color:black;
         width:250px;
+        text-indent:2px;
     }
 
     span{
@@ -107,9 +107,41 @@ const Header = styled.div`
         border:0px;
         color:black;
         border-radius:0px 0px 5px 5px;
+        padding:5px;
     }
     .boton:hover{
         background-color:#999;
+    }
+
+    @media (max-width:800px){
+        img{
+            width:160px;
+            height:200px;
+        }
+        .titulo{
+            font-size:12px;
+        }
+        .contenedor-info{
+            width:160px;
+            height:200px;
+            font-size:10px;
+        }
+        .finalizado{
+            width:160px;
+            height:200px;
+        }
+        .p-finalizado{
+            font-size:12px;
+        }
+        .boton{
+            font-size:10px;
+            width:160px;
+            padding:10px;
+        }
+    }
+    @media (max-width:800px){
+        width:125px;
+        height:125px;
     }
 `
 

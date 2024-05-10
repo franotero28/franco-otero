@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
+import Aos from "aos";
+import "aos/dist/aos.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Titulos(){
+
+    useEffect(()=>{
+        Aos.init();
+    }, [])
+
     return(
         <ContenedorTitulos>
             {/*<p className="title-1">¿ESTAN LISTOS?</p>*/}  
-            <p className="title">LA + PICANTE<span className="span"></span></p>
-            <p className="sub-title"><strong>Te la vas a perder?</strong></p>
+            <p data-aos="zoom-out" className="title">LA + PICANTE<span className="span"></span></p>
+            <p data-aos="fade-up" className="sub-title"><strong>Te la vas a perder?</strong></p>
         </ContenedorTitulos>
     )
 }
@@ -44,9 +53,9 @@ const ContenedorTitulos = styled.div`
         font-family:monospace;
     }
     .title-1{
-        font-size:150px;
+        font-size:100px;
         text-align:center;
-        color:#ffffff;
+        color:#35010111;
         letter-spacing: -7px;
         font-weight:700;
         text-transform:uppercase;
@@ -70,11 +79,7 @@ const ContenedorTitulos = styled.div`
       0px 0px 50px #7B96B8,
       0px 0px 150px #7B96B8,
       0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px 10px 100px #7B96B8,
-      0px -10px 100px #7B96B8,
-      0px -10px 100px #7B96B8;}
+      0px 10px 100px #7B96B8;}
 }
 
     @media screen and (max-width:800px) {

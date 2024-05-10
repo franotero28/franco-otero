@@ -5,6 +5,7 @@ import Contenedor1 from "./components/logoPicante"
 import Eventos from "./components/events"
 import Contador from "./components/contador"
 import Titulos from './components/titulos';
+import Footer from './components/footer';
 
 function App() {
 
@@ -46,6 +47,7 @@ function App() {
           />
 
         </div>
+        <Footer />
     </div>
   );
 }
