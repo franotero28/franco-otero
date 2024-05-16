@@ -1,0 +1,5 @@
+body{
+    background-image: url(./img/bgc-fondo.png);
+    backdrop-filter: brightness(80%);
+    background-attachment: fixed;
+}
