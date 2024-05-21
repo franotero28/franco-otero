@@ -32,6 +32,7 @@ const Contenedor = styled.div`
     justify-content:space-around;
     align-items:center;
     text-align:center;
+    width:100%;
     .boton-contacto{
         margin-top:50px;
         background-color:#b8a0bdc5;
@@ -63,6 +64,7 @@ const Contenedor = styled.div`
     }
 
     @media screen and (max-width:850px) {
+        justify-content:center;
         h1{
             font-size:35px;
         }
