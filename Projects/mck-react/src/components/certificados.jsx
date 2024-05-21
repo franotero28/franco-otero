@@ -7,7 +7,7 @@ import { faHandPointer } from "@fortawesome/free-solid-svg-icons";
 function Certificados(props){
     return(
         <ContenedorCertificados>
-            <div className="certificados">
+            <div className="certificados" id="experiencia">
                 <p><strong>Registros Akashicos</strong></p>
                 <FontAwesomeIcon className="icon-1" icon={faGraduationCap}/>
                 <span>Abriendo tu<strong> Registro Akáshico </strong> obtendrás información que esté disponible para traer sanación y consciencia a tu vida, obteniendo toda la experiencia vivida durante el viaje evolutivo de nuestra alma.</span>
@@ -25,7 +25,8 @@ function Certificados(props){
             <div className="certificados">
                 <p><strong>Hipnosis Ericksoniana</strong></p>
                 <FontAwesomeIcon className="icon-4" icon={faGraduationCap}/>
-                <span>Con <strong>Reiki </strong> estaremos compartiendo cada nivel con material didáctico  y prácticas. Sanación a uno mismo y para los que lo pidan.</span>
+                <span>La <strong>hipnosis ericksoniana</strong> es una técnica terapéutica que induce un estado de trance ligero para tratar problemas emocionales y físicos, aprovechando los recursos internos del individuo para la transformación personal.
+                </span>
             </div>
         </ContenedorCertificados>
     )
@@ -58,8 +59,9 @@ const ContenedorCertificados = styled.div`
     }
 
     span{
+        width:100%;
         margin-top:20px;
-        font-size:20px;
+        font-size:19px;
         cursor:default;
     }
 
@@ -108,16 +110,16 @@ const ContenedorCertificados = styled.div`
     @media screen and (max-width:850px) {
         flex-direction:column;
         .icon-1{
-            top:1220px;
+            top:1320px;
         }
         .icon-2{
-            top:1500px;
+            top:1600px;
         }
         .icon-3{
-            top:1770px;
+            top:1850px;
         }
         .icon-4{
-            top:2030px;
+            top:2120px;
         }
         .certificados:hover .icon-1{
         position:absolute;
@@ -140,6 +142,7 @@ const ContenedorCertificados = styled.div`
             transition:0.5s;
         }
         span{
+            font-size:18px;
             height:150px;
         }
     }
