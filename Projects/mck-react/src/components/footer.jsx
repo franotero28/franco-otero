@@ -29,6 +29,13 @@ const ContenedorFooter = styled.div`
         justify-content:space-around;
     }
     
+    p{
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+            margin:0;
+            letter-spacing:1px;
+        color:#7c4969;
+    }
+
     i{
         font-size:30px;
         margin:20px;
@@ -37,13 +44,21 @@ const ContenedorFooter = styled.div`
 
     a{
         text-decoration:none;
-        color:black;
+        color:#7c4969;
     }
 
     a:hover{
         color:grey;
         transform:scale(1.05);
         transition:0.5s;
+    }
+
+    @media screen and (max-width:850px) {
+        display:flex;
+        flex-direction:column;
+        i{
+            font-size:25px;
+        }
     }
 `
 

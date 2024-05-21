@@ -13,7 +13,7 @@ function Titulos(){
         <Contenedor>
             <div className="contenedor-titulos">
                 <h1>AMPLIANDO TU<br/> CONSCIENCIA</h1><br />
-                <h2>SIN OCUPAR TU MENTE</h2><br />
+                <h2>PARA UN BIENESTAR GENERAL</h2><br />
                 <p><FontAwesomeIcon icon={faGraduationCap}/><span-1><strong>LIC. MARIA CELIA KOCHUR</strong></span-1></p>
                 <button onClick={handleClick} className="boton-contacto">Agenda tu sesión!</button>
             </div>
