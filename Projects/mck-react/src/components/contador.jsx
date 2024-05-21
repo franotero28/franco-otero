@@ -55,6 +55,7 @@ const ContenedorTitulo = styled.div`
     text-align:center;
     margin-top:100px;
     h3{
+        padding:20px;
         color:white;
         font-size:40px;
         font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;

@@ -12,9 +12,9 @@ function Titulos(){
     return(
         <Contenedor>
             <div className="contenedor-titulos">
-                <h1>AMPLIANDO TU<br/> CONSCIENCIA</h1><br />
+                <h1>AMPLIANDO <br/> CONSCIENCIAS</h1><br />
                 <h2>PARA UN BIENESTAR GENERAL</h2><br />
-                <p><FontAwesomeIcon icon={faGraduationCap}/><span-1><strong>LIC. MARIA CELIA KOCHUR</strong></span-1></p>
+                <p><FontAwesomeIcon icon={faGraduationCap}/><span-1><strong>MARIA CELIA KOCHUR</strong></span-1></p>
                 <button onClick={handleClick} className="boton-contacto">Agenda tu sesión!</button>
             </div>
             <div className="contenedor-imagen">
@@ -58,7 +58,7 @@ const Contenedor = styled.div`
         letter-spacing:5px;
     }
     span-1{
-        margin-left:20px;
+        margin-left:10px;
         font-size:19px;
     }
 
