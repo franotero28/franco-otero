@@ -4,11 +4,13 @@ import styled from "styled-components";
 function Blog(props){
     return(
         <ContenedorBlog id="blog">
-            <div className="card-blog">
-                <h6>{props.titulo}</h6>
-                <hr />
-                <p>{props.fechaup}</p>
-            </div>
+            <a href={`/blog#${props.slash}`}>
+                <div className="card-blog">
+                    <h6>{props.titulo}</h6>
+                    <hr />
+                    <p>{props.fechaup}</p>
+                </div>
+            </a>
         </ContenedorBlog>
     )
 }
@@ -16,6 +18,11 @@ function Blog(props){
 const ContenedorBlog = styled.div`
     display:flex;
     flex-direction:column;
+
+    a{
+        text-decoration:none;
+        color:black;
+    }
 
     .card-blog{
     background-color:#fffdfdb7;

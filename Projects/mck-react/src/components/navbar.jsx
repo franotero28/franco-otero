@@ -19,10 +19,10 @@ function Navbar(){
           </div>
         </div>
         <div class="tabeador">
-          <a class="tabs" href="#sobreMi">SOBRE MI</a>
-          <a class="tabs" href="#experiencia">CERTIFICADOS</a>
-          <a class="tabs" href="#contador">PROXIMA CHARLA</a>
-          <a class="tabs" href="#blog">BLOG</a>
+          <a class="tabs" href="/#sobreMi">SOBRE MI</a>
+          <a class="tabs" href="/#experiencia">CERTIFICADOS</a>
+          <a class="tabs" href="/#contador">PROXIMA CHARLA</a>
+          <a class="tabs" href="/blog">BLOG</a>
         </div>
       </header>
     )
