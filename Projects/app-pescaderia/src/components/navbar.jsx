@@ -7,15 +7,16 @@ function BarraNav(){
         <ContenedorNavbar>
             <Navbar expand="lg" className="bg-dark" data-bs-theme="light">
             <Container>
-                <Navbar.Brand href="#home"><img className="img-user" src={require("../img/admin1.jpg")} alt="" width={50} /></Navbar.Brand>
-                <Navbar.Brand href="#home"><img src={require("../img/logo_texto_icono.png")} alt="" width={150} /></Navbar.Brand>
+                <p class="img-user mr-3">A</p>
+                <Navbar.Brand href="/"><img src={require("../img/logo_texto_icono.png")} alt="" width={150} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-body-dark" data-bs-theme="dark"/>
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link className="link-nav" href="#home">Menu</Nav.Link>
-                    <Nav.Link className="link-nav" href="#products">Productos</Nav.Link>
-                    <Nav.Link className="link-nav" href="#price">Precios</Nav.Link>
-                    <Nav.Link className="link-nav" href="#dist">Distribuidores</Nav.Link>
+                    <Nav.Link className="link-nav" href="/">Menu</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="#products">Productos</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="#price">Precios</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="/clientes">Clientes</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="/login">Ingresar</Nav.Link><hr />
                 </Nav>
                 </Navbar.Collapse>
             </Container>
@@ -28,6 +29,10 @@ const ContenedorNavbar = styled.div`
     color:white;
     background-color:grey;
 
+    hr{
+        margin:0;
+    }
+
     @media screen and (min-width:850px){
         Navbar{
             display:flex;
@@ -35,6 +40,15 @@ const ContenedorNavbar = styled.div`
         }
     }
     .img-user{
+        cursor:pointer;
+        background-color: rgba(33, 37, 61, 1 );
+        border: white 1px solid;
+        text-align:center;
+        padding-top:3px;
+        width:35px;
+        height:35px;
+        margin:0px;
+        margin-right:20px;
         border-radius:90px;
     }
 
