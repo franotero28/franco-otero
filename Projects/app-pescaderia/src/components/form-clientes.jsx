@@ -50,8 +50,7 @@ function FormClientes(){
                     </div>
                     <div className="form-floating w-100">
                         <select className="form-select mb-3" id="usuario" >
-                            <option value="0" selected></option>
-                            <option value="1">Gustavo Fring</option>
+                            <option value="1" selected>Gustavo Fring</option>
                             <option value="2">Walter White</option>
                             <option value="3">Hank Schrader</option>
                         </select>

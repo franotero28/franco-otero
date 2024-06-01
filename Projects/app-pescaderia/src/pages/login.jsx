@@ -13,6 +13,8 @@ function Login(){
 const ContenedorLogin = styled.div`
     margin-bottom:200px;
     margin-top:100px;
+    display:flex;
+    justify-content:center;
 `
 
 export default Login
