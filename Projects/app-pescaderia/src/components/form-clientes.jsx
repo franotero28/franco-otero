@@ -23,50 +23,48 @@ function FormClientes(){
         <ContenedorFormulario>
             <div className="form-floating m-2 w-100">
                 <select className="form-select mb-3" id="usuario" >
-                    <option value="0" selected></option>
                     <option value="1">Gustavo Fring</option>
                     <option value="2">Walter White</option>
                     <option value="3">Hank Schrader</option>
                 </select>
-                <label for="usuario">Seleccionar Cliente</label>
+                <label htmlFor="usuario">Seleccionar Cliente</label>
             </div>
                 <div className={`contenedor-form-cliente ${click ? "activo": ""} `}>
                     <div className="form-floating m-3 w-100">
                         <input type="text" className="form-control" id="#" placeholder="Contraseña" />
-                        <label for="#">Nombre de Cliente</label>
+                        <label htmlFor="#">Nombre de Cliente</label>
                     </div>
                     <div className="form-floating m-3 w-100">
                         <input type="number" className="form-control" id="#" placeholder="Contraseña" />
-                        <label for="#">Teléfono</label>
+                        <label htmlFor="#">Teléfono</label>
                     </div>
                     <div className="form-floating mb-2 w-100">
                         <select className="form-select mb-3" id="usuario" >
-                            <option value="0" selected></option>
                             <option value="1">Gustavo Fring</option>
                             <option value="2">Walter White</option>
                             <option value="3">Hank Schrader</option>
                         </select>
-                        <label for="usuario">Provincia</label>
+                        <label htmlFor="usuario">Provincia</label>
                     </div>
                     <div className="form-floating w-100">
                         <select className="form-select mb-3" id="usuario" >
-                            <option value="1" selected>Gustavo Fring</option>
+                            <option value="1">Gustavo Fring</option>
                             <option value="2">Walter White</option>
                             <option value="3">Hank Schrader</option>
                         </select>
-                        <label for="usuario">Provincia</label>
+                        <label htmlFor="usuario">Provincia</label>
                     </div>
                     <div className="form-floating m-3 w-100">
                         <input type="text" className="form-control" id="#" placeholder="Contraseña" />
-                        <label for="#">Dirección</label>
+                        <label htmlFor="#">Dirección</label>
                     </div>
                     <div className="form-floating m-3 w-100">
                         <input type="text" className="form-control" id="#" placeholder="Contraseña" />
-                        <label for="#">CUIL/CUIT</label>
+                        <label htmlFor="#">CUIL/CUIT</label>
                     </div>
                     <div className="form-floating m-3 w-100">
                         <input type="text" className="form-control" id="#" placeholder="Contraseña" />
-                        <label for="#">Saldo Inicial $</label>
+                        <label htmlFor="#">Saldo Inicial $</label>
                     </div>
 
                 </div>

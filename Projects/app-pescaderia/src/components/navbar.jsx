@@ -7,7 +7,7 @@ function BarraNav(){
         <ContenedorNavbar>
             <Navbar expand="lg" className="bg-dark" data-bs-theme="light">
             <Container>
-                <p class="img-user mr-3">A</p>
+                <p className="img-user mr-3">A</p>
                 <Navbar.Brand href="/"><img src={require("../img/logo_texto_icono.png")} alt="" width={150} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-body-dark" data-bs-theme="dark"/>
                 <Navbar.Collapse id="basic-navbar-nav">

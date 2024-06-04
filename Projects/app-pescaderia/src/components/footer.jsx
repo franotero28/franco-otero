@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Footer(){
     return(
         <ContenedorFooter>
-            <img src={require("../img/logo_texto_icono.png")} alt="" srcset="" width={150}/>
+            <img src={require("../img/logo_texto_icono.png")} alt="" srcSet="" width={150}/>
         </ContenedorFooter>
     )
 }
