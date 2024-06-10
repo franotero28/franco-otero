@@ -44,6 +44,7 @@ const ContainerBlog = styled.div`
         font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
         font-weight:bold;
         letter-spacing:1px;
+        text-align:center;
     }
 
     button{
