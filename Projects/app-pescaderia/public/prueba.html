@@ -1,0 +1,32 @@
+<select id="provincia"></select>
+<select id="ciudad"></select>
+
+<script src="prov_ciud_json.js"></script>
+<script type="text/javascript">
+
+    console.log(prov_ciud_json)
+
+    for (let index = 0; index < prov_ciud_json.length; index++) {
+        var newOption = new Option(prov_ciud_json[index].nombre, prov_ciud_json[index].id);
+        provincia.append(newOption);
+    }
+
+    cargar_ciudades(provincia.value);
+
+    function cargar_ciudades(provincia_id){
+        let provincia_seleccionada = prov_ciud_json.find(x => x.id == provincia_id);
+
+        for (let index = 0; index < provincia_seleccionada.ciudades.length; index++) {
+            var newOption = new Option(provincia_seleccionada.ciudades[index].nombre, provincia_seleccionada.ciudades[index].id);
+            ciudad.append(newOption);
+        }
+    }
+
+    provincia.onchange = function(){
+        ciudad.innerHTML = '';
+        cargar_ciudades(provincia.value);
+    }
+
+
+
+</script>

@@ -1,19 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
 import {useForm} from "react-hook-form"
 
 function Formulario(){
+  const navigate = useNavigate();
     const {
         register,
         formState: { errors },
         handleSubmit,
         clearErrors
       } = useForm({ reValidateMode: "onSubmit" });
-      const onSubmit = () => null;
+      const onSubmit = () => {
+        // Maneja la lógica de envío del formulario aquí
+        // Por ejemplo, puedes hacer una solicitud a tu servidor
+        // Después de que la solicitud se haya completado correctamente, redirige a la ruta deseada
+        // Por ahora, solo vamos a redirigir directamente después de enviar el formulario
+        navigate("/clientes")
+      }
       const password = register("password", { required: {value: true} , minLength: {value: 6 }});
       return (
         <ContenedorFormulario>
-        <img className="img-login" src={require("../img/2_.jpeg")} alt="" />
+        <img className="img-login mb-3" src={require("../img/2_.jpeg")} alt="" />
         <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-floating mb-2 mt-2 w-100">
             <select className="form-select" id="usuario" >
