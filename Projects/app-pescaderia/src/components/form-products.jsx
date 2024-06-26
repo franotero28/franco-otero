@@ -8,16 +8,28 @@ function FormMarcas(){
     const [mostrarEditor, setMostrarEditor] = useState(false)
     const [click, setClicked] = useState(true)
 
+
+    const options = [
+        { value: '1', name: 'Pescado' },
+        { value: '2', name: 'Hamburguesa' },
+        { value: '3', name: 'Medallones' }
+      ];
+
+    const marcas = [
+        {value: '6', name: 'El Shaddai'},
+        {value: '7', name: 'Grangys'},
+        {value: '8', name: 'PuntaMarina'}
+    ]
+
     const handleChange = (event) => {
         if ( event.target.value === "0"){
             setMostrarEditor(false)
         }
         else{
-            setMostrarEditor(true)
-
             const selectedIndex = event.target.selectedIndex;
             const optionText = event.target.options[selectedIndex].text;
-            
+
+            setMostrarEditor(true)
             setInputValue(optionText);
         }
     };
@@ -54,10 +66,12 @@ function FormMarcas(){
     })
 
     const Save = () =>{
-       const selectedItem = document.getElementById("selectorNewMarca").value
-
-        if(selectedItem === "0"){
+        const selectedItem = document.getElementById("selectorNewMarca").value
+        const newItem = document.getElementById("newItem").value
+        
+        if(selectedItem === "0" || newItem === ""){
             alert("Complete todos los campos")
+
         }else{
             alert("Guardado con exito")
             handleClick()
@@ -74,9 +88,9 @@ function FormMarcas(){
                 <div className={`form-floating mb-2 mt-2 w-100 ${click ? "" : "inactivo"} `}>
                     <select onChange={handleChange} className="form-select" id="selectorProductos" >
                         <option value="0">Seleccione Variedad</option>
-                        <option value="1">Pescado</option>
-                        <option value="2">Hamburguesas</option>
-                        <option value="3">Medallones</option>
+                        {options.map(option => (
+                        <option key={option.value} value={option.value}>{option.name}</option>
+                        ))}
                     </select>
                     <label htmlFor="marcas">Productos</label>
                 </div>
@@ -95,9 +109,9 @@ function FormMarcas(){
                     <div className={`form-floating mb-2 mt-2 w-100 ${mostrarEditor ? "" : "prueba"} `}>
                     <select className="form-select" id="selectorMarcas" >
                         <option value="0">Seleccione Marca</option>
-                        <option value="6">Grangys</option>
-                        <option value="7">El Shaddai</option>
-                        <option value="8">Punta Marina</option>
+                        {marcas.map(marca => (
+                        <option key={marca.value} value={marca.value}>{marca.name}</option>
+                        ))}
                     </select>
                     <label htmlFor="marcas">Marcas</label>
                 </div>
@@ -118,7 +132,7 @@ function FormMarcas(){
                         {...nombreVariedad}
                         type="text"
                         className="form-control" 
-                        id="#"
+                        id="newItem"
                         placeholder="Nombre de Variedad"
                         onChange={(e) => {
                             nombreVariedad.onChange(e);
