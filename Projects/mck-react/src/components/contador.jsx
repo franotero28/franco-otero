@@ -26,7 +26,9 @@ const formatTime = (time) => {
     return (
         <>
         <ContenedorTitulo>
-            <h3>NO TE PIERDAS MI PROXIMA CHARLA!</h3>
+            <h3>REIKI USUI NIVEL 1</h3>
+            <h3>NO TE PIERDAS MI PROXIMO ENCUENTRO!</h3>
+            <h4>INSCRIPCION ABIERTA!</h4>
         </ContenedorTitulo>
         <ContenedorContador id='contador'>
             <div data-aos="zoom-out" data-aos-duration="500" className='contador'>
@@ -58,6 +60,14 @@ const ContenedorTitulo = styled.div`
         padding:20px;
         color:white;
         font-size:40px;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-weight:bold;
+        letter-spacing:10px;
+    }
+    h4{
+        padding:20px;
+        color:white;
+        font-size:25px;
         font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
         font-weight:bold;
         letter-spacing:10px;
