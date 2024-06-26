@@ -97,7 +97,7 @@ function FormClientes(){
                          id="#" 
                          placeholder="Correo Electrónico"
                          onChange={(e) => {
-                            email.onChange(e);
+                        email.onChange(e);
                         clearErrors("email");
                          }}
                         />

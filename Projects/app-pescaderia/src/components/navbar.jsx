@@ -13,9 +13,10 @@ function BarraNav(){
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <Nav.Link className="link-nav" href="/">Menu</Nav.Link><hr />
-                    <Nav.Link className="link-nav" href="#products">Productos</Nav.Link><hr />
-                    <Nav.Link className="link-nav" href="#price">Precios</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="/marcas">Marcas</Nav.Link><hr />
                     <Nav.Link className="link-nav" href="/clientes">Clientes</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="/productos">Productos</Nav.Link><hr />
+                    <Nav.Link className="link-nav" href="/type-products">Variedades</Nav.Link><hr />
                     <Nav.Link className="link-nav" href="/login">Ingresar</Nav.Link><hr />
                 </Nav>
                 </Navbar.Collapse>

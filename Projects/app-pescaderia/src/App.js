@@ -6,7 +6,9 @@ import Footer from './components/footer'
 import Home from './pages/home'
 import Login from './pages/login'
 import Clientes from './pages/clientes'
-
+import Marcas from './pages/marcas';
+import Products from './pages/productos'
+import TypeProducts from './pages/typeproducts'
 
 function App() {
   return (
@@ -19,6 +21,9 @@ function App() {
           <Route path='/' element={<Home />}/>
           <Route path='/login' element={<Login />}/>
           <Route path='/clientes' element={<Clientes />}/>
+          <Route path='/marcas' element={<Marcas />}/>
+          <Route path='/products' element={<Products />}/>
+          <Route path='/type-products' element={<TypeProducts />}/>
         </Routes>
     </BrowserRouter>
 
