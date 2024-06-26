@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import styled from "styled-components";
 import {useForm} from "react-hook-form"
 
@@ -25,15 +25,21 @@ function FormMarcas(){
 
     const handleInputChange = (event) => {
         setInputValue(event.target.value);
-      };
+    };
     
+
     const handleCancelar = () =>{
         setMostrarEditor(false)
+        document.getElementById("selectorProductos").selectedIndex = 0;
+        document.getElementById("selectorMarcas").selectedIndex = 0;
+        document.getElementById("selectorVariedad").selectedIndex = 0;
     }
 
     const handleClick = ()=>{
         setClicked(!click)
         setMostrarEditor(false)
+        document.getElementById("selectorNewMarca").selectedIndex = 0;
+        document.getElementById("selectorNewVariedad").selectedIndex = 0;
     }
 
     const {
@@ -41,23 +47,23 @@ function FormMarcas(){
         formState: { errors },
         handleSubmit,
         clearErrors
-      } = useForm({ reValidateMode: "onSubmit" });
+    } = useForm({ reValidateMode: "onSubmit" });
 
     const nombreVariedad = register("nombreVariedad", {
         required:true
     })
 
+    const Save = () =>{
+       const selectedItem = document.getElementById("selectorNewMarca").value
 
-    const [animationClass, setAnimationClass] = useState(true)
-    
-    const animationSave = () =>{
-        setAnimationClass(!animationClass)
-        console.log(animationClass)
+        if(selectedItem === "0"){
+            alert("Complete todos los campos")
+        }else{
+            alert("Guardado con exito")
+            handleClick()
+        }
     }
-    
-    useEffect(()=>{
-        setClicked(true)
-    },[animationClass])
+
 
 
     return(
@@ -66,8 +72,8 @@ function FormMarcas(){
 
 
                 <div className={`form-floating mb-2 mt-2 w-100 ${click ? "" : "inactivo"} `}>
-                    <select onChange={handleChange}  className="form-select" id="usuario" >
-                        <option selected value="0">Seleccione Variedad</option>
+                    <select onChange={handleChange} className="form-select" id="selectorProductos" >
+                        <option value="0">Seleccione Variedad</option>
                         <option value="1">Pescado</option>
                         <option value="2">Hamburguesas</option>
                         <option value="3">Medallones</option>
@@ -87,7 +93,7 @@ function FormMarcas(){
                     </div>
 
                     <div className={`form-floating mb-2 mt-2 w-100 ${mostrarEditor ? "" : "prueba"} `}>
-                    <select className="form-select" id="usuario" >
+                    <select className="form-select" id="selectorMarcas" >
                         <option value="0">Seleccione Marca</option>
                         <option value="6">Grangys</option>
                         <option value="7">El Shaddai</option>
@@ -97,7 +103,7 @@ function FormMarcas(){
                 </div>
 
                 <div className={`form-floating mb-2 mt-2 w-100 ${mostrarEditor ? "" : "prueba"} `}>
-                    <select className="form-select" id="usuario" >
+                    <select className="form-select" id="selectorVariedad" >
                         <option value="0">Seleccione Variedad</option>
                         <option value="10">Pescado</option>
                         <option value="11">Hamburguesas</option>
@@ -124,8 +130,8 @@ function FormMarcas(){
                     </div>
 
                 <div className={`form-floating mb-2 mt-2 w-100 ${click ? "inactivo" : ""} `}>
-                    <select className="form-select" id="usuario" >
-                        <option value="5">Seleccione Marca</option>
+                    <select className="form-select" id="selectorNewMarca" >
+                        <option value="0">Seleccione Marca</option>
                         <option value="6">Grangys</option>
                         <option value="7">El Shaddai</option>
                         <option value="8">Punta Marina</option>
@@ -134,8 +140,8 @@ function FormMarcas(){
                 </div>
 
                 <div className={`form-floating mb-2 mt-2 w-100 ${click ? "inactivo" : ""} `}>
-                    <select className="form-select" id="usuario" >
-                        <option value="9">Seleccione Variedad</option>
+                    <select className="form-select" id="selectorNewVariedad" >
+                        <option value="0">Seleccione Variedad</option>
                         <option value="10">Pescado</option>
                         <option value="11">Hamburguesas</option>
                         <option value="12">Medallones</option>
@@ -153,7 +159,7 @@ function FormMarcas(){
                 <button onClick={handleCancelar} className={`btn btn-danger m-1 ${mostrarEditor ? "": "inactivo"}`}>Cancelar</button>
             </div>
             <div className={`contenedor-modificacion ${click ? "activo": ""} `}>
-                <button onClick={animationSave} className={`btn btn-primary m-1`}>Guardar</button>
+                <button onClick={Save} className={`btn btn-primary m-1`}>Guardar</button>
                 <button onClick={handleClick} className="btn btn-danger m-1">Cancelar</button>
             </div>
         </ContenedorForm>
