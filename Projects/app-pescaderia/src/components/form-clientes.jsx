@@ -44,7 +44,7 @@ function FormClientes(){
 
     const validateInput = (value) => {
         // Verificar si el valor contiene caracteres no deseados
-        if (value.includes('-') || value.includes('.')) {
+        if (value == '-' || value == '.') {
           return "El número no puede contener - o .";
         }
         return true;
@@ -54,7 +54,7 @@ function FormClientes(){
     const telefono = register("telefono", {
         required:true,
         maxLength:10,
-        validate: validateInput
+        validate: validateInput()
     })
     const direccion = register("direccion", {
         required:true
@@ -114,6 +114,7 @@ function FormClientes(){
                         onInput={(e) => {
                             if ((e.target.value.length > e.target.maxLength))
                             e.target.value = e.target.value.slice(0,e.target.maxLength);
+                            validateInput()
                         }}
                         maxLength={10}
                         onChange={(e) => {

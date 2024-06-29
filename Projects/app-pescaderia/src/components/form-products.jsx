@@ -8,12 +8,11 @@ function FormMarcas(){
     const [mostrarEditor, setMostrarEditor] = useState(false)
     const [click, setClicked] = useState(true)
 
-
     const options = [
-        { value: '1', name: 'Pescado' },
-        { value: '2', name: 'Hamburguesa' },
-        { value: '3', name: 'Medallones' }
-      ];
+        { value: '1', name: 'Pescado'},
+        { value: '2', name: 'Hamburguesa'},
+        { value: '3', name: 'Medallones'}
+    ];
 
     const marcas = [
         {value: '6', name: 'El Shaddai'},
@@ -94,6 +93,7 @@ function FormMarcas(){
                     </select>
                     <label htmlFor="marcas">Productos</label>
                 </div>
+
                 <div className={`form-floating mb-2 mt-2 w-100  ${mostrarEditor ? "" : "prueba"}`}>
                         <input
                         type="text"
@@ -104,13 +104,13 @@ function FormMarcas(){
                         />
                         {errors.nombreVariedad?.type === "required" && <span>Debe ingresar nombre válido</span>}
                         <label htmlFor="#">Nombre de Variedad</label>
-                    </div>
+                </div>
 
-                    <div className={`form-floating mb-2 mt-2 w-100 ${mostrarEditor ? "" : "prueba"} `}>
+                <div className={`form-floating mb-2 mt-2 w-100 ${mostrarEditor ? "" : "prueba"} `}>
                     <select className="form-select" id="selectorMarcas" >
                         <option value="0">Seleccione Marca</option>
                         {marcas.map(marca => (
-                        <option key={marca.value} value={marca.value}>{marca.name}</option>
+                        <option value={marca.value}>{marca.name}</option>
                         ))}
                     </select>
                     <label htmlFor="marcas">Marcas</label>
@@ -182,7 +182,6 @@ function FormMarcas(){
 
 const ContenedorForm = styled.div`
     display:block;
-    height:800px;
     margin:30px;
     padding:20px;
     background-color: rgba(33, 37, 41, 1 );
@@ -195,7 +194,7 @@ const ContenedorForm = styled.div`
 
     .form-floating.inactivo{
         position:absolute;
-        top:-500px;
+        left:-50000px;
         opacity:0;
     }
     
@@ -204,6 +203,7 @@ const ContenedorForm = styled.div`
     }
 
     .form-floating{
+        top:0px;
         transition:0.5s;
         opacity:1;
     }
@@ -219,7 +219,7 @@ const ContenedorForm = styled.div`
 
     .contenedor-buttons.inactivo{
         position:absolute;
-        left:-500px;
+        left:-10000px;
         opacity:0;
     }
 
@@ -234,7 +234,7 @@ const ContenedorForm = styled.div`
     }
 
     .contenedor-modificacion.activo{
-        position:relative;
+        position:absolute;
         left:-500px;
         opacity:0;
     }

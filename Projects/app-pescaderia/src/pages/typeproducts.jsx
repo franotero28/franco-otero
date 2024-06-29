@@ -14,7 +14,8 @@ const ContenedorForm = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column;
+    height:500px;
+    width:100%;
 `
 
 export default TypeProducts
