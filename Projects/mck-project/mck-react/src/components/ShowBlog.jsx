@@ -26,7 +26,7 @@ function CompShowBlogs(){
             <h4>{blog.titulo}</h4>
                 <div className="contenido-blog">
                     <p className="p-contenido">-{blog.contenido}</p>
-                    <img className="img-contenido" src={require(`../img/${blog.id}.jpeg`)} width={250}/>
+                    {/*<img className="img-contenido" src={require(`../img/${blog.id}.jpeg`)} width={250}/>*/}
                 </div>
                 <div className="botones-blog">
                     <button className="boton-blog m-3">Comprar material de estudio</button>
@@ -59,8 +59,8 @@ const ContainerBlog = styled.div`
 
     .contenido-blog{
         display:grid;
-        grid-template-columns:60% 40%;
-        gap:70px;
+        grid-template-columns:100% 0%;
+        //gap:70px;
         margin-top:40px;
     }
 
@@ -101,9 +101,6 @@ const ContainerBlog = styled.div`
 
 
     @media screen and (max-width:800px) {
-        h1{
-            
-        }
         .contenido-blog{
             display:flex;
             justify-content:center;

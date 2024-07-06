@@ -47,7 +47,7 @@ function CompCreateBlog(){
                 <h4>{blog.titulo}</h4>
                     <div className="contenido-blog">
                         <p className="p-contenido">-{blog.contenido}</p>
-                        <img className="img-contenido" src={require(`../img/${blog.id}.jpeg`)} width={250}/>
+                        {/*<img className="img-contenido" src={require(`../img/${blog.id}.jpeg`)} width={250}/>*/}
                     </div>
                     <div className="botones-blog">
                         <button className="boton-blog m-3">Comprar material de estudio</button>
@@ -172,7 +172,14 @@ const ContenedorFormulario = styled.div`
         margin:0px;
         margin-top:50px;
     }
-
+    @media screen and (max-width:800px) {
+        .contenido-blog{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+        }
+    }
 `
 
 export default CompCreateBlog
