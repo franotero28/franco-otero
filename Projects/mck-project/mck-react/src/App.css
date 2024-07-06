@@ -1,0 +1,22 @@
+body{
+    background-image: url(./img/bgc-fondo.png);
+    backdrop-filter: brightness(80%);
+    background-attachment: fixed;
+}
+
+.contenedor-blog{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+.titulo-blog{
+    margin-top: 150px;
+    letter-spacing:1px;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-weight:bold;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
