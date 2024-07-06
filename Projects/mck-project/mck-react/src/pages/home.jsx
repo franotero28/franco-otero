@@ -8,7 +8,7 @@ import Countdown from '../components/contador';
 
 function Home() {
 
-  const dateTime = new Date('2024-07-02 00:00').getTime();
+  const dateTime = new Date('2024-07-15 00:00').getTime();
   const timestamp = Math.floor(dateTime / 1000);
   const ahora = Date.now();
   const timeAhora = Math.floor(ahora / 1000);
