@@ -1,14 +1,42 @@
 import React from "react";
 import styled from "styled-components";
 
+const giftIds = [4, 1, 3, 5, 3 , 4 , 2]
+
+
+
 function Intro(){
+    
+    function findFirstRepeated(gifts) {
+     
+        gifts.forEach( id => {
+
+            let i = 0
+
+            if(id === gifts[i] ){
+
+                let numerorep = id
+                console.log(numerorep )
+            }else{
+                let numeronorep = id
+                console.log(numeronorep)
+            }
+
+            i++
+
+        });
+
+    }
+
+    findFirstRepeated(giftIds)
+
     return(
         <ContenedorPerfil>
             <div className="mi-info">
                 <div className="mi-descripcion">
                     <h1>Franco Otero /{">"}</h1>
                     <h3>Desarrollador Web 💻</h3>
-                    <p>"Soy un desarrollador web comprometido, con habilidades en trabajo en equipo, resolución de problemas y capacidad de escucha activa. Estoy motivado para aprender y aplicar nuevos conocimientos, contribuyendo al éxito colectivo. Especializado en front-end, siempre estoy en constante aprendizaje."
+                    <p>"Soy un desarrollador web comprometido, con habilidades en trabajo en equipo, resolución de problemas<br/> y capacidad de escucha activa. Estoy motivado para aprender y aplicar nuevos conocimientos, contribuyendo al éxito colectivo.<br/> Especializado en front-end, siempre estoy en constante aprendizaje."
                     </p>
                 </div>
                 <div className="mi-imagen">
@@ -68,11 +96,20 @@ const ContenedorPerfil = styled.div`
         color:white;
     }
 
-
     .img-perfil{
         margin-left:px;
         border-radius:10px;
         border:solid 1px white;
+        animation:img-blur 1s ease-in-out;
+    }   
+
+    @keyframes img-blur {
+    from{
+        filter:blur(50px);
+    }
+     to{
+        filter:blur(0px);
+     }   
     }
 `
 

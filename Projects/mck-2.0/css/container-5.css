@@ -1,0 +1,101 @@
+/*--------- Contenedor 5 ----------- */
+
+
+.contenedor-5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(92, 78, 95);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-img-contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 236, 236);
+    padding: 60px;
+}
+
+.contenedor-contacto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-contact{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    background-color: rgb(92, 78, 95);
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom :1px black solid;
+    color: white;
+    padding: 15px;
+    width: 500px;
+    outline: none;
+}
+
+@media screen and (max-width:850px) {
+    .contenedor-5{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(92, 78, 95);
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contenedor-img-contacto{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        padding: 60px;
+        width: 100%;
+    }
+    
+    .contenedor-contacto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .contenedor-input{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .input-contact{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        background-color: rgb(92, 78, 95);
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+        border-bottom :1px black solid;
+        color: white;
+        width: 100%;
+        padding: 15px;
+        outline: none;
+    }
+}

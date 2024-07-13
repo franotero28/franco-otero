@@ -1,0 +1,57 @@
+/* ---- Contenedor 4 ------------ */
+
+.contenedor-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    height: 500px;
+}
+
+.contenedor-intro-material{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-material{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    margin: 20px;
+    animation-name: animacion-archivos;
+    animation-duration: 3s;
+}
+
+@keyframes animacion-archivos {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.contenedor-archivos{
+    display: flex;
+    color: black;
+}
+
+.boton-descarga{
+    text-decoration: none;
+    border: 1px solid black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+}

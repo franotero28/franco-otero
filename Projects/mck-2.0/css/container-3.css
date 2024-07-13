@@ -1,0 +1,42 @@
+/* --------- Contenedor 3 ---------- */
+
+.contenedor-3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contenedor-experiencia{
+    margin: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.separador-flecha{
+    height: 20px;
+    background-color: white;
+    width: 1px;
+    margin: 5px;
+}
+
+@media screen and (max-width:850px) {
+    .contenedor-experiencia{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px;
+    }
+    .contenedor-trabajo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
