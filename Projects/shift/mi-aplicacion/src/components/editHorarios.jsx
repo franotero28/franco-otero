@@ -1,151 +1,146 @@
 import React, {useState, useEffect} from "react";
+import { useNavigate} from "react-router-dom";
 import styled from "styled-components";
+import axios from "axios";
+
+
+const URI = 'http://localhost:8000/horarios/'
 
 function EditarHorarios(){
 
-    const [horarios, setHorarios] = useState([
-        {
-            id: 1,
-            hora:"9:30"
-        },
-        {
-            id: 2,
-            hora:"10:30"
-        },
-        {
-            id: 3,
-            hora:"11:30"
-        },
-        {
-            id: 4,
-            hora:"12:30"
-        },
-        {
-            id: 5,
-            hora:"13:30"
-        },
-    ])
+    const [horarios, setHorarios] = useState([])
+
+    const [hora, setHora] = useState("")
+
+    const navigate = useNavigate()
 
     const [valorInput, setValorInput] = useState()
     const [valorCuarto, setValorCuarto] = useState()
 
     const handleInputChange = (event) =>{
-        setValorInput(event.target.value)
+            setValorInput(event.target.value)
     }
+
     const handleInputChange2 = (event) =>{
         setValorCuarto(event.target.value)
     }
 
-    const addDia = () =>{
+     const addDia = () =>{
 
-        if(valorCuarto == undefined || valorInput == undefined || valorInput == "" || valorCuarto == ""){
-            alert("Selecciona hora valida")
-        }else{
+         if(valorCuarto == undefined || valorInput == undefined || valorInput == "" || valorCuarto == ""){
+             alert("Selecciona hora valida")
+         }else{
+            let horaFinal = valorInput+":"+valorCuarto
+            console.log(horaFinal)
+            setHora(horaFinal)
 
-            const cuarto = valorCuarto
-            const numero = valorInput
-            const hora = numero+":"+cuarto
-            const newID = horarios.length + 1
+         }
+     } 
     
-            const nuevoElemento = ({ id: newID, hora: hora })
-            setHorarios([...horarios, nuevoElemento])
-            console.log(horarios)
+    const [advertencia, setAdvertencia] = useState(false)
+
+    const handleDelete = () => {
+        setAdvertencia(true);
+        const timer = setTimeout(() => {
+          setAdvertencia(false);
+        }, 3500);
+    
+        // Limpiar el timer cuando el componente se desmonte
+        return () => clearTimeout(timer);
+    }
+
+    useEffect(()=>{
+         getHorarios()
+    },[])
+    
+    const getHorarios = async ()=>{
+        const res = await axios.get(URI)
+        const horariosData = res.data;
+        // Ordenar los horarios por 'hora'
+        horariosData.sort((a, b) => {   
+        const convertirHora = (hora) => {
+         // Si la hora es solo un número (como "9"), convertirlo a minutos
+        if (/^\d+$/.test(hora)) {
+         return parseInt(hora) * 60;
         }
-    } 
-    
-
-    useEffect(() => {
-        const horariosOrdenados = [...horarios].sort((a, b) => {
-          // Función para convertir la hora a un formato comparable
-          const convertirHora = (hora) => {
-            // Si la hora es solo un número (como "9"), convertirlo a minutos
-            if (/^\d+$/.test(hora)) {
-              return parseInt(hora) * 60;
-            }
-      
-            // Si la hora está en formato "hh:mm", convertirla a minutos
-            if (/^\d+:\d+$/.test(hora)) {
-              const partes = hora.split(":");
-              return parseInt(partes[0]) * 60 + parseInt(partes[1]);
-            }
-      
-            // Manejar otros formatos si es necesario
-            return 0; // Valor por defecto si no se puede convertir
-          };
-      
-          // Convertir las horas a un valor comparable
-          const valorA = convertirHora(a.hora);
-          const valorB = convertirHora(b.hora);
-      
-          // Comparar los valores convertidos
-          return valorA - valorB;
+              
+        // Si la hora está en formato "hh:mm", convertirla a minutos
+        if (/^\d+:\d+$/.test(hora)) {
+        const partes = hora.split(":");
+        return parseInt(partes[0]) * 60 + parseInt(partes[1]);
+        }
+              
+        // Manejar otros formatos si es necesario
+        return 0; // Valor por defecto si no se puede convertir
+        };
+              
+        // Convertir las horas a un valor comparable
+        const valorA = convertirHora(a.hora);
+        const valorB = convertirHora(b.hora);
+              
+        // Comparar los valores convertidos
+        return valorA - valorB;
         });
-      
-        setHorarios(horariosOrdenados);
-      }, [horarios.length]);
+        
+    }
 
-      const [ReservadoBtn, setReservadoBtn] = useState(true)
+    const guardar = async (e) =>{
+        await axios.post(URI, {hora: hora})
+        navigate('/editar-horarios')
+    } 
 
-      const handleBtnReserva = (e)=> {
-          setReservadoBtn(false)
-          e.target.classList.toggle("btn-success")
-          setTimeout(() => {
-              // Aquí puedes agregar cualquier acción que deseas realizar después de 3 segundos
-              setReservacion(false)
-              e.target.classList.toggle("btn-success")
-              setReservadoBtn(true)
-            }, 3000);
-      }
-
-      const [Reservacion, setReservacion ] = useState(false)
-
-      const handleReserva = (event) =>{
-          if(event.target.classList.contains("reservado")){
-              setReservacion(false)
-              console.log("Ya esta reservado", Reservacion)
-          }else{
-              setReservacion(true)
-              event.target.classList.toggle("reservado")
-              console.log("Reservacion Completa", Reservacion)
-              return true
-          }
-      }
+    const deleteHora = async (id) =>{
+        axios.delete(`${URI}${id}`)
+        navigate('/editar-horarios')
+        alert("hora Eliminada")
+        getHorarios()
+    }
 
     return(
         <ContenedorDivisor>
-            <div className={`grilla-horarios ${Reservacion ? "inactivo" : ""}`}>
+            <h1>Editar Horarios</h1>
+                <div className={`grilla-horarios`}>
                 {horarios.map(horario => (
-                <button onClick={handleReserva} className={`link-horario`} key={horario.id} id={horario.id}>{horario.hora}</button>
+                    <div key={horario.id} className="div-edit-hora">
+                        <button className={`link-horario`} key={horario.id} id={horario.id}>{horario.hora}:00</button>
+                        <button className="btn btn-danger boton-eliminar" onClick={()=>{deleteHora(horario.id); handleDelete()}}>X</button>
+                    </div>
                 )
                 )}
             </div>
+            <button onClick={()=>{handleDelete(); addDia()}}>Prueba</button>
+            <span className={`advertencia ${advertencia ? "" : "inactivo"}`}>Horario Eliminado Correctamente! ℹ️</span>
+            <form onSubmit={guardar}>
 
-            <div className={`select-horarios ${Reservacion ? "inactivo": ""}`}>
+            <select className="select" onChange={handleInputChange} name="" id="">
 
-            <select onChange={handleInputChange} name="" id="">
-
-                <option value="">Seleccione hora</option> 
-                <option value="8">8</option> 
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-
-            </select>
-
-            <select onChange={handleInputChange2} name="" id="">
-
-                <option value="">Seleccione minutos</option>
-                <option value="00">00</option>
-                <option value="15">15</option>
-                <option value="30">30</option>
-                <option value="45">45</option>
+            <option value="">Seleccione hora</option> 
+            <option value="8">8</option> 
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
 
             </select>
 
-            <button onClick={addDia}>Agregar Dia</button>
+            <select className="select" onChange={handleInputChange2} name="" id="">
 
-            </div>
+            <option value="">Seleccione minutos</option>
+            <option value="00">00</option>
+            <option value="15">15</option>
+            <option value="30">30</option>
+            <option value="45">45</option>
 
+            </select>
+
+            <button className="btn btn-primary m-3" onClick={addDia}>Agregar Dia</button>
+            <input type="number"
+            value={hora}
+            onChange={ (e)=> setHora(e.target.value)}
+            />
+            <label htmlFor="">Ingresar hora</label>
+            <button className="btn btn-primary m-3">Crear Hora</button>
+            </form>
+            
         </ContenedorDivisor>
     )
 }
@@ -171,8 +166,36 @@ const ContenedorDivisor = styled.div`
         display:none;
     }
 
+    .div-edit-hora{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+    }
+
+    .boton-eliminar{
+    }
+
+    .advertencia{
+        padding:20px;
+        border-radius:5px;
+        background-color:#4b73e2;
+        position:absolute;
+        left:20px;
+        top:80px;
+        opacity:80%;
+        color:white;
+        transition:2s;
+    }
+
+    .advertencia.inactivo{
+        position:absolute;
+        left:-500px;
+        opacity:0%;
+    }
+
     .link-horario{
-        background-color:#00631c;
+        background-color:#4b73e2;
         text-decoration:none;
         text-align:center;
         width:100%;
@@ -190,6 +213,14 @@ const ContenedorDivisor = styled.div`
     }
     .select-horarios.inactivo{
         display:none;
+    }
+
+    form{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:20px;
     }
 `
 

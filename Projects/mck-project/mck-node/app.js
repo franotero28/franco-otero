@@ -10,6 +10,8 @@ app.use( cors())
 app.use(express.json())
 app.use('/blogs', blogRoutes)
 
+const port = process.env.PORT || 3000
+
 try {
     await db.authenticate()
     console.log("conexion exitosa")
@@ -21,8 +23,8 @@ app.get("/", (req,res)=>{
     res.send("hola mundo")
 })
 
-app.listen(8000, ()=>{
-    console.log("server levantado in http://localhost:8000/")
+app.listen(port, ()=>{
+    console.log(`server levantado in http://localhost:${port}`)
 })
 
 
