@@ -9,14 +9,6 @@ app.use( cors())
 app.use(express.json())
 app.use('/blogs', blogRoutes)
 
-// Ruta para servir archivos estáticos del frontend
-app.use(express.static(path.join(__dirname, '../mck-react/build')));
-
-// Ruta principal para servir la aplicación frontend
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../mck-react/build/index.html'));
-});
-
 const port = process.env.PORT || 3000
 
 try {
