@@ -3,9 +3,8 @@ import { useState, useEffect } from "react"
 import {Link} from "react-router-dom"
 import styled from "styled-components"
 
-const port = process.env.PORT || 3000
 
-const URI = `http://localhost:${port}/blogs/`
+const URI = `/blogs`
 
 function CompShowBlogs(){
 

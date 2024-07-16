@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "/mck-react/build/**", "use": "@vercel/static" },
+      { "src": "/mck-node/index.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/.*", "dest": "/mck-node/index.js" },
+      { "src": "/(.*)", "dest": "/mck-react/build/index.html" }
+    ]
+  }
