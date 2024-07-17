@@ -16,10 +16,40 @@ function EditarHorarios(){
     
     const getHorarios = async ()=>{
         const res = await axios.get(URI)
-        const horariosData = res.data;
+        const horariosData = res.data
+        const convertirHora = (hora) => {
+            // Si la hora es solo un número (como "9"), convertirlo a minutos
+            if (/^\d+$/.test(hora)) {
+                return parseInt(hora) * 60;
+            }
+
+            // Si la hora está en formato "hh:mm", convertirla a minutos
+            if (/^\d+:\d+$/.test(hora)) {
+                const partes = hora.split(":");
+                return parseInt(partes[0]) * 60 + parseInt(partes[1]);
+            }
+
+            // Manejar otros formatos si es necesario
+            return 0; // Valor por defecto si no se puede convertir
+        };
+
         // Ordenar los horarios por 'hora'
-        horariosData.sort((a, b) => a.hora - b.hora);
-        setHorarios(horariosData);
+        horariosData.sort((a, b) => {
+            // Verificar si las propiedades 'hora' existen
+            if (!a.hora || !b.hora) {
+                throw new Error('Propiedad "hora" faltante en uno de los objetos');
+            }
+
+            // Convertir las horas a un valor comparable
+            const valorA = convertirHora(a.hora);
+            const valorB = convertirHora(b.hora);
+
+            // Comparar los valores convertidos
+            return valorA - valorB;
+        });
+
+        // Hacer algo con los datos ordenados (por ejemplo, retornarlos o mostrarlos)
+        setHorarios(horariosData)
     }
    
     const [ReservadoBtn, setReservadoBtn] = useState(true)
@@ -55,7 +85,7 @@ function EditarHorarios(){
 
             <div className={`grilla-horarios ${Reservacion ? "inactivo" : ""}`}>
                 {horarios.map(horario => (
-                <button onClick={handleReserva} className={`link-horario`} key={horario.id} id={horario.id}>{horario.hora}:00</button>
+                <button onClick={handleReserva} className={`link-horario`} key={horario.id} id={horario.id}>{horario.hora}</button>
                 )
                 )}
             </div>

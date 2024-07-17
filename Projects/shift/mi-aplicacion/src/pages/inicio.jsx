@@ -4,8 +4,11 @@ import styled from "styled-components";
 function Inicio(){
     return(
         <ContenedorInicio>
+            <div className="contenedor-principal">
+                <h2>La mejor app de reserva de turnos gratuita!</h2>
+            </div>
             <h4>Reserva tu turno!</h4>
-            <button className="btn btn-primary">Click Aqui!</button>
+            <a className="btn btn-primary" href="/reserva-horarios">Click Aqui!</a>
         </ContenedorInicio>
     )
 }
