@@ -2,7 +2,6 @@ import express from "express"
 import cors from "cors"
 import db from "./database/db.js"
 import blogRoutes from "./routes/routes.js"
-import { Sequelize, DataTypes } from 'sequelize';
 
 const app = express()
 
