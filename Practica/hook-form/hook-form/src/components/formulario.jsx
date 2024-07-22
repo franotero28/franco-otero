@@ -25,7 +25,7 @@ function Formulario(){
                         value:5,
                         message: "El usuario debe tener min 5 caracteres"},
                         maxLength:{
-                        value:20,
+                        value:10,
                         message:"El usuario debe tener max 20 caracteres"
                         }
                     })} />

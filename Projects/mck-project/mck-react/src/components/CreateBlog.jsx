@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 const port = process.env.PORT || 3000
 
-const URI = `http://localhost:${port}/blogs/`
+const URI = `http://localhost:3000/blogs/`
 
 function CompCreateBlog(){
 
