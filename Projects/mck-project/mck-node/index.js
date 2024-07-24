@@ -23,6 +23,8 @@ app.get("/", (req,res)=>{
     res.send("hola mundo")
 })
 
-export default app
+app.listen(port, ()=>{
+    console.log(`server levantado in http://localhost:${port}`)
+})
 
 
