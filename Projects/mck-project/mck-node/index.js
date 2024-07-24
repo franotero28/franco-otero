@@ -3,6 +3,7 @@ import cors from "cors"
 import db from "./database/db.js"
 import blogRoutes from "./routes/routes.js"
 
+
 const app = express()
 
 app.use( cors())
@@ -22,8 +23,6 @@ app.get("/", (req,res)=>{
     res.send("hola mundo")
 })
 
-app.listen(port, ()=>{
-    console.log(`server levantado in http://localhost:${port}`)
-})
+export default app
 
 
