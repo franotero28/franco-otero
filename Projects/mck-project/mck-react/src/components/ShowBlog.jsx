@@ -2,7 +2,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 
-const URI = `http://localhost:8000/blogs/`
+const URI = `http://localhost:8000/blogs`
 
 function CompShowBlogs(){
 
@@ -25,7 +25,8 @@ function CompShowBlogs(){
             <h4>{blog.titulo}</h4>
                 <div className="contenido-blog">
                     <p className="p-contenido">-{blog.contenido}</p>
-                    {/*<img className="img-contenido" src={require(`../img/${blog.id}.jpeg`)} width={250}/>*/}
+                    <a href={blog.link} target="_blank" className={`a-contenido ${blog.link == "" ? "inactivo" : ""}`}>Ver en youtube</a>
+
                 </div>
                 <div className="botones-blog">
                     <button className="boton-blog m-3">Comprar material de estudio</button>
@@ -48,26 +49,45 @@ const ContainerBlog = styled.div`
     padding:20px;
     background-color:#e7e7e796;
     width:100%;
+
     h4{
         color:white;
         font-size:25px;
         font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
         font-weight:bold;
-        letter-spacing:5px;
+        letter-spacing:1px;
     }
 
     .contenido-blog{
-        display:grid;
-        grid-template-columns:100% 0%;
-        //gap:70px;
-        margin-top:40px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100%;
     }
 
     .p-contenido{
-        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-        letter-spacing:1px;
         text-align:center;
-        font-size:20px;
+        font-size:17px;
+    }
+
+    .a-contenido{
+        text-decoration:none;
+        background:#8f6581;
+        font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+        font-weight:bold;
+        color:white;
+        padding:5px;
+        border-radius:5px;
+    }
+
+    .a-contenido.inactivo{
+        display:none;
+    }
+
+    .a-contenido:hover{
+        transform:scale(1.05);
+        transition:0.5s;
     }
 
     .botones-blog{
@@ -95,7 +115,6 @@ const ContainerBlog = styled.div`
 
     .p-fecha{
         margin:0px;
-        margin-top:50px;
     }
 
 

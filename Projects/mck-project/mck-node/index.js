@@ -24,7 +24,8 @@ app.get("/", (req,res)=>{
 })
 
 app.listen(port, ()=>{
-    console.log(`server levantado in http://localhost:${port}`)
+    console.log(`server levantado in ${port}`)
+    console.log("modificado")
 })
 
 

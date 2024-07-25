@@ -1,10 +1,9 @@
-import { Sequelize, DataTypes } from 'sequelize';
+import { Sequelize} from 'sequelize';
 
 // Configura la conexión a la base de datos
 const db = new Sequelize('database_app', 'root', '', {
   host: 'localhost',
-  dialect: 'mysql' // Puedes cambiarlo a 'postgresql' si estás usando PostgreSQL
+  dialect: 'mysql', // Asegúrate de que el puerto sea correcto (por defecto 3306 para MySQL)
 });
-
 
 export default db;
