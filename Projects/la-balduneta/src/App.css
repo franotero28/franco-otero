@@ -1,0 +1,12 @@
+body{
+    background-image: url(./img/fondonegro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.players{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

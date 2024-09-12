@@ -1,7 +1,0 @@
-body{
-    background-image: url(./img/fondonegro.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    backdrop-filter: brightness(40%);
-    background-attachment: fixed;
-}
