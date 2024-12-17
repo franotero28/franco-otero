@@ -43,7 +43,6 @@ function Navbar (){
             <div className={`links ${clicked ? "active" : ""}`}>
                 <p>INICIO</p>
                 <p>ENTRADAS</p>
-                <p>BARBERIA</p>
                 <p>CONTACTO</p>
             </div>
             <img src={require("../img/logo-lapicante.gif")} alt="" srcset="" width={60}/>

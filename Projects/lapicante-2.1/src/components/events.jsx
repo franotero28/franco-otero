@@ -6,6 +6,8 @@ import { faHome, faTag, faCalendarDays, faHeadphones } from "@fortawesome/free-s
 
 function Eventos (props){
 
+
+
     console.log(props)
 
     return(
@@ -23,7 +25,7 @@ function Eventos (props){
                 <p><FontAwesomeIcon icon={faHeadphones}/><span>{props.dj}</span></p>
                 <p><FontAwesomeIcon icon={faHome}/><span>{props.direccion}</span></p>
             </div>
-                <button className="boton">{props.button}</button>
+                <button onClick={() => window.open('https://w.app/iNWvqJ', '_blank')}  className="boton">{props.button}</button>
         </Header>
     )
 }
@@ -67,7 +69,7 @@ const Header = styled.div`
     img{
         border-radius:5px 5px 0px 0px;
         width:250px;
-        height:250px;
+        height:500px;
     }
 
     .titulo{
@@ -110,13 +112,14 @@ const Header = styled.div`
         padding:5px;
     }
     .boton:hover{
-        background-color:#999;
+        transition:0.5s;
+        background-color:#dbdbdb;
     }
 
     @media (max-width:800px){
         img{
             width:160px;
-            height:200px;
+            height:300px;
         }
         .titulo{
             font-size:12px;
