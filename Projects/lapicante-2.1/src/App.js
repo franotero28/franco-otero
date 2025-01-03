@@ -9,7 +9,7 @@ import Footer from './components/footer';
 
 function App() {
 
-  const dateTime = new Date('2024-01-3 00:00').getTime();
+  const dateTime = new Date('2025-01-3 00:00').getTime();
   const timestamp = Math.floor(dateTime / 1000);
   const ahora = Date.now();
   const timeAhora = Math.floor(ahora / 1000);
