@@ -25,7 +25,7 @@ function Eventos (props){
                 <p><FontAwesomeIcon icon={faHeadphones}/><span>{props.dj}</span></p>
                 <p><FontAwesomeIcon icon={faHome}/><span>{props.direccion}</span></p>
             </div>
-                <button onClick={() => window.open('https://w.app/iNWvqJ', '_blank')}  className="boton">{props.button}</button>
+                <button onClick={() => window.open('https://api.whatsapp.com/send?phone=2235759355&text=Hola,%20te%20escribo%20para%20las%20entradas%20de%20la%picante', '_blank')}  className="boton">{props.button}</button>
         </Header>
     )
 }

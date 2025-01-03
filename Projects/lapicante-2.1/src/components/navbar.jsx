@@ -45,7 +45,7 @@ function Navbar (){
                 <p>ENTRADAS</p>
                 <p>CONTACTO</p>
             </div>
-            <img src={require("../img/logo-lapicante.gif")} alt="" srcset="" width={60}/>
+            <img src={require("../img/logo-lapicante.gif")} alt="" srcSet="" width={60}/>
         </ContenedorNavbar>
     )
 }

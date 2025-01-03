@@ -23,7 +23,6 @@ const FooterPicante = styled.div`
     padding:0px 50px 0px 50px;
     align-items:center;
     background-color:#9b9b9b9f;
-    margin-top:350px;
     p{
         font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
         font-size:20px;
@@ -32,6 +31,7 @@ const FooterPicante = styled.div`
     }
 
     @media (max-width:800px){
+        margin-top:350px;
         p{
             font-size:10px;
         }
