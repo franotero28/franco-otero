@@ -9,7 +9,7 @@ import Footer from './components/footer';
 
 function App() {
 
-  const dateTime = new Date('2025-02-08 23:50').getTime();
+  const dateTime = new Date('2025-02-15 23:50 .').getTime();
   const timestamp = Math.floor(dateTime / 1000);
   const ahora = Date.now();
   const timeAhora = Math.floor(ahora / 1000);
@@ -25,10 +25,10 @@ function App() {
         <div className='contenedor-eventos'>
 
           <Eventos 
-          titulo= "LA PICANTE x CREAM PARTY"
-          img= "flyerhenry1.jpg"
-          fecha= " Sabado 08-02 23:50"
-          direccion= "Ruta Nacional n°226 km 16 - Obras sanitarias"
+          titulo= "LA PICANTE x LA BEBOTEO"
+          img= "flyerhenrybeboteo.jpg"
+          fecha= " Sabado 15-02 23:50"
+          direccion= "Sierra de los padres rn°226 km 16 - Obras sanitarias"
           entrada= " Consultar"
           dj="DJ Killah"
           button= "Comprar Entradas"
